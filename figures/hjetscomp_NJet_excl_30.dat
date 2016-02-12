@@ -1,0 +1,226 @@
+# BEGIN PLOT
+DrawOnly=hqt nnlo-h nnlo-hj powheg madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
+Legend=1
+LegendXPos=0.45
+LogY=1
+PlotSize=10,8
+RatioPlot=0
+RatioPlot1=1
+RatioPlot1DrawOnly=powheg madgraph sherpa herwig hej
+RatioPlot1Reference=powheg
+RatioPlot1SameStyle=1
+RatioPlot1YLabel=Ratio to \texttt{Powheg}
+RatioPlot1YMajorTickMarks=5
+RatioPlot1YMax=1.9999
+RatioPlot1YMin=0.0001
+RatioPlot1YSize=4
+RatioPlot2=1
+RatioPlot2DrawOnly=hqt nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
+RatioPlot2Reference=powheg
+RatioPlot2SameStyle=1
+RatioPlot2YLabel=Ratio to \texttt{Powheg}
+RatioPlot2YMajorTickMarks=5
+RatioPlot2YMax=1.9999
+RatioPlot2YMin=0.0001
+RatioPlot2YSize=4
+RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+Title=Exclusive jet multiplicity
+XCustomMajorTicks=0	0	1	1	2	2	3	3
+XLabel=$n_j$
+XTwosidedTicks=1
+YLabel=d$\sigma$/d$n_j$ [pb]
+YTwosidedTicks=1
+# END PLOT
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=black!30!white
+ErrorBandOpacity=0.1
+ErrorBandStyle=hlines
+ErrorBands=1
+ErrorTubeLineColor=black!40!white
+ErrorTubes=1
+LineColor=black
+LineStyle=solid
+LineWidth=1.5pt
+Name=powheg
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+Scale=438.596491228
+Title=\texttt{Powheg} \textsc{NnloPs}
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	6.298611e-02	8.771390e-03	9.503450e-03
+5.000000e-01	1.500000e+00	2.539988e-02	3.335040e-03	2.934300e-03
+1.500000e+00	2.500000e+00	8.419735e-03	1.310301e-03	1.271883e-03
+2.500000e+00	3.500000e+00	1.892460e-03	3.266750e-04	3.419360e-04
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/MG5aMC/MG5aMC_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=green!50!white
+ErrorBandOpacity=0.4
+ErrorBandStyle=vlines
+ErrorBands=1
+ErrorTubeLineColor=green!70!white
+ErrorTubes=1
+LineColor=green!70!black
+LineStyle=solid
+LineWidth=1.5pt
+Name=madgraph
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/MG5aMC/MG5aMC_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+Title=\texttt{MG5\_aMC} \textsc{FxFx}
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	2.050903e+01	3.843900e+00	4.858610e+00
+5.000000e-01	1.500000e+00	8.901700e+00	2.116894e+00	2.595840e+00
+1.500000e+00	2.500000e+00	3.015278e+00	7.908450e-01	8.451000e-01
+2.500000e+00	3.500000e+00	9.119875e-01	2.226533e-01	3.022885e-01
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa/pphjets-l3-n5.yoda/MC_HJETS_LH15/NJet_excl_30
+LineColor=blue!80!white
+LineStyle=solid
+LineWidth=1.5pt
+Name=sherpa
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa/pphjets-l3-n5.yoda/MC_HJETS_LH15/NJet_excl_30
+ScaledBy=4.1520507732366236e-09
+Title=\textsc{Sherpa} \textsc{MePs@Nlo}
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	2.381244e+01	6.917999e-02	6.917999e-02
+5.000000e-01	1.500000e+00	1.174429e+01	8.125683e-02	8.125683e-02
+1.500000e+00	2.500000e+00	3.444215e+00	5.428403e-02	5.428403e-02
+2.500000e+00	3.500000e+00	1.002305e+00	4.888924e-02	4.888924e-02
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=RawSienna!30!white
+ErrorBandOpacity=0.4
+ErrorBandStyle=crosshatch
+ErrorBands=1
+ErrorTubeLineColor=RawSienna!60!white
+ErrorTubes=1
+LineColor=RawSienna
+LineStyle=solid
+LineWidth=1.5pt
+Name=herwig
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+Title=\textsc{Herwig}7
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	2.460393e+01	1.855260e+00	2.468510e+00
+5.000000e-01	1.500000e+00	1.091594e+01	7.326600e-01	1.314980e+00
+1.500000e+00	2.500000e+00	3.422030e+00	5.445610e-01	1.415250e-01
+2.500000e+00	3.500000e+00	9.201990e-01	1.443132e-01	2.416660e-01
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+LineColor=purple!70!black
+LineStyle=dotted
+LineWidth=2pt
+Name=hej
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+Scale=438.596491228
+ScaledBy=0.001017293997965412
+Title=\textsc{Hej}
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	2.494521e-07	6.686139e-09	6.686139e-09
+5.000000e-01	1.500000e+00	6.262127e-05	1.287470e-07	1.287470e-07
+1.500000e+00	2.500000e+00	5.265259e-03	1.026624e-06	1.026624e-06
+2.500000e+00	3.500000e+00	1.912262e-03	3.050089e-06	3.050089e-06
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=yellow
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorTubeLineColor=yellow!50!black
+ErrorTubeLineStyle=solid
+ErrorTubes=1
+LineColor=yellow!50!black
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h1j-nlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_excl_30
+Title=\textsc{GoSam+Sherpa} hj NLO
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	1.087229e+01	9.805600e-01	0.000000e+00
+1.500000e+00	2.500000e+00	3.476208e+00	1.223175e+00	2.106542e+00
+2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=orange
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorTubeLineColor=orange!80!black
+ErrorTubeLineStyle=solid
+ErrorTubes=1
+LineColor=orange!80!black
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h2j-nlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_excl_30
+Title=\textsc{GoSam+Sherpa} hjj NLO
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	3.757557e+00	5.468060e-01	0.000000e+00
+2.500000e+00	3.500000e+00	1.197300e+00	4.984824e-01	9.634080e-01
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H3j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=red
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorTubeLineColor=red!80!black
+ErrorTubeLineStyle=solid
+ErrorTubes=1
+LineColor=red!80!black
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h3j-nlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H3j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_excl_30
+Title=\textsc{GoSam+Sherpa} hjjj NLO
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+2.500000e+00	3.500000e+00	1.221975e+00	3.664460e-01	0.000000e+00
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=yellow
+ErrorBandOpacity=0.2
+ErrorBands=1
+ErrorTubeLineColor=yellow!50!black
+ErrorTubeLineStyle=solid
+ErrorTubes=1
+LineColor=yellow!50!black
+LineStyle=dashdotted
+LineWidth=1.5pt
+Name=gosam-h1j-loopsim
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/NJet_excl_30
+Title=\textsc{GoSam+Sherpa} hj nNLO
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	8.893692e+00	1.196625e+00	1.452978e+00
+1.500000e+00	2.500000e+00	3.518515e+00	5.111160e-01	0.000000e+00
+2.500000e+00	3.500000e+00	1.132059e+00	4.652024e-01	8.885110e-01
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=orange
+ErrorBandOpacity=0.2
+ErrorBands=1
+ErrorTubeLineColor=orange!80!black
+ErrorTubeLineStyle=solid
+ErrorTubes=1
+LineColor=orange!80!black
+LineStyle=dashdotted
+LineWidth=1.5pt
+Name=gosam-h2j-loopsim
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/NJet_excl_30
+Title=\textsc{GoSam+Sherpa} hjj nNLO
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	3.047311e+00	4.285280e-01	1.872970e-01
+2.500000e+00	3.500000e+00	1.146303e+00	3.365800e-01	0.000000e+00
+# END HISTOGRAM
+
