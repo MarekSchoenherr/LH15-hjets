@@ -1,2 +1,29 @@
-\subsubsection{Herwig7}
+\subsubsection{\Herwig}
 \label{sec:hjetscomp:tools:mc:herwig}
+
+We provide predictions from NLO merging of $h+0,1,2$ jets at NLO and $h+4$
+jets at LO in the Higgs effective theory. The merging is carried out with the
+\Herwig \ \cite{Bellm:2015jjp} dipole shower module based on
+\cite{Platzer:2009jq,Platzer:2011bc}, in a modified version of the algorithms
+set out in \cite{Platzer:2012bs,Lonnblad:2012ix}, and implemented in
+\cite{Bellm:thesis,Bellm:2016xxx}. The merging implementation will become
+publicly available in \textsf{Herwig~7.1}. We use \textsf{MadGraph~5}
+\cite{Alwall:2011uj} generated amplitudes together with \textsf{ColorFull}
+\cite{Sjodahl:2014opa} for the point-by-point evaluation of tree-level type
+objects (tree level matrix elements squared, colour- and spin-correlated
+matrix elements), and \textsf{OpenLoops} \cite{Cascioli:2011va} for the
+evaluation of Born/one-loop interferences.  Subtraction terms and their
+integrated counter-parts, phase space generation, integration and process
+bookkeeping is handled by the \textsf{Matchbox} module as outlined in
+\cite{Bellm:2015jjp}.
+
+The algorithm we use is a modified, unitarized merging algorithm. We allow
+finite, higher-order cross section corrections in higher multiplicity jet
+bins, but still choose a unitarization procedure to remove potentially
+dangerous, logarithmic enhanced terms in inclusive quantities. Below the
+merging scale of $30\ {\rm GeV}$, NLO accuracy of the first additional
+emission off each contribution is reached by the standard subtractive
+matching. The uncertainty band is obtained by variation of the renormalization
+and factorization scales of the hard input processes, and is covering all
+other uncertainties present in the algorithm (specifically, merging and shower
+scale variations).
