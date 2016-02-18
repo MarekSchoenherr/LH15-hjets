@@ -1,4 +1,5 @@
 # BEGIN PLOT
+ConnectBins=0
 DrawOnly=hqt nnlo-h nnlo-hj powheg madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
 Legend=1
 LegendXPos=0.45
@@ -108,20 +109,26 @@ Title=\textsc{Herwig}7
 2.500000e+00	3.500000e+00	9.201990e-01	1.443132e-01	2.416660e-01
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+ErrorBandColor=purple!30!white
+ErrorBandOpacity=0.4
+ErrorBandStyle=vlines,hatchangle=90
+ErrorBands=1
+ErrorTubeLineColor=purple!60!white
+ErrorTubeLineStyle=solid
+ErrorTubes=1
 LineColor=purple!70!black
 LineStyle=dotted
 LineWidth=2pt
 Name=hej
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/NJet_excl_30
 Scale=438.596491228
-ScaledBy=0.001017293997965412
 Title=\textsc{Hej}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	2.494521e-07	6.686139e-09	6.686139e-09
-5.000000e-01	1.500000e+00	6.262127e-05	1.287470e-07	1.287470e-07
-1.500000e+00	2.500000e+00	5.265259e-03	1.026624e-06	1.026624e-06
-2.500000e+00	3.500000e+00	1.912262e-03	3.050089e-06	3.050089e-06
+-5.000000e-01	5.000000e-01	2.419123e-07	6.474140e-08	9.946810e-08
+5.000000e-01	1.500000e+00	6.281211e-05	1.311576e-05	1.814381e-05
+1.500000e+00	2.500000e+00	5.265479e-03	9.934120e-04	1.310654e-03
+2.500000e+00	3.500000e+00	1.915146e-03	5.372750e-04	8.357610e-04
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_excl_30
