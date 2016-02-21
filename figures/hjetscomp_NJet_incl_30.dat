@@ -11,18 +11,18 @@ RatioPlot1DrawOnly=powheg madgraph sherpa herwig hej
 RatioPlot1Reference=powheg
 RatioPlot1SameStyle=1
 RatioPlot1YLabel=Ratio to \texttt{Powheg}
-RatioPlot1YMajorTickMarks=5
-RatioPlot1YMax=1.9999
-RatioPlot1YMin=0.0001
+RatioPlot1YMajorTickMarks=20
+RatioPlot1YMax=1.4999
+RatioPlot1YMin=0.5001
 RatioPlot1YSize=4
 RatioPlot2=1
 RatioPlot2DrawOnly=hqt nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
 RatioPlot2Reference=powheg
 RatioPlot2SameStyle=1
 RatioPlot2YLabel=Ratio to \texttt{Powheg}
-RatioPlot2YMajorTickMarks=5
-RatioPlot2YMax=1.9999
-RatioPlot2YMin=0.0001
+RatioPlot2YMajorTickMarks=20
+RatioPlot2YMax=1.4999
+RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=Inclusive jet multiplicity
@@ -40,6 +40,7 @@ ErrorBandStyle=hlines
 ErrorBands=1
 ErrorTubeLineColor=black!40!white
 ErrorTubes=1
+LegendOrder=3
 LineColor=black
 LineStyle=solid
 LineWidth=1.5pt
@@ -61,6 +62,7 @@ ErrorBandStyle=vlines
 ErrorBands=1
 ErrorTubeLineColor=green!70!white
 ErrorTubes=1
+LegendOrder=4
 LineColor=green!70!black
 LineStyle=solid
 LineWidth=1.5pt
@@ -74,28 +76,30 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 2.500000e+00	3.500000e+00	1.319608e+00	3.295893e-01	4.234210e-01
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3.yoda/MC_HJETS_LH15/NJet_incl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3-newII/pphjets-l3-n3.yoda/MC_HJETS_LH15/NJet_incl_30
+LegendOrder=5
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3.yoda/MC_HJETS_LH15/NJet_incl_30
-ScaledBy=1.1389150649534651e-08
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3-newII/pphjets-l3-n3.yoda/MC_HJETS_LH15/NJet_incl_30
+ScaledBy=1.3462188918262633e-08
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	3.786446e+01	7.879292e-02	7.879292e-02
-5.000000e-01	1.500000e+00	1.539092e+01	6.666453e-02	6.666453e-02
-1.500000e+00	2.500000e+00	4.560827e+00	5.240732e-02	5.240732e-02
-2.500000e+00	3.500000e+00	1.367355e+00	4.290844e-02	4.290844e-02
+-5.000000e-01	5.000000e-01	3.865555e+01	7.340059e-02	7.340059e-02
+5.000000e-01	1.500000e+00	1.539565e+01	6.115067e-02	6.115067e-02
+1.500000e+00	2.500000e+00	4.621387e+00	4.182885e-02	4.182885e-02
+2.500000e+00	3.500000e+00	1.443638e+00	2.973605e-02	2.973605e-02
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_incl_30
-ErrorBandColor=RawSienna!30!white
+ErrorBandColor=RawSienna!20!white
 ErrorBandOpacity=0.4
 ErrorBandStyle=crosshatch
 ErrorBands=1
-ErrorTubeLineColor=RawSienna!60!white
+ErrorTubeLineColor=RawSienna!50!white
 ErrorTubes=1
+LegendOrder=6
 LineColor=RawSienna
 LineStyle=solid
 LineWidth=1.5pt
@@ -117,6 +121,7 @@ ErrorBands=1
 ErrorTubeLineColor=purple!60!white
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=7
 LineColor=purple!70!black
 LineStyle=dotted
 LineWidth=2pt
@@ -125,8 +130,8 @@ Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS
 Scale=438.596491228
 Title=\textsc{Hej}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	7.661814e-03	1.686819e-03	2.405676e-03
-5.000000e-01	1.500000e+00	7.661572e-03	1.686755e-03	2.405568e-03
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 1.500000e+00	2.500000e+00	7.598761e-03	1.673639e-03	2.387425e-03
 2.500000e+00	3.500000e+00	2.333281e-03	6.802270e-04	1.076773e-03
 # END HISTOGRAM
@@ -138,6 +143,7 @@ ErrorBands=1
 ErrorTubeLineColor=yellow!50!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=8
 LineColor=yellow!50!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -145,9 +151,9 @@ Name=gosam-h1j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{GoSam+Sherpa} hj NLO
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	1.434849e+01	2.203730e+00	2.104250e+00
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	1.434849e+01	2.203730e+00	2.104250e+00
-1.500000e+00	2.500000e+00	3.476208e+00	1.223175e+00	2.106542e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
@@ -158,6 +164,7 @@ ErrorBands=1
 ErrorTubeLineColor=orange!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=9
 LineColor=orange!80!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -165,10 +172,10 @@ Name=gosam-h2j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{GoSam+Sherpa} hjj NLO
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	4.954857e+00	8.687720e-01	4.166070e-01
-5.000000e-01	1.500000e+00	4.954857e+00	8.687720e-01	4.166070e-01
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 1.500000e+00	2.500000e+00	4.954857e+00	8.687720e-01	4.166070e-01
-2.500000e+00	3.500000e+00	1.197300e+00	4.984824e-01	9.634080e-01
+2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H3j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_incl_30
@@ -178,6 +185,7 @@ ErrorBands=1
 ErrorTubeLineColor=red!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=10
 LineColor=red!80!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -185,9 +193,9 @@ Name=gosam-h3j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H3j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{GoSam+Sherpa} hjjj NLO
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	1.599370e+00	3.221750e-01	1.107800e-02
-5.000000e-01	1.500000e+00	1.599370e+00	3.221750e-01	1.107800e-02
-1.500000e+00	2.500000e+00	1.599370e+00	3.221750e-01	1.107800e-02
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 2.500000e+00	3.500000e+00	1.599370e+00	3.221750e-01	1.107800e-02
 # END HISTOGRAM
 
@@ -198,6 +206,7 @@ ErrorBands=1
 ErrorTubeLineColor=yellow!50!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=11
 LineColor=yellow!50!black
 LineStyle=dashdotted
 LineWidth=1.5pt
@@ -205,10 +214,10 @@ Name=gosam-h1j-loopsim
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{GoSam+Sherpa} hj nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	1.354427e+01	1.988180e+00	1.830380e+00
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	1.354427e+01	1.988180e+00	1.830380e+00
 1.500000e+00	2.500000e+00	4.650574e+00	7.915570e-01	3.773920e-01
-2.500000e+00	3.500000e+00	1.132059e+00	4.652024e-01	8.885110e-01
+2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/NJet_incl_30
@@ -218,6 +227,7 @@ ErrorBands=1
 ErrorTubeLineColor=orange!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=12
 LineColor=orange!80!black
 LineStyle=dashdotted
 LineWidth=1.5pt
@@ -225,8 +235,8 @@ Name=gosam-h2j-loopsim
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{GoSam+Sherpa} hjj nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	4.549227e+00	7.226130e-01	1.980440e-01
-5.000000e-01	1.500000e+00	4.549227e+00	7.226130e-01	1.980440e-01
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 1.500000e+00	2.500000e+00	4.549227e+00	7.226130e-01	1.980440e-01
 2.500000e+00	3.500000e+00	1.501916e+00	2.940840e-01	1.074500e-02
 # END HISTOGRAM

@@ -10,18 +10,18 @@ RatioPlot1DrawOnly=nnlo-h powheg madgraph sherpa herwig
 RatioPlot1Reference=nnlo-h
 RatioPlot1SameStyle=1
 RatioPlot1YLabel=Ratio to h \textsc{Nnlo}
-RatioPlot1YMajorTickMarks=5
-RatioPlot1YMax=1.9999
-RatioPlot1YMin=0.0001
+RatioPlot1YMajorTickMarks=20
+RatioPlot1YMax=1.4999
+RatioPlot1YMin=0.5001
 RatioPlot1YSize=4
 RatioPlot2=0
 RatioPlot2DrawOnly=hqt nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
 RatioPlot2Reference=powheg
 RatioPlot2SameStyle=1
 RatioPlot2YLabel=Ratio to \texttt{Powheg}
-RatioPlot2YMajorTickMarks=5
-RatioPlot2YMax=1.9999
-RatioPlot2YMin=0.0001
+RatioPlot2YMajorTickMarks=20
+RatioPlot2YMax=1.4999
+RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLO/nnlo-mh/nnlo-mh-envelope-3p-sel-min.yoda/MC_HJETS_LH15/H_y
 Title=Higgs boson rapidity
@@ -29,6 +29,8 @@ XLabel=$y(h)$ [GeV]
 XMin=0
 XTwosidedTicks=1
 YLabel=d$\sigma$/d$p_\perp$ [pb/GeV]
+YMax=25
+YMin=0
 YTwosidedTicks=1
 # END PLOT
 
@@ -38,6 +40,7 @@ ErrorBandOpacity=0.2
 ErrorBands=1
 ErrorTubeLineColor=cyan!90!black
 ErrorTubes=1
+LegendOrder=1
 LineColor=cyan
 LineStyle=solid
 LineWidth=1.5pt
@@ -81,12 +84,13 @@ Title=\textsc{Sherpa} h \textsc{Nnlo}
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/BFGLP-NNLO/H1j_NNLO_m1sumpt2_BFGLP.yoda/MC_HJETS_LH15/H_y
-ErrorBandColor=white!70!black
+ErrorBandColor=white!50!black
 ErrorBandOpacity=0.3
 ErrorBands=1
 ErrorTubeLineColor=white!50!black
 ErrorTubes=1
-LineColor=white!50!black
+LegendOrder=2
+LineColor=white!40!black
 LineStyle=solid
 LineWidth=1.5pt
 Name=nnlo-hj
@@ -135,6 +139,7 @@ ErrorBandStyle=hlines
 ErrorBands=1
 ErrorTubeLineColor=black!40!white
 ErrorTubes=1
+LegendOrder=3
 LineColor=black
 LineStyle=solid
 LineWidth=1.5pt
@@ -185,6 +190,7 @@ ErrorBandStyle=vlines
 ErrorBands=1
 ErrorTubeLineColor=green!70!white
 ErrorTubes=1
+LegendOrder=4
 LineColor=green!70!black
 LineStyle=solid
 LineWidth=1.5pt
@@ -227,57 +233,59 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3.yoda/MC_HJETS_LH15/H_y
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3-newII/pphjets-l3-n3.yoda/MC_HJETS_LH15/H_y
+LegendOrder=5
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3.yoda/MC_HJETS_LH15/H_y
-ScaledBy=1.1389150649534654e-08
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3-newII/pphjets-l3-n3.yoda/MC_HJETS_LH15/H_y
+ScaledBy=1.3462188918262635e-08
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
-0.000000e+00	1.000000e-01	1.856560e+01	1.424199e-01	1.424199e-01
-1.000000e-01	2.000000e-01	1.835832e+01	1.412119e-01	1.412119e-01
-2.000000e-01	3.000000e-01	1.841342e+01	1.572360e-01	1.572360e-01
-3.000000e-01	4.000000e-01	1.818846e+01	1.503068e-01	1.503068e-01
-4.000000e-01	5.000000e-01	1.794637e+01	1.746387e-01	1.746387e-01
-5.000000e-01	6.000000e-01	1.771234e+01	1.458351e-01	1.458351e-01
-6.000000e-01	7.000000e-01	1.740818e+01	1.432382e-01	1.432382e-01
-7.000000e-01	8.000000e-01	1.714962e+01	1.463771e-01	1.463771e-01
-8.000000e-01	9.000000e-01	1.675582e+01	1.286553e-01	1.286553e-01
-9.000000e-01	1.000000e+00	1.638377e+01	1.304939e-01	1.304939e-01
-1.000000e+00	1.100000e+00	1.566347e+01	2.731045e-01	2.731045e-01
-1.100000e+00	1.200000e+00	1.533301e+01	1.559837e-01	1.559837e-01
-1.200000e+00	1.300000e+00	1.448874e+01	1.338003e-01	1.338003e-01
-1.300000e+00	1.400000e+00	1.388477e+01	1.538843e-01	1.538843e-01
-1.400000e+00	1.500000e+00	1.363610e+01	1.163850e-01	1.163850e-01
-1.500000e+00	1.600000e+00	1.268994e+01	1.580325e-01	1.580325e-01
-1.600000e+00	1.700000e+00	1.226093e+01	1.140560e-01	1.140560e-01
-1.700000e+00	1.800000e+00	1.122432e+01	2.413630e-01	2.413630e-01
-1.800000e+00	1.900000e+00	1.062656e+01	1.140886e-01	1.140886e-01
-1.900000e+00	2.000000e+00	9.921434e+00	1.311509e-01	1.311509e-01
-2.000000e+00	2.100000e+00	9.361878e+00	1.190574e-01	1.190574e-01
-2.100000e+00	2.200000e+00	8.170875e+00	1.404344e-01	1.404344e-01
-2.200000e+00	2.300000e+00	7.755333e+00	8.761718e-02	8.761718e-02
-2.300000e+00	2.400000e+00	7.018215e+00	1.592344e-01	1.592344e-01
-2.400000e+00	2.500000e+00	6.376652e+00	8.314645e-02	8.314645e-02
-2.500000e+00	2.700000e+00	5.374025e+00	7.516811e-02	7.516811e-02
-2.700000e+00	2.900000e+00	4.068694e+00	4.539008e-02	4.539008e-02
-2.900000e+00	3.100000e+00	2.820490e+00	4.659136e-02	4.659136e-02
-3.100000e+00	3.300000e+00	2.038927e+00	4.702848e-02	4.702848e-02
-3.300000e+00	3.500000e+00	1.223307e+00	2.328984e-02	2.328984e-02
-3.500000e+00	4.000000e+00	4.341104e-01	6.663284e-03	6.663284e-03
-4.000000e+00	4.500000e+00	2.579364e-02	5.395365e-04	5.395365e-04
-4.500000e+00	5.000000e+00	5.914200e-06	7.047476e-07	7.047476e-07
+0.000000e+00	1.000000e-01	1.887502e+01	1.412236e-01	1.412236e-01
+1.000000e-01	2.000000e-01	1.885711e+01	1.421002e-01	1.421002e-01
+2.000000e-01	3.000000e-01	1.834894e+01	2.134984e-01	2.134984e-01
+3.000000e-01	4.000000e-01	1.858813e+01	1.818840e-01	1.818840e-01
+4.000000e-01	5.000000e-01	1.844409e+01	1.546661e-01	1.546661e-01
+5.000000e-01	6.000000e-01	1.852286e+01	1.607513e-01	1.607513e-01
+6.000000e-01	7.000000e-01	1.799685e+01	1.280508e-01	1.280508e-01
+7.000000e-01	8.000000e-01	1.769365e+01	1.241651e-01	1.241651e-01
+8.000000e-01	9.000000e-01	1.694693e+01	1.533412e-01	1.533412e-01
+9.000000e-01	1.000000e+00	1.639044e+01	1.640997e-01	1.640997e-01
+1.000000e+00	1.100000e+00	1.620067e+01	1.427930e-01	1.427930e-01
+1.100000e+00	1.200000e+00	1.569715e+01	1.204204e-01	1.204204e-01
+1.200000e+00	1.300000e+00	1.495028e+01	1.194874e-01	1.194874e-01
+1.300000e+00	1.400000e+00	1.419619e+01	1.339354e-01	1.339354e-01
+1.400000e+00	1.500000e+00	1.389798e+01	1.155517e-01	1.155517e-01
+1.500000e+00	1.600000e+00	1.285149e+01	1.235807e-01	1.235807e-01
+1.600000e+00	1.700000e+00	1.258605e+01	2.300009e-01	2.300009e-01
+1.700000e+00	1.800000e+00	1.146842e+01	1.164050e-01	1.164050e-01
+1.800000e+00	1.900000e+00	1.073083e+01	1.422361e-01	1.422361e-01
+1.900000e+00	2.000000e+00	9.987575e+00	1.101145e-01	1.101145e-01
+2.000000e+00	2.100000e+00	9.310922e+00	1.212834e-01	1.212834e-01
+2.100000e+00	2.200000e+00	8.674834e+00	1.064051e-01	1.064051e-01
+2.200000e+00	2.300000e+00	7.746471e+00	9.458273e-02	9.458273e-02
+2.300000e+00	2.400000e+00	6.988249e+00	1.215858e-01	1.215858e-01
+2.400000e+00	2.500000e+00	6.559415e+00	8.251980e-02	8.251980e-02
+2.500000e+00	2.700000e+00	5.451865e+00	5.422020e-02	5.422020e-02
+2.700000e+00	2.900000e+00	4.101950e+00	5.208951e-02	5.208951e-02
+2.900000e+00	3.100000e+00	2.973657e+00	4.530708e-02	4.530708e-02
+3.100000e+00	3.300000e+00	2.039404e+00	2.778133e-02	2.778133e-02
+3.300000e+00	3.500000e+00	1.294513e+00	2.237837e-02	2.237837e-02
+3.500000e+00	4.000000e+00	4.400388e-01	6.035615e-03	6.035615e-03
+4.000000e+00	4.500000e+00	2.439134e-02	7.223268e-04	7.223268e-04
+4.500000e+00	5.000000e+00	6.366246e-06	8.667950e-07	8.667950e-07
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/H_y
-ErrorBandColor=RawSienna!30!white
+ErrorBandColor=RawSienna!20!white
 ErrorBandOpacity=0.4
 ErrorBandStyle=crosshatch
 ErrorBands=1
-ErrorTubeLineColor=RawSienna!60!white
+ErrorTubeLineColor=RawSienna!50!white
 ErrorTubes=1
+LegendOrder=6
 LineColor=RawSienna
 LineStyle=solid
 LineWidth=1.5pt
@@ -328,6 +336,7 @@ ErrorBands=1
 ErrorTubeLineColor=purple!60!white
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=7
 LineColor=purple!70!black
 LineStyle=dotted
 LineWidth=2pt
@@ -378,6 +387,7 @@ ErrorBands=1
 ErrorTubeLineColor=yellow!50!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=8
 LineColor=yellow!50!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -427,6 +437,7 @@ ErrorBands=1
 ErrorTubeLineColor=orange!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=9
 LineColor=orange!80!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -476,6 +487,7 @@ ErrorBands=1
 ErrorTubeLineColor=red!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=10
 LineColor=red!80!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -525,6 +537,7 @@ ErrorBands=1
 ErrorTubeLineColor=yellow!50!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=11
 LineColor=yellow!50!black
 LineStyle=dashdotted
 LineWidth=1.5pt
@@ -574,6 +587,7 @@ ErrorBands=1
 ErrorTubeLineColor=orange!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+LegendOrder=12
 LineColor=orange!80!black
 LineStyle=dashdotted
 LineWidth=1.5pt
