@@ -1,2 +1,40 @@
-\subsubsection{HEJ}
+\subsubsection{\Hej}
 \label{sec:hjetscomp:tools:bfkl:hej}
+
+High Energy Jets (\Hej) describes hard, wide angle (high energy-)
+emissions to all orders and to all multiplicities. The predictions are based
+on events generated according to an all-order resummation, merged with
+high-multiplicity full tree-level matrix-elements. The explicit all-order summation
+is built on an approximation to the n-parton hard scattering matrix element
+\cite{Andersen:2009nu,Andersen:2009he,Andersen:2011hs} which becomes exact in
+the limit of wide-angle emissions, ensuring leading logarithmic accuracy for
+both real and virtual corrections. A first set of sub-leading logarithmic
+terms are included by allowing one un-ordered gluon emission from quarks. All
+of these logarithmic terms are important when
+the partonic invariant mass is large compared to the typical transverse
+momentum in the event. This is precisely the situation which arises in
+typical ``VBF'' cuts, including those used in this study.  Matching to the
+full tree level accuracy for up to three jets is obtained by supplementing
+the resummation with a merging
+procedure~\cite{Andersen:2008ue,Andersen:2008gc}.
+
+The implementation of this framework in a fully-flexible Monte Carlo event
+generator is available at \texttt{http://hej.web.cern.ch}, and produces
+exclusive samples for events with at least two jets.  The predictions include
+resummation also for events with up to two un-ordered emissions,
+i.e.~contributions from the first sub-leading configurations~\cite{Andersen:2014xx}.
+
+The factorisation and renormalisation scales can be chosen arbitrarily, just
+as in a standard fixed-order calculation. Here, we have chosen to evaluate
+two powers of the strong coupling at a scale given by the Higgs mass, and for
+the central predictions the remaining scales are evaluated at $\mu_R=H_T/2$. Thus,
+for the $n$-jet tree-level evaluation, 
+\begin{equation}
+  \alpha_s^{n+2}=\alpha^2_s(m_h)\cdot \alpha^n_s(\mu_R).
+\end{equation}
+The scale variation bands shown in the plots here correspond to varying
+$\mu_F,\mu_R\in \{\mu_c/2, \mu_c/\sqrt{2}, \mu_c,$ $\sqrt{2}\mu_c, 2\mu_c\}$ with 
+$\mu_c=H_T/2$, but discarding evaluations where any ratio $\mu_F/\mu_R$ or 
+$\mu_R/\mu_F$ is bigger than two (which results in a total of 18 variations
+around the central scale). The \texttt{CT10nlo} \cite{Lai:2010vv,Gao:2013xoa} parton 
+distribution functions were used in the predictions.
