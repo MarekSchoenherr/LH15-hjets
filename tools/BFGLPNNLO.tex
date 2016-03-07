@@ -1,2 +1,23 @@
 \subsubsection{NNLO calculation of $pp\to h+j$}
 \label{sec:hjetscomp:tools:fo:BFGLP}
+
+The NNLO calculation for Higgs production in association with one or 
+more jets is obtained using the $N$-jettiness subtraction 
+scheme~\cite{Boughezal:2015dva,Gaunt:2015pea}.  The application of 
+this technique to obtain the full NNLO result for Higgs+jet, and its 
+validation against another calculation using sector-improved residue 
+subtraction~\cite{Boughezal:2015dra}, was described in 
+\cite{Boughezal:2015aha}.  In this study we adapt the dynamical scale choice
+%
+\begin{equation}
+\mu_0 = \tfrac{1}{2}\,\sqrt{m_{h}^2+\sum p_{T,j_i}^2}
+\end{equation}
+%
+for both the renormalization and factorization scales, where the sum 
+runs over all reconstructed jets.  This dynamical scale correctly 
+captures the characteristic energy throughout the entire kinematic 
+range.  To estimate the theoretical uncertainties we equate $\mu_R$ 
+and $\mu_F$ and vary them in the range $\mu_0/2 \leq \mu_{R,F} \leq 2 \mu_0$.  
+We use \texttt{CT14nnlo} parton distribution functions 
+\cite{Dulat:2015mca}.  Jets are reconstructed using the anti-$k_T$ algorithm 
+with $R=0.4$, subject to the requirements $p_T>30$ GeV and $|\eta|<4.4$.
