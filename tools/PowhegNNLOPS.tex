@@ -1,2 +1,25 @@
-\subsubsection{Powheg NNLOPS}
+\subsubsection{\Powheg \NNLOPS}
 \label{sec:hjetscomp:tools:nnlops:powheg}
+
+One of the generators under investigation is the \NNLOPS prediction 
+of Higgs boson production via gluon fusion~\cite{Hamilton:2013fea}.
+To produce this sample, the Higgs-boson-plus-jet \MINLO~\cite{Hamilton:2012np} 
+predictions generated with \PowhegBox{}\texttt{-v2}~\cite{Campbell:2012am} 
+are combined with an NNLO accurate analytical calculation by the 
+program \HNNLO (v.1.3)~\cite{Catani:2007vq,Grazzini:2008tf,Grazzini:2013mca} 
+following the instructions in \cite{Hamilton:2013fea}. Here, the rapidity 
+spectrum of the Higgs boson of the \Powheg \texttt{HJ} \MINLO prediction 
+is reweighted with the spectrum from \HNNLO, while ensuring that NLO 
+precision is kept for the kinematic properties of the first additional jet. 
+In the generation and the \HNNLO calculation, the default parameters are 
+set as follows, in particular the renormalization and factorization scales 
+have been set to $\mu_R = \mu_F = \tfrac{1}{2}\,m_h$ and the 
+\texttt{MMHT2014nnlo68cl} \cite{Harland-Lang:2014zoa} has been used. 
+To evaluate the uncertainties in the choice of the renormalization and 
+factorization scales, the 21-point scale variations described in detail 
+in \cite{Hamilton:2013fea} are evaluated.
+The \NNLOPS sample is showered with \Pythia~8 (v.8.253) \cite{Sjostrand:2014zea} 
+using the \texttt{NNPDF} \texttt{2.3} leading-order PDF set~\cite{Ball:2012cx} 
+and the A14 tune~\cite{ATL-PHYS-PUB-2014-021}. No parameters governing the 
+resummation properties of this simulation have been varied.
+
