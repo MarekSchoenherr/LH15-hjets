@@ -2,6 +2,7 @@
 \usepackage{graphicx,epsfig}
 \usepackage{amsmath}
 \usepackage{xspace}
+\usepackage[dvipsnames]{xcolor}
 \bibliographystyle{lesHouches}
 
 % newcommands (for now)
@@ -21,10 +22,14 @@
 \newcommand{\MCatNLO}{\protect\textsc{Mc@Nlo}\xspace}
 \newcommand{\MEPSatNLO}{\protect\textsc{MePs@Nlo}\xspace}
 
+\def\Todo#1{{\color{BrickRed}\textbf{#1}}}
+
+
 \begin{document}
 
 % find a catchy title, this is just a filler
-\title{A comparative study of Higgs plus jets production in gluon fusion}
+\title{A comparative study of Higgs boson plus jets production in
+  gluon fusion}
 
 \author{
   J.\ Andersen$^1$,
@@ -54,7 +59,8 @@
   $^8$ Michigan State University\\
   $^9$ CERN\\
   $^{10}$ School of Physics and Astronomy, University of Manchester\\
-  $^{11}$ Centre for Cosmology, Particle Physics and Phenomenology (CP3), Universit\'e catholique de Louvain
+  $^{11}$ Centre for Cosmology, Particle Physics and Phenomenology
+  (CP3), Universit\'e catholique de Louvain
 }
 
 \maketitle
@@ -67,5 +73,7 @@
 \input{hjetscomp_tools}
 \input{hjetscomp_results}
 \input{hjetscomp_conclusions}
+
 \bibliography{hjetscomp_bib}
+
 \end{document}
