@@ -268,7 +268,7 @@ class Plot:
 
     def set_normalization(self,inputdata):
         if inputdata.normalized==True:
-	    return
+            return
         for method in ['NormalizeToIntegral', 'NormalizeToSum']:
             if inputdata.description.has_key(method):
                 for i in inputdata.description['DrawOnly']:
@@ -502,6 +502,12 @@ class Plot:
         out += ('  top=%4.3fcm,  bottom=0cm,\n' %(inputdata.description['TopMargin']-0.30,))
         out += ('  paperwidth=%scm,paperheight=%scm\n' %(papersizex,papersizey))
         out += (']{geometry}\n')
+        if inputdata.description.has_key('DefineColor'):
+            out += ('% user defined colours\n')
+            for color in inputdata.description['DefineColor'].split('\t'):
+                out += ('%s\n' %color)
+        if inputdata.description.has_key('UseExtendedPSTricks') and inputdata.description['UseExtendedPSTricks']=='1':
+	    out += self.write_extended_pstricks()
         out += ('\\begin{document}\n')
         out += ('\\pagestyle{empty}\n')
         out += ('\\SpecialCoor\n')
@@ -514,6 +520,58 @@ class Plot:
                 colorseries = '{hsb}{grad}[rgb]{0,0,1}{-.700,0,0}'
             out += ('\\definecolorseries{gradientcolors}%s\n' %colorseries)
             out += ('\\resetcolorseries[130]{gradientcolors}\n')
+        return out
+
+    def write_extended_pstricks(self):
+        out = ''
+        out += ('\\usepackage{pstricks-add}\n')
+        out += ('\\makeatletter\n')
+        out += ('\\def\\pshs@solid{0 setlinecap }\n')
+        out += ('\\def\\pshs@dashed{[ \\psk@dash ] 0 setdash }\n')
+        out += ('\\def\\pshs@dotted{[ 0 \\psk@dotsep CLW add ] 0 setdash 1 setlinecap }\n')
+        out += ('\\def\\psset@hatchstyle#1{%\n')
+        out += ('\\@ifundefined{pshs@#1}%\n')
+        out += ('{\\@pstrickserr{Hatch style `#1\' not defined}\\@eha}%\n')
+        out += ('{\\edef\\pshatchstyle{#1}}}\n')
+        out += ('\\psset@hatchstyle{solid}\n')
+        out += ('\\def\\pst@linefill{%\n')
+        out += ('\\@nameuse{pshs@\\pshatchstyle}\n')
+        out += ('\\psk@hatchangle rotate\n')
+        out += ('\\psk@hatchwidth SLW\n')
+        out += ('\\pst@usecolor\\pshatchcolor\n')
+        out += ('\\psk@hatchsep\n')
+        out += ('\\tx@LineFill}\n')
+        out += ('\\pst@def{LineFill}<{%\n')
+        out += ('gsave\n')
+        out += ('  abs CLW add\n')
+        out += ('  /a ED\n')
+        out += ('  a 0 dtransform\n')
+        out += ('  round exch round exch 2 copy idtransform\n')
+        out += ('  exch Atan rotate idtransform\n')
+        out += ('  pop\n')
+        out += ('  /a ED\n')
+        out += ('  .25 .25 itransform\n')
+        out += ('  pathbbox\n')
+        out += ('  /y2 ED\n')
+        out += ('  a Div ceiling cvi\n')
+        out += ('  /x2 ED\n')
+        out += ('  /y1 ED\n')
+        out += ('  a Div cvi\n')
+        out += ('  /x1 ED\n')
+        out += ('  /y2 y2 y1 sub def\n')
+        out += ('  clip\n')
+        out += ('  newpath\n')
+        out += ('  systemdict\n')
+        out += ('  /setstrokeadjust\n')
+        out += ('    known { true setstrokeadjust } if\n')
+        out += ('    x2 x1 sub 1 add\n')
+        out += ('    { x1 a mul y1 moveto\n')
+        out += ('      0 y2 rlineto\n')
+        out += ('      stroke\n')
+        out += ('      /x1 x1 1 add def } repeat\n')
+        out += ('  grestore\n')
+        out += ('pop pop}>\n')
+        out += ('\makeatother\n')
         return out
 
     def write_footer(self):
@@ -553,14 +611,14 @@ class MainPlot(Plot):
         if inputdata.description.has_key('DrawSpecialFirst') and inputdata.description['DrawSpecialFirst']=='1':
             for i in inputdata.special.keys():
                 out += inputdata.special[i].draw(self.coors,inputdata)
-	if inputdata.description.has_key('DrawFunctionFirst') and inputdata.description['DrawFunctionFirst']=='1':
-	    for i in inputdata.functions.keys():
-		out += inputdata.functions[i].draw(self.coors,inputdata)
-	for i in inputdata.description['DrawOnly']:
-	    out += inputdata.histos[i].draw(self.coors)
-	if not inputdata.description.has_key('DrawFunctionFirst') or inputdata.description['DrawFunctionFirst']=='0':
-	    for i in inputdata.functions.keys():
-		out += inputdata.functions[i].draw(self.coors,inputdata)
+        if inputdata.description.has_key('DrawFunctionFirst') and inputdata.description['DrawFunctionFirst']=='1':
+            for i in inputdata.functions.keys():
+                out += inputdata.functions[i].draw(self.coors,inputdata)
+        for i in inputdata.description['DrawOnly']:
+            out += inputdata.histos[i].draw(self.coors)
+        if not inputdata.description.has_key('DrawFunctionFirst') or inputdata.description['DrawFunctionFirst']=='0':
+            for i in inputdata.functions.keys():
+                out += inputdata.functions[i].draw(self.coors,inputdata)
         if not inputdata.description.has_key('DrawSpecialFirst') or inputdata.description['DrawSpecialFirst']=='0':
             for i in inputdata.special.keys():
                 out += inputdata.special[i].draw(self.coors,inputdata)
@@ -568,9 +626,9 @@ class MainPlot(Plot):
             legend = Legend(inputdata.description,inputdata.histos,inputdata.functions,'Legend',1)
             out += legend.draw()
         for i in range(1,9):
-	    if inputdata.description.has_key('Legend'+str(i)) and inputdata.description['Legend'+str(i)]=='1':
-		legend = Legend(inputdata.description,inputdata.histos,inputdata.functions,'Legend'+str(i),i)
-		out += legend.draw()
+            if inputdata.description.has_key('Legend'+str(i)) and inputdata.description['Legend'+str(i)]=='1':
+                legend = Legend(inputdata.description,inputdata.histos,inputdata.functions,'Legend'+str(i),i)
+                out += legend.draw()
         if inputdata.description['is2dim']:
             colorscale = Colorscale(inputdata.description,self.coors)
             out += colorscale.draw()
@@ -714,7 +772,7 @@ class RatioPlot(Plot):
         if i==0:
             self.name='RatioPlot'
         # initialise histograms even when no main plot
-	self.set_normalization(inputdata)
+        self.set_normalization(inputdata)
         self.refdata = inputdata.description[self.name+'Reference']
         if not inputdata.description.has_key('RatioPlotYOffset'):
             inputdata.description['RatioPlotYOffset'] = inputdata.description['PlotSizeY']
@@ -799,18 +857,18 @@ class RatioPlot(Plot):
         if  inputdata.description.has_key('DrawSpecialFirst') and inputdata.description['DrawSpecialFirst']=='1':
             for i in inputdata.special.keys():
                 out += inputdata.special[i].draw(self.coors,inputdata)
-	if inputdata.description.has_key('DrawFunctionFirst') and inputdata.description['DrawFunctionFirst']=='1':
-	    for i in inputdata.functions.keys():
-		out += inputdata.functions[i].draw(self.coors,inputdata)
+        if inputdata.description.has_key('DrawFunctionFirst') and inputdata.description['DrawFunctionFirst']=='1':
+            for i in inputdata.functions.keys():
+                out += inputdata.functions[i].draw(self.coors,inputdata)
         for i in inputdata.description[self.name+'DrawOnly']:
             if inputdata.description.has_key(self.name+'Mode') and inputdata.description[self.name+'Mode']=='datamc':
                 if i!=self.refdata:
                     out += inputdata.ratiohistos[i].draw(self.coors)
             else:
                 out += inputdata.ratiohistos[i].draw(self.coors)
-	if not inputdata.description.has_key('DrawFunctionFirst') or inputdata.description['DrawFunctionFirst']=='0':
-	    for i in inputdata.functions.keys():
-		out += inputdata.functions[i].draw(self.coors,inputdata)
+        if not inputdata.description.has_key('DrawFunctionFirst') or inputdata.description['DrawFunctionFirst']=='0':
+            for i in inputdata.functions.keys():
+                out += inputdata.functions[i].draw(self.coors,inputdata)
         if not inputdata.description.has_key('DrawSpecialFirst') or inputdata.description['DrawSpecialFirst']=='0':
             for i in inputdata.special.keys():
                 out += inputdata.special[i].draw(self.coors,inputdata)
@@ -841,14 +899,14 @@ class RatioPlot(Plot):
         # find out whether to draw title (only if no MainPlot and top RatioPlot)
         drawtitle=False
         if inputdata.description.has_key('MainPlot') and inputdata.description['MainPlot']=='0':
-	    drawtitle=True
-	    for i in range(0,self.number):
-		if i==0:
-		    if inputdata.description.has_key('RatioPlot') and inputdata.description['RatioPlot']=='1':
-			drawtitle=False
-		else:
-		    if inputdata.description.has_key('RatioPlot'+str(i)) and inputdata.description['RatioPlot'+str(i)]=='1':
-			drawtitle=False
+            drawtitle=True
+            for i in range(0,self.number):
+                if i==0:
+                    if inputdata.description.has_key('RatioPlot') and inputdata.description['RatioPlot']=='1':
+                        drawtitle=False
+                else:
+                    if inputdata.description.has_key('RatioPlot'+str(i)) and inputdata.description['RatioPlot'+str(i)]=='1':
+                        drawtitle=False
         # find out whether to draw xlabels (only if lowest RatioPlot)
         drawlabels = True
         if (inputdata.description.has_key(self.name+'TickLabels') and inputdata.description[self.name+'TickLabels']=='0'):
@@ -888,15 +946,15 @@ class RatioPlot(Plot):
                            customminorticks=ycustomminorticks)
 
         if inputdata.description.has_key(self.name+'Legend') and inputdata.description[self.name+'Legend']=='1':
-	    legend = Legend(inputdata.description,inputdata.histos,inputdata.functions,self.name+'Legend',1)
-	    out += legend.draw()
+            legend = Legend(inputdata.description,inputdata.histos,inputdata.functions,self.name+'Legend',1)
+            out += legend.draw()
         for i in range(1,9):
-	    if inputdata.description.has_key(self.name+'Legend'+str(i)) and inputdata.description[self.name+'Legend'+str(i)]=='1':
-		legend = Legend(inputdata.description,inputdata.histos,inputdata.functions,self.name+'Legend'+str(i),i)
-		out += legend.draw()
+            if inputdata.description.has_key(self.name+'Legend'+str(i)) and inputdata.description[self.name+'Legend'+str(i)]=='1':
+                legend = Legend(inputdata.description,inputdata.histos,inputdata.functions,self.name+'Legend'+str(i),i)
+                out += legend.draw()
 
         labels = Labels(inputdata.description)
-	if drawtitle:
+        if drawtitle:
             if drawlabels:
                 out += labels.draw(['Title','XLabel','YLabel'])
             else:
@@ -1159,8 +1217,8 @@ class Special:
         self.data = []
         self.read_input(f)
         if not self.description.has_key('Location'):
-	    self.description['Location']='MainPlot'
-	self.description['Location']=self.description['Location'].split('\t')
+            self.description['Location']='MainPlot'
+        self.description['Location']=self.description['Location'].split('\t')
 
     def read_input(self, f):
         for line in f:
@@ -1181,10 +1239,10 @@ class Special:
         drawme = False
         for i in self.description['Location']:
             if i in inputdata.description['PlotStage']:
-	        drawme = True
-	        break
-	if not drawme:
-	    return ""
+                drawme = True
+                break
+        if not drawme:
+            return ""
         out = ""
         out += ('\n%\n% Special\n%\n')
         import re
@@ -1412,8 +1470,8 @@ class Function(DrawableObject):
         self.description = {}
         self.read_input(f)
         if not self.description.has_key('Location'):
-	    self.description['Location']='MainPlot'
-	self.description['Location']=self.description['Location'].split('\t')
+            self.description['Location']='MainPlot'
+        self.description['Location']=self.description['Location'].split('\t')
 
     def read_input(self, f):
         self.code='def plotfunction(x):\n'
@@ -1445,10 +1503,10 @@ class Function(DrawableObject):
         drawme = False
         for i in self.description['Location']:
             if i in inputdata.description['PlotStage']:
-	        drawme = True
-	        break
-	if not drawme:
-	    return ""
+                drawme = True
+                break
+        if not drawme:
+            return ""
         out = ""
         out += self.startclip()
         out += self.startpsset()
@@ -2031,8 +2089,8 @@ class Frame:
             # We want to draw this frame only once, so set it to False for next time:
             inputdata.description['FrameColor']=None
 
-	    if inputdata.description.has_key('FrameLineWidth'):
-	        self.framelinewidth=inputdata.description['FrameLineWidth']
+            if inputdata.description.has_key('FrameLineWidth'):
+                self.framelinewidth=inputdata.description['FrameLineWidth']
 
             # Calculate how high and wide the overall plot is
             height = [0,0]
@@ -2445,6 +2503,8 @@ def process_datfile(datfile):
 
     ## Make TeX file
     inputdata = Inputdata(os.path.join(dirname,filename))
+    if inputdata.description.has_key('IgnorePlot') and inputdata.description['IgnorePlot']=='1':
+        return
     texpath = os.path.join(tempdir, '%s.tex' % filename)
     texfile = open(texpath, 'w')
     p = Plot(inputdata)
@@ -2464,7 +2524,7 @@ def process_datfile(datfile):
             rp = RatioPlot(inputdata,i)
             texfile.write(rp.draw(inputdata))
         else:
-	    logging.debug('no RatioPlot'+str(i))
+            logging.debug('no RatioPlot'+str(i))
     texfile.write(p.write_footer())
     texfile.close()
 

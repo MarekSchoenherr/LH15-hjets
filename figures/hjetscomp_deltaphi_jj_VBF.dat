@@ -1,5 +1,6 @@
 # BEGIN PLOT
-DrawOnly=powheg madgraph sherpa herwig hej gosam-h2j-nlo gosam-h2j-loopsim 
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}
+DrawOnly=powheg un2lops madgraph sherpa herwig hej gosam-h2j-nlo gosam-h2j-loopsim 
 Legend=1
 LegendXPos=0.05
 LogY=0
@@ -23,18 +24,34 @@ RatioPlot2YMajorTickMarks=5
 RatioPlot2YMax=1.9999
 RatioPlot2YMin=0.0001
 RatioPlot2YSize=4
+RatioPlot3=1
+RatioPlot3DrawOnly=hqt nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
+RatioPlot3Reference=powheg
+RatioPlot3SameStyle=1
+RatioPlot3YLabel=Ratio to \texttt{Powheg}
+RatioPlot3YMajorTickMarks=20
+RatioPlot3YMax=1.4999
+RatioPlot3YMin=0.5001
+RatioPlot3YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+RightMargin=0.4
 Title=Azimuthal separation of leading and subleading jet
+UseExtendedPSTricks=1
 XLabel=$\Delta\phi(j_1,j_2)$
 XTwosidedTicks=1
 YLabel=d$\sigma$/d$\Delta\phi$ [pb]
 YTwosidedTicks=1
 # END PLOT
 
+
+# BEGIN SPECIAL /MC_HJETS_LH15/deltaphi_jj_VBF
+\rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
+# END SPECIAL
+
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
 ErrorBandColor=black!30!white
 ErrorBandOpacity=0.1
-ErrorBandStyle=hlines
+ErrorBandStyle=hlines,hatchangle=90
 ErrorBands=1
 ErrorTubeLineColor=black!40!white
 ErrorTubes=1
@@ -65,6 +82,39 @@ Title=\texttt{Powheg} \textsc{NnloPs}
 2.945243e+00	3.141593e+00	1.036357e-03	1.671480e-04	1.984202e-04
 # END HISTOGRAM
 
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+ErrorBandColor=brilliantrose!50!white
+ErrorBandOpacity=0.1
+ErrorBandStyle=vlines,hatchangle=90
+ErrorBands=1
+ErrorTubeLineColor=brilliantrose!60!white
+ErrorTubes=1
+LegendOrder=4
+LineColor=brilliantrose
+LineStyle=solid
+LineWidth=1.5pt
+Name=un2lops
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+Title=\textsc{Sherpa} \textsc{NnloPs}
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.963495e-01	1.416272e-01	2.521932e-02	5.228371e-02
+1.963495e-01	3.926991e-01	1.470733e-01	3.590799e-02	4.386609e-02
+3.926991e-01	5.890486e-01	1.315473e-01	3.097854e-02	3.896542e-02
+5.890486e-01	7.853982e-01	1.237508e-01	2.155232e-02	3.999473e-02
+7.853983e-01	9.817478e-01	1.155430e-01	2.407090e-02	3.309013e-02
+9.817474e-01	1.178097e+00	1.049230e-01	1.496125e-02	2.533062e-02
+1.178097e+00	1.374447e+00	9.936389e-02	1.682185e-02	1.364395e-02
+1.374448e+00	1.570797e+00	9.343159e-02	8.498999e-03	3.212010e-02
+1.570796e+00	1.767146e+00	1.194892e-01	2.957316e-02	1.631210e-02
+1.767146e+00	1.963496e+00	1.314615e-01	1.950058e-02	3.825413e-02
+1.963495e+00	2.159845e+00	1.513846e-01	1.412804e-02	6.017056e-02
+2.159845e+00	2.356193e+00	1.996033e-01	3.311695e-02	4.934800e-02
+2.356194e+00	2.552544e+00	2.525982e-01	5.537036e-02	5.097224e-02
+2.552544e+00	2.748894e+00	2.831908e-01	4.979934e-02	6.906356e-02
+2.748894e+00	2.945242e+00	3.461115e-01	6.087645e-02	6.191990e-02
+2.945243e+00	3.141593e+00	3.667287e-01	6.232997e-02	8.604915e-02
+# END HISTOGRAM
+
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/MG5aMC/MG5aMC_envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
 ErrorBandColor=green!50!white
 ErrorBandOpacity=0.4
@@ -72,7 +122,7 @@ ErrorBandStyle=vlines
 ErrorBands=1
 ErrorTubeLineColor=green!70!white
 ErrorTubes=1
-LegendOrder=4
+LegendOrder=5
 LineColor=green!70!black
 LineStyle=solid
 LineWidth=1.5pt
@@ -98,32 +148,37 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 2.945243e+00	3.141593e+00	3.512915e-01	1.285353e-01	1.373594e-01
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3-newII/pphjets-l3-n3.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
-LegendOrder=5
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+ErrorBandColor=blue!30!white
+ErrorBandOpacity=0.4
+ErrorBandStyle=hlines
+ErrorBands=0
+ErrorTubeLineColor=blue!50!white
+ErrorTubes=0
+LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3-newII/pphjets-l3-n3.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
-ScaledBy=1.3462188918262633e-08
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
-0.000000e+00	1.963495e-01	1.551432e-01	2.529244e-02	2.529244e-02
-1.963495e-01	3.926991e-01	1.727526e-01	1.960009e-02	1.960009e-02
-3.926991e-01	5.890486e-01	1.787679e-01	3.831801e-02	3.831801e-02
-5.890486e-01	7.853982e-01	1.873166e-01	1.304009e-02	1.304009e-02
-7.853982e-01	9.817477e-01	1.558378e-01	1.431524e-02	1.431524e-02
-9.817477e-01	1.178097e+00	1.324501e-01	1.122960e-02	1.122960e-02
-1.178097e+00	1.374447e+00	1.288612e-01	1.133245e-02	1.133245e-02
-1.374447e+00	1.570796e+00	1.472339e-01	1.063661e-02	1.063661e-02
-1.570796e+00	1.767146e+00	1.578810e-01	1.396293e-02	1.396293e-02
-1.767146e+00	1.963495e+00	1.795424e-01	1.242657e-02	1.242657e-02
-1.963495e+00	2.159845e+00	2.149059e-01	1.516912e-02	1.516912e-02
-2.159845e+00	2.356194e+00	2.588647e-01	2.578476e-02	2.578476e-02
-2.356194e+00	2.552544e+00	3.183787e-01	2.321939e-02	2.321939e-02
-2.552544e+00	2.748894e+00	3.617426e-01	1.926316e-02	1.926316e-02
-2.748894e+00	2.945243e+00	4.219278e-01	1.951114e-02	1.951114e-02
-2.945243e+00	3.141593e+00	4.371346e-01	2.439464e-02	2.439464e-02
+0.000000e+00	1.963495e-01	1.586638e-01	4.207935e-02	1.008006e-01
+1.963495e-01	3.926991e-01	1.805554e-01	4.231946e-02	1.282785e-01
+3.926991e-01	5.890486e-01	1.753307e-01	4.985931e-02	5.426777e-02
+5.890486e-01	7.853982e-01	1.668423e-01	4.352553e-02	9.133260e-02
+7.853983e-01	9.817478e-01	1.590110e-01	4.608298e-02	7.360482e-02
+9.817474e-01	1.178097e+00	1.307175e-01	3.577359e-02	6.936358e-02
+1.178097e+00	1.374447e+00	1.372301e-01	4.420525e-02	1.314535e-02
+1.374448e+00	1.570797e+00	1.302847e-01	2.236044e-02	6.045934e-02
+1.570796e+00	1.767146e+00	1.517965e-01	4.575941e-02	7.077464e-02
+1.767146e+00	1.963496e+00	1.810568e-01	4.040774e-02	7.211893e-02
+1.963495e+00	2.159845e+00	2.213265e-01	5.241686e-02	1.052145e-01
+2.159845e+00	2.356193e+00	2.420047e-01	7.154246e-02	1.072850e-01
+2.356194e+00	2.552544e+00	2.927901e-01	5.477051e-02	1.258332e-01
+2.552544e+00	2.748894e+00	3.762917e-01	1.027057e-01	1.694140e-01
+2.748894e+00	2.945242e+00	4.075909e-01	1.092226e-01	2.062493e-01
+2.945243e+00	3.141593e+00	3.803057e-01	9.068551e-02	1.614606e-01
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
@@ -133,7 +188,7 @@ ErrorBandStyle=crosshatch
 ErrorBands=1
 ErrorTubeLineColor=RawSienna!50!white
 ErrorTubes=1
-LegendOrder=6
+LegendOrder=7
 LineColor=RawSienna
 LineStyle=solid
 LineWidth=1.5pt
@@ -162,12 +217,12 @@ Title=\textsc{Herwig}7
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
 ErrorBandColor=purple!30!white
 ErrorBandOpacity=0.4
-ErrorBandStyle=vlines,hatchangle=90
+ErrorBandStyle=hlines,hatchstyle=dotted,hatchsep=0.08
 ErrorBands=1
 ErrorTubeLineColor=purple!60!white
 ErrorTubeLineStyle=solid
 ErrorTubes=1
-LegendOrder=7
+LegendOrder=8
 LineColor=purple!70!black
 LineStyle=dotted
 LineWidth=2pt
@@ -201,7 +256,7 @@ ErrorBands=1
 ErrorTubeLineColor=yellow!50!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
-LegendOrder=8
+LegendOrder=9
 LineColor=yellow!50!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -234,7 +289,7 @@ ErrorBands=1
 ErrorTubeLineColor=orange!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
-LegendOrder=9
+LegendOrder=10
 LineColor=orange!80!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -267,7 +322,7 @@ ErrorBands=1
 ErrorTubeLineColor=red!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
-LegendOrder=10
+LegendOrder=11
 LineColor=red!80!black
 LineStyle=dashed
 LineWidth=1.5pt
@@ -300,7 +355,7 @@ ErrorBands=1
 ErrorTubeLineColor=yellow!50!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
-LegendOrder=11
+LegendOrder=12
 LineColor=yellow!50!black
 LineStyle=dashdotted
 LineWidth=1.5pt
@@ -333,7 +388,7 @@ ErrorBands=1
 ErrorTubeLineColor=orange!80!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
-LegendOrder=12
+LegendOrder=13
 LineColor=orange!80!black
 LineStyle=dashdotted
 LineWidth=1.5pt
