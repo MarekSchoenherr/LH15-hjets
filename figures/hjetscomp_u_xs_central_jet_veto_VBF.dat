@@ -1,6 +1,6 @@
 # BEGIN PLOT
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}
-DrawOnly=hqt nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo nnlo-hj 
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
+DrawOnly=hqt stwz nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo nnlo-hj 
 Legend=1
 LegendXPos=0.45
 LogY=0
@@ -25,7 +25,7 @@ RatioPlot2YMax=1.9999
 RatioPlot2YMin=0.0001
 RatioPlot2YSize=4
 RatioPlot3=0
-RatioPlot3DrawOnly=hqt nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
+RatioPlot3DrawOnly=hqt stwz nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
@@ -35,12 +35,12 @@ RatioPlot3YMin=0.5001
 RatioPlot3YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
 RightMargin=0.4
-ShowZero=0
 Title=Central jet veto cross section
 UseExtendedPSTricks=1
 XLabel=$y_\text{dist}^\text{max}$
 XTwosidedTicks=1
 YLabel=$\sigma(y_\text{dist}^\text{max})$ [pb]
+YMax=1.4
 YTwosidedTicks=1
 # END PLOT
 
@@ -86,13 +86,13 @@ Title=\texttt{Powheg} \textsc{NnloPs}
 4.800000e+00	5.000000e+00	1.010169e-03	1.621100e-04	1.618210e-04
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
 LegendOrder=4
 LineColor=brilliantrose
 LineStyle=solid
 LineWidth=1.5pt
 Name=un2lops
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
 Title=\textsc{Sherpa} \textsc{NnloPs}
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	2.000000e-01	5.513160e-01	9.850120e-02	1.396800e-01
@@ -158,13 +158,13 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 4.800000e+00	5.000000e+00	3.335798e-01	8.034965e-02	8.940410e-02
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
 LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	2.000000e-01	6.856130e-01	1.754810e-01	3.160450e-01
@@ -230,13 +230,13 @@ Title=\textsc{Herwig}7
 4.800000e+00	5.000000e+00	4.610990e-01	1.025917e-01	2.337335e-02
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope_scaled.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
 LegendOrder=8
 LineColor=purple!70!black
 LineStyle=dotted
 LineWidth=2pt
 Name=hej
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope_scaled.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
 Scale=438.596491228
 Title=\textsc{Hej}
 # xlow	 xhigh	 val	 errminus	 errplus

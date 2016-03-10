@@ -1,5 +1,5 @@
 # BEGIN PLOT
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=powheg un2lops madgraph sherpa herwig hej gosam-h2j-nlo gosam-h2j-loopsim 
 Legend=1
 Legend2=1
@@ -101,13 +101,13 @@ Title=\texttt{Powheg} \textsc{NnloPs}
 3.800000e+02	4.000000e+02	1.423632e-06	2.767015e-07	2.979110e-07
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope.yoda/MC_HJETS_LH15/H_jj_pT_incl
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 LegendOrder=4
 LineColor=brilliantrose
 LineStyle=solid
 LineWidth=1.5pt
 Name=un2lops
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope.yoda/MC_HJETS_LH15/H_jj_pT_incl
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 Title=\textsc{Sherpa} \textsc{NnloPs}
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.000000e+01	1.415846e-03	2.055570e-04	5.228760e-04
@@ -183,13 +183,13 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 3.800000e+02	4.000000e+02	6.183325e-04	1.496954e-04	3.387275e-04
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope.yoda/MC_HJETS_LH15/H_jj_pT_incl
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope.yoda/MC_HJETS_LH15/H_jj_pT_incl
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.000000e+01	2.065099e-03	8.244990e-04	2.171859e-03
@@ -265,13 +265,13 @@ Title=\textsc{Herwig}7
 3.800000e+02	4.000000e+02	5.340415e-04	8.526135e-05	7.041600e-05
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/H_jj_pT_incl
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 LegendOrder=8
 LineColor=purple!70!black
 LineStyle=dotted
 LineWidth=2pt
 Name=hej
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/H_jj_pT_incl
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 Scale=438.596491228
 Title=\textsc{Hej}
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -348,13 +348,13 @@ Title=\textsc{GoSam+Sherpa} hj NLO
 3.800000e+02	4.000000e+02	6.147545e-04	2.234846e-04	3.921380e-04
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/H_jj_pT_incl
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 LegendOrder=10
 LineColor=orange!80!black
 LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h2j-nlo
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/H_jj_pT_incl
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 Title=\textsc{GoSam+Sherpa} hjj NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.000000e+01	5.875380e-03	9.397800e-04	2.910280e-04
@@ -471,13 +471,13 @@ Title=\textsc{GoSam+Sherpa} hj nNLO
 3.800000e+02	4.000000e+02	6.538665e-04	8.816700e-05	0.000000e+00
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/H_jj_pT_incl
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 LegendOrder=13
 LineColor=orange!80!black
 LineStyle=dashdotted
 LineWidth=1.5pt
 Name=gosam-h2j-loopsim
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/H_jj_pT_incl
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO_scaled.yoda/MC_HJETS_LH15/H_jj_pT_incl
 Title=\textsc{GoSam+Sherpa} hjj nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.000000e+01	5.131627e-03	7.408940e-04	1.411280e-04

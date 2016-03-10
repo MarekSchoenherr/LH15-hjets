@@ -1,8 +1,8 @@
 # BEGIN PLOT
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=powheg un2lops madgraph sherpa herwig gosam-h1j-nlo gosam-h1j-loopsim 
 Legend=1
-LegendXPos=0.45
+LegendXPos=0.5
 LogY=1
 PlotSize=10,8
 RatioPlot=0
@@ -39,8 +39,11 @@ Title=Leading jet transverse momentum ($n_j=1$)
 UseExtendedPSTricks=1
 XLabel=$p_\perp(j_1)$ [GeV]
 XMax=200
+XMin=30
 XTwosidedTicks=1
 YLabel=d$\sigma$/d$p_\perp$ [pb/GeV]
+YMax=1e0
+YMin=1e-3
 YTwosidedTicks=1
 # END PLOT
 
@@ -56,6 +59,7 @@ ErrorBandStyle=hlines,hatchangle=90
 ErrorBands=1
 ErrorTubeLineColor=black!40!white
 ErrorTubes=1
+ErrorType=env
 LegendOrder=3
 LineColor=black
 LineStyle=solid
@@ -97,19 +101,20 @@ Title=\texttt{Powheg} \textsc{NnloPs}
 1.900000e+02	2.000000e+02	5.887178e-06	1.124677e-06	1.244318e-06
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope.yoda/MC_HJETS_LH15/jet1_pT_excl
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/jet1_pT_excl
 ErrorBandColor=brilliantrose!50!white
 ErrorBandOpacity=0.1
 ErrorBandStyle=vlines,hatchangle=90
 ErrorBands=1
 ErrorTubeLineColor=brilliantrose!60!white
 ErrorTubes=1
+ErrorType=env
 LegendOrder=4
 LineColor=brilliantrose
 LineStyle=solid
 LineWidth=1.5pt
 Name=un2lops
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope.yoda/MC_HJETS_LH15/jet1_pT_excl
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/jet1_pT_excl
 Title=\textsc{Sherpa} \textsc{NnloPs}
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -151,6 +156,7 @@ ErrorBandStyle=vlines
 ErrorBands=1
 ErrorTubeLineColor=green!70!white
 ErrorTubes=1
+ErrorType=env
 LegendOrder=5
 LineColor=green!70!black
 LineStyle=solid
@@ -191,19 +197,20 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 1.900000e+02	2.000000e+02	2.308087e-03	4.173950e-04	9.589030e-04
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope.yoda/MC_HJETS_LH15/jet1_pT_excl
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/jet1_pT_excl
 ErrorBandColor=blue!30!white
 ErrorBandOpacity=0.4
 ErrorBandStyle=hlines
 ErrorBands=0
 ErrorTubeLineColor=blue!50!white
 ErrorTubes=0
+ErrorType=env
 LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope.yoda/MC_HJETS_LH15/jet1_pT_excl
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/jet1_pT_excl
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -245,6 +252,7 @@ ErrorBandStyle=crosshatch
 ErrorBands=1
 ErrorTubeLineColor=RawSienna!50!white
 ErrorTubes=1
+ErrorType=env
 LegendOrder=7
 LineColor=RawSienna
 LineStyle=solid
@@ -285,7 +293,7 @@ Title=\textsc{Herwig}7
 1.900000e+02	2.000000e+02	2.859140e-03	8.546990e-04	0.000000e+00
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/jet1_pT_excl
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope_scaled.yoda/MC_HJETS_LH15/jet1_pT_excl
 ErrorBandColor=purple!30!white
 ErrorBandOpacity=0.4
 ErrorBandStyle=hlines,hatchstyle=dotted,hatchsep=0.08
@@ -293,12 +301,13 @@ ErrorBands=1
 ErrorTubeLineColor=purple!60!white
 ErrorTubeLineStyle=solid
 ErrorTubes=1
+ErrorType=env
 LegendOrder=8
 LineColor=purple!70!black
 LineStyle=dotted
 LineWidth=2pt
 Name=hej
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope.yoda/MC_HJETS_LH15/jet1_pT_excl
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/HEJ/HEJ-envelope_scaled.yoda/MC_HJETS_LH15/jet1_pT_excl
 Scale=438.596491228
 Title=\textsc{Hej}
 # xlow	 xhigh	 val	 errminus	 errplus
