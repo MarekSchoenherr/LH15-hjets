@@ -1,6 +1,59 @@
 \subsubsection{NLO calculation of $pp\to h+0,1,2\,\text{jets}$}
 \label{sec:hjetscomp:tools:fo:hnj}
 
+We compute $h+1$ jet, $h+2$ jets and
+$h+3$ jets at NLO in QCD in the infinite top mass limit
+using \textsc{Sherpa}~\cite{Gleisberg:2008ta} and
+\textsc{GoSam}~\cite{Cullen:2011ac,Cullen:2014yla}, linked via the
+interface defined in the Binoth Les Houches
+Accord~\cite{Binoth:2010xt,Alioli:2013nda}.
+The one-loop amplitudes are generated with \textsc{GoSam} employing
+\textsc{QGraf}~\cite{Nogueira:1991ex},
+\textsc{Form}~\cite{Vermaseren:2000nd,Kuipers:2012rf} and
+\textsc{Spinney}~\cite{Cullen:2010jv}, The reduction of the loop
+integrals is performed using
+\textsc{Ninja}~\cite{Mastrolia:2012bu,vanDeurzen:2013saa,Peraro:2014cba},
+\textsc{Golem95}~\cite{Heinrich:2010ax,Binoth:2008uq,Cullen:2011kv}
+and \textsc{OneLoop}~\cite{vanHameren:2010cp} for the evaluation of
+the scalar integrals.
+The calculation of tree-level matrix elements for the Born and the
+real emission contribution as well as the subtraction terms in the
+Catani-Seymour approach~\cite{Catani:1996vz} have been done within
+\textsc{Sherpa} using the matrix element generator
+\textsc{Comix}~\cite{Gleisberg:2008fv}.
+
+The computation is performed for a Higgs boson with mass
+$m_h=125$, which is considered to be stable. We used the 
+\texttt{MMHT2014nlo68clas118} PDF set. We present results 
+obtained by processing events pre-generated and
+stored in form of \textsc{Root} Ntuples as described
+in~\cite{Bern:2013zja}. Theoretical
+uncertainties are estimated by varying renormalization and
+factorization scales by factors of $\tfrac{1}{2}$ and $2$ 
+around the central scale
+\begin{equation}
+  \mu_0 = \tfrac{1}{2}\,\sqrt{m_{h}^2+\sum p_{T,j_i}^2}\;.
+\end{equation}
+This scale was chosen to facilitate comparison with the $h+j$ NNLO 
+calculation of Sec.\ \ref{sec:hjetscomp:tools:fo:BFGLP}.
+
+
+\subsubsection{\textsc{MiNLO} calculation of $pp\to h+0,1,2\,\text{jets}$}
+\label{sec:hjetscomp:tools:fo:hnjminlo}
+
+Reprocessing the \textsc{Root} Ntuples of Sec.\ 
+\ref{sec:hjetscomp:tools:fo:hnj}, for the first time in these 
+proceedings we present fixed order NLO results evaluated with a
+\textsc{MiNLO}~\cite{Hamilton:2012np} scale chioce, as implemented in
+\textsc{Sherpa}. Events are read-in by \textsc{Sherpa}, which applies
+the \textsc{MiNLO} prescription event by event. As a \textsc{MiNLO}
+core scale we choose
+\begin{equation}
+  \mu_\text{core}^\text{\textsc{MiNLO}}
+  \;=\;\frac{\hat{H}^\prime_T}{2}
+  \;=\;\frac{1}{2}\left(\sqrt{m_{\mathrm{H}}^{2}+p_{T,\mathrm{H}}^{2}}+\sum_{i}|p_{T,i}|\right)\,.
+\end{equation}
+
 \subsubsection{\textsc{LoopSim} merged $\bar{n}$NLO calculation of $pp\to h+0,1,2\,\text{jets}$}
 \label{sec:hjetscomp:tools:fo:hnjloopsim}
 
