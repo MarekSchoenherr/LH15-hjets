@@ -1,6 +1,6 @@
 # BEGIN PLOT
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
-DrawOnly=hqt stwz nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo nnlo-hj 
+DrawOnly=hqt stwz nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo nnlo-hj 
 Legend=1
 LegendXPos=0.45
 LogY=0
@@ -25,7 +25,7 @@ RatioPlot2YMax=1.9999
 RatioPlot2YMin=0.0001
 RatioPlot2YSize=4
 RatioPlot3=0
-RatioPlot3DrawOnly=hqt stwz nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-loopsim gosam-h3j-nlo 
+RatioPlot3DrawOnly=hqt stwz nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo 
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
@@ -34,7 +34,7 @@ RatioPlot3YMax=1.4999
 RatioPlot3YMin=0.5001
 RatioPlot3YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
-RightMargin=0.4
+RightMargin=0.45
 Title=Central jet veto cross section
 UseExtendedPSTricks=1
 XLabel=$y_\text{dist}^\text{max}$
@@ -308,5 +308,137 @@ Title=\textsc{Hej}
 4.400000e+00	4.600000e+00	3.854846e-04	6.884175e-05	9.027520e-05
 4.600000e+00	4.800000e+00	3.854845e-04	6.884175e-05	9.027520e-05
 4.800000e+00	5.000000e+00	3.854845e-04	6.884175e-05	9.027520e-05
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H1j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+ErrorBandColor=yellow
+ErrorBandOpacity=0.2
+ErrorBands=1
+ErrorTubeLineColor=yellow!50!black
+ErrorTubeLineStyle=solid
+ErrorTubes=1
+ErrorType=env
+LegendOrder=12
+LineColor=yellow!50!black
+LineDash=3pt 3pt 0.8pt 3pt 0.8pt 3pt 0.8pt 3pt
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h1j-minlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H1j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+Title=\textsc{MiNLO}
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.000000e-01	6.011165e-01	1.722430e-01	2.181085e-01
+2.000000e-01	4.000000e-01	6.011165e-01	1.722430e-01	2.181085e-01
+4.000000e-01	6.000000e-01	6.011165e-01	1.722431e-01	2.181085e-01
+6.000000e-01	8.000000e-01	6.011165e-01	1.722430e-01	2.181085e-01
+8.000000e-01	1.000000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+1.000000e+00	1.200000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+1.200000e+00	1.400000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+1.400000e+00	1.600000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+1.600000e+00	1.800000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+1.800000e+00	2.000000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+2.000000e+00	2.200000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+2.200000e+00	2.400000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+2.400000e+00	2.600000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+2.600000e+00	2.800000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+2.800000e+00	3.000000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+3.000000e+00	3.200000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+3.200000e+00	3.400000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+3.400000e+00	3.600000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+3.600000e+00	3.800000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+3.800000e+00	4.000000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+4.000000e+00	4.200000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+4.200000e+00	4.400000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+4.400000e+00	4.600000e+00	6.011165e-01	1.722431e-01	2.181085e-01
+4.600000e+00	4.800000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+4.800000e+00	5.000000e+00	6.011165e-01	1.722430e-01	2.181085e-01
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H2j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+ErrorBandColor=orange
+ErrorBandOpacity=0.2
+ErrorBands=1
+ErrorTubeLineColor=orange!80!black
+ErrorTubeLineStyle=solid
+ErrorTubes=1
+ErrorType=env
+LegendOrder=13
+LineColor=orange!80!black
+LineDash=3pt 3pt 0.8pt 3pt 0.8pt 3pt 0.8pt 3pt
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h2j-minlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H2j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+Title=\textsc{MiNLO}
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.000000e-01	7.628315e-01	9.772800e-02	8.453500e-03
+2.000000e-01	4.000000e-01	7.376570e-01	8.940600e-02	0.000000e+00
+4.000000e-01	6.000000e-01	7.118900e-01	8.087150e-02	0.000000e+00
+6.000000e-01	8.000000e-01	6.849070e-01	7.193550e-02	0.000000e+00
+8.000000e-01	1.000000e+00	6.565450e-01	6.258100e-02	0.000000e+00
+1.000000e+00	1.200000e+00	6.259445e-01	5.249650e-02	0.000000e+00
+1.200000e+00	1.400000e+00	5.917480e-01	5.700250e-02	0.000000e+00
+1.400000e+00	1.600000e+00	5.539295e-01	7.142105e-02	0.000000e+00
+1.600000e+00	1.800000e+00	5.176905e-01	8.535755e-02	0.000000e+00
+1.800000e+00	2.000000e+00	4.881322e-01	9.685070e-02	0.000000e+00
+2.000000e+00	2.200000e+00	4.654616e-01	1.058181e-01	1.062400e-03
+2.200000e+00	2.400000e+00	4.489833e-01	1.124198e-01	6.841000e-03
+2.400000e+00	2.600000e+00	4.378891e-01	1.168972e-01	1.076585e-02
+2.600000e+00	2.800000e+00	4.310454e-01	1.196915e-01	1.321870e-02
+2.800000e+00	3.000000e+00	4.271030e-01	1.213016e-01	1.463625e-02
+3.000000e+00	3.200000e+00	4.250752e-01	1.221258e-01	1.536730e-02
+3.200000e+00	3.400000e+00	4.239320e-01	1.226080e-01	1.579210e-02
+3.400000e+00	3.600000e+00	4.235258e-01	1.227808e-01	1.594415e-02
+3.600000e+00	3.800000e+00	4.232702e-01	1.228843e-01	1.603825e-02
+3.800000e+00	4.000000e+00	4.232156e-01	1.229057e-01	1.605810e-02
+4.000000e+00	4.200000e+00	4.231922e-01	1.229152e-01	1.606675e-02
+4.200000e+00	4.400000e+00	4.231905e-01	1.229160e-01	1.606740e-02
+4.400000e+00	4.600000e+00	4.231905e-01	1.229161e-01	1.606740e-02
+4.600000e+00	4.800000e+00	4.231905e-01	1.229160e-01	1.606740e-02
+4.800000e+00	5.000000e+00	4.231905e-01	1.229160e-01	1.606740e-02
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+ErrorBandColor=red
+ErrorBandOpacity=0.2
+ErrorBands=1
+ErrorTubeLineColor=red!80!black
+ErrorTubeLineStyle=solid
+ErrorTubes=1
+ErrorType=env
+LegendOrder=14
+LineColor=red!80!black
+LineDash=3pt 3pt 0.8pt 3pt 0.8pt 3pt 0.8pt 3pt
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h3j-minlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
+Title=\textsc{MiNLO}
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.000000e-01	2.845238e-01	6.733275e-02	0.000000e+00
+2.000000e-01	4.000000e-01	2.545217e-01	6.577205e-02	0.000000e+00
+4.000000e-01	6.000000e-01	2.243496e-01	6.553035e-02	8.070500e-04
+6.000000e-01	8.000000e-01	1.951927e-01	6.293770e-02	3.562850e-03
+8.000000e-01	1.000000e+00	1.651748e-01	5.920825e-02	6.121100e-03
+1.000000e+00	1.200000e+00	1.391238e-01	5.371000e-02	6.965500e-03
+1.200000e+00	1.400000e+00	1.117280e-01	4.721785e-02	7.475800e-03
+1.400000e+00	1.600000e+00	8.484365e-02	3.810935e-02	6.685750e-03
+1.600000e+00	1.800000e+00	6.196290e-02	2.761645e-02	4.754100e-03
+1.800000e+00	2.000000e+00	4.180940e-02	1.985472e-02	3.748085e-03
+2.000000e+00	2.200000e+00	2.581444e-02	1.310343e-02	2.855680e-03
+2.200000e+00	2.400000e+00	1.540619e-02	8.091560e-03	1.838830e-03
+2.400000e+00	2.600000e+00	9.142695e-03	4.931805e-03	1.082700e-03
+2.600000e+00	2.800000e+00	5.051055e-03	2.684745e-03	6.048950e-04
+2.800000e+00	3.000000e+00	1.487481e-03	1.631322e-03	6.654070e-04
+3.000000e+00	3.200000e+00	-1.481796e-04	7.676098e-04	5.194627e-04
+3.200000e+00	3.400000e+00	-2.506628e-04	1.678420e-04	2.334511e-04
+3.400000e+00	3.600000e+00	-3.697634e-04	1.065971e-04	1.719932e-04
+3.600000e+00	3.800000e+00	1.590606e-04	5.707710e-05	8.968585e-05
+3.800000e+00	4.000000e+00	6.016920e-05	2.042089e-05	2.493290e-05
+4.000000e+00	4.200000e+00	-5.028085e-06	4.363700e-06	3.076813e-06
+4.200000e+00	4.400000e+00	-1.275010e-05	7.091780e-06	5.582390e-06
+4.400000e+00	4.600000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+4.600000e+00	4.800000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+4.800000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
