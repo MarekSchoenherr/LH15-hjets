@@ -1,12 +1,13 @@
 # BEGIN PLOT
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
-DrawOnly=powheg un2lops madgraph sherpa herwig hej gosam-h2j-nlo gosam-h2j-loopsim 
+DrawOnly=powheg un2lops madgraph sherpa herwig hej gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
 Legend=1
 Legend2=1
 Legend2Only=madgraph sherpa herwig 
 Legend2XPos=0.5
 Legend3=1
-Legend3Only=gosam-h2j-nlo gosam-h2j-loopsim 
+Legend3Only=gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
+Legend3Title=\textsc{GoSam+Sherpa} hjj
 Legend3XPos=0.1
 Legend3YPos=0.7
 LegendOnly=powheg un2lops hej
@@ -33,7 +34,7 @@ RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlot3=1
-RatioPlot3DrawOnly=powheg gosam-h2j-nlo gosam-h2j-loopsim 
+RatioPlot3DrawOnly=powheg gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
@@ -43,7 +44,7 @@ RatioPlot3YMin=0.5001
 RatioPlot3YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
 Rebin=2
-RightMargin=0.4
+RightMargin=0.45
 Title=Azimuthal separation of leading and subleading jet
 UseExtendedPSTricks=1
 XLabel=$\Delta\phi(j_1,j_2)$
@@ -230,7 +231,7 @@ LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h1j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
-Title=\textsc{GoSam+Sherpa} hj NLO
+Title=\textsc{GoSam} hj NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.963495e-01	1.758506e-01	6.618963e-02	1.198162e-01
 1.963495e-01	3.926991e-01	1.691561e-01	6.369649e-02	1.153270e-01
@@ -257,7 +258,7 @@ LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h2j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO_scaled.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
-Title=\textsc{GoSam+Sherpa} hjj NLO
+Title=\textsc{GoSam} hjj NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.963495e-01	2.203504e-01	3.379021e-02	0.000000e+00
 1.963495e-01	3.926991e-01	1.697026e-01	3.048781e-02	0.000000e+00
@@ -284,7 +285,7 @@ LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h3j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H3j/histograms_6500_pt25.0_eta4.5_MMHT2014nlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-NLO.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
-Title=\textsc{GoSam+Sherpa} hjjj NLO
+Title=\textsc{GoSam} hjjj NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.963495e-01	6.796906e-02	1.782755e-02	0.000000e+00
 1.963495e-01	3.926991e-01	6.547587e-02	1.939856e-02	0.000000e+00
@@ -304,6 +305,90 @@ Title=\textsc{GoSam+Sherpa} hjjj NLO
 2.945243e+00	3.141593e+00	1.705157e-01	3.611811e-02	0.000000e+00
 # END HISTOGRAM
 
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H1j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+LegendOrder=12
+LineColor=yellow!50!black
+LineDash=3pt 3pt 0.8pt 3pt 0.8pt 3pt 0.8pt 3pt
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h1j-minlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H1j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+Title=\textsc{MiNLO}
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.963495e-01	2.097039e-01	6.504279e-02	7.549329e-02
+1.963495e-01	3.926991e-01	2.022811e-01	6.257645e-02	7.276480e-02
+3.926991e-01	5.890486e-01	1.834466e-01	5.643437e-02	6.587773e-02
+5.890486e-01	7.853982e-01	1.613854e-01	4.924619e-02	5.784932e-02
+7.853983e-01	9.817478e-01	1.344653e-01	4.049493e-02	4.797242e-02
+9.817474e-01	1.178097e+00	1.084821e-01	3.224060e-02	3.862331e-02
+1.178097e+00	1.374447e+00	8.719048e-02	2.544242e-02	3.095661e-02
+1.374448e+00	1.570797e+00	7.695766e-02	2.207600e-02	2.730643e-02
+1.570796e+00	1.767146e+00	8.076246e-02	2.288999e-02	2.874148e-02
+1.767146e+00	1.963496e+00	1.009157e-01	2.838609e-02	3.610057e-02
+1.963495e+00	2.159845e+00	1.400502e-01	3.916471e-02	5.045684e-02
+2.159845e+00	2.356193e+00	1.942162e-01	5.399314e-02	7.044920e-02
+2.356194e+00	2.552544e+00	2.597987e-01	7.176868e-02	9.481670e-02
+2.552544e+00	2.748894e+00	3.255365e-01	8.956002e-02	1.194855e-01
+2.748894e+00	2.945242e+00	3.806380e-01	1.042963e-01	1.403242e-01
+2.945243e+00	3.141593e+00	4.156293e-01	1.136129e-01	1.536012e-01
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H2j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+LegendOrder=13
+LineColor=orange!80!black
+LineDash=3pt 3pt 0.8pt 3pt 0.8pt 3pt 0.8pt 3pt
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h2j-minlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H2j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+Title=\textsc{MiNLO}
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.963495e-01	2.500600e-01	3.284714e-02	0.000000e+00
+1.963495e-01	3.926991e-01	1.947289e-01	1.735084e-02	0.000000e+00
+3.926991e-01	5.890486e-01	2.193353e-01	2.932307e-02	0.000000e+00
+5.890486e-01	7.853982e-01	1.342825e-01	2.768241e-02	0.000000e+00
+7.853983e-01	9.817478e-01	1.697895e-01	2.473161e-02	1.831530e-03
+9.817474e-01	1.178097e+00	1.346663e-01	1.897114e-02	1.498248e-03
+1.178097e+00	1.374447e+00	1.104414e-01	1.583443e-02	2.533843e-03
+1.374448e+00	1.570797e+00	1.067046e-01	1.671417e-02	4.739469e-03
+1.570796e+00	1.767146e+00	1.129587e-01	1.685780e-02	4.026942e-03
+1.767146e+00	1.963496e+00	1.491577e-01	2.409725e-02	1.036562e-02
+1.963495e+00	2.159845e+00	2.075802e-01	3.189025e-02	1.184629e-02
+2.159845e+00	2.356193e+00	2.703490e-01	3.819108e-02	1.208552e-02
+2.356194e+00	2.552544e+00	3.571550e-01	4.740952e-02	1.104100e-02
+2.552544e+00	2.748894e+00	4.299186e-01	5.468352e-02	1.279465e-02
+2.748894e+00	2.945242e+00	5.056276e-01	6.385798e-02	1.600736e-02
+2.945243e+00	3.141593e+00	5.323107e-01	6.274276e-02	1.003361e-02
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+LegendOrder=14
+LineColor=red!80!black
+LineDash=3pt 3pt 0.8pt 3pt 0.8pt 3pt 0.8pt 3pt
+LineStyle=dashed
+LineWidth=1.5pt
+Name=gosam-h3j-minlo
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
+Title=\textsc{MiNLO}
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.963495e-01	7.176453e-02	2.233614e-02	0.000000e+00
+1.963495e-01	3.926991e-01	6.668152e-02	2.915555e-02	1.454294e-03
+3.926991e-01	5.890486e-01	6.005042e-02	2.210096e-02	6.089651e-04
+5.890486e-01	7.853982e-01	5.643424e-02	2.161810e-02	5.985243e-04
+7.853983e-01	9.817478e-01	5.982613e-02	1.360289e-02	0.000000e+00
+9.817474e-01	1.178097e+00	4.806852e-02	1.507532e-02	0.000000e+00
+1.178097e+00	1.374447e+00	4.580544e-02	9.711194e-03	0.000000e+00
+1.374448e+00	1.570797e+00	4.990545e-02	6.081218e-03	0.000000e+00
+1.570796e+00	1.767146e+00	6.600932e-02	7.485154e-03	0.000000e+00
+1.767146e+00	1.963496e+00	6.693067e-02	7.542488e-03	0.000000e+00
+1.963495e+00	2.159845e+00	8.049091e-02	1.749152e-02	0.000000e+00
+2.159845e+00	2.356193e+00	1.119236e-01	2.215606e-02	0.000000e+00
+2.356194e+00	2.552544e+00	1.387347e-01	2.660066e-02	0.000000e+00
+2.552544e+00	2.748894e+00	1.686273e-01	3.417703e-02	0.000000e+00
+2.748894e+00	2.945242e+00	1.719067e-01	4.211847e-02	1.544800e-03
+2.945243e+00	3.141593e+00	1.859078e-01	4.566804e-02	2.118156e-03
+# END HISTOGRAM
+
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
 LegendOrder=12
 LineColor=yellow!50!black
@@ -311,7 +396,7 @@ LineStyle=dashdotted
 LineWidth=1.5pt
 Name=gosam-h1j-loopsim
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H1j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
-Title=\textsc{GoSam+Sherpa} hj nNLO
+Title=\textsc{GoSam} hj nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.963495e-01	1.939601e-01	2.581743e-02	0.000000e+00
 1.963495e-01	3.926991e-01	1.791838e-01	2.306631e-02	0.000000e+00
@@ -338,7 +423,7 @@ LineStyle=dashdotted
 LineWidth=1.5pt
 Name=gosam-h2j-loopsim
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/histograms_6500_pt25.0_eta4.5_MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4/m1hthat-env-l_s0-LS-nNLO_scaled.yoda/MC_HJETS_LH15/deltaphi_jj_VBF
-Title=\textsc{GoSam+Sherpa} hjj nNLO
+Title=\textsc{GoSam} hjj nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.963495e-01	2.008911e-01	2.772857e-02	0.000000e+00
 1.963495e-01	3.926991e-01	1.455331e-01	3.693249e-02	0.000000e+00

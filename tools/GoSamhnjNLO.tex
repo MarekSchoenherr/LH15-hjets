@@ -32,12 +32,13 @@ uncertainties are estimated by varying renormalization and
 factorization scales by factors of $\tfrac{1}{2}$ and $2$ 
 around the central scale
 \begin{equation}
-  \mu_0 = \tfrac{1}{2}\,\sqrt{m_{h}^2+\sum p_{T,j_i}^2}\;.
+  \mu_0 = \tfrac{1}{2}\,\sqrt{m_{h}^2+\sum p_{T,j_i}^2}\;,
 \end{equation}
-This scale was chosen to facilitate comparison with the $h+j$ NNLO 
+where $i$ runs over all identified jets.
+This scale was chosen to facilitate comparison with the $h+1$ jet NNLO 
 calculation of Sec.\ \ref{sec:hjetscomp:tools:fo:BFGLP}.
 
-\Todo{did we really use the scale choice in above equation for GoSam+Sherpa? I thought it was $H'_T/2$ as usual?}
+\Todo{did we really use the scale choice in above equation for GoSam+Sherpa? I thought it was $H'_T/2$ as usual? Yes, we did for the stated reasons.}
 
 
 \subsubsection{\textsc{MiNLO} calculation of $pp\to h+1,2,3\,\text{jets}$}
@@ -52,14 +53,14 @@ the \textsc{MiNLO} prescription event by event. As a \textsc{MiNLO}
 core scale we choose
 \begin{equation}
   \mu_\text{core}^\text{\textsc{MiNLO}}
-  \;=\;\frac{\hat{H}^\prime_T}{2}
-  \;=\;\frac{1}{2}\left(\sqrt{m_{\mathrm{H}}^{2}+p_{T,\mathrm{H}}^{2}}+\sum_{i}|p_{T,i}|\right)\,.
+  \;=\;\tfrac{1}{2}\,\hat{H}^\prime_T
+  \;=\;\tfrac{1}{2}\left(\sqrt{m_h^{2}+p_{T,h}^{2}}
+       +\sum_{i}p_{T,i}^{}\right)\,
 \end{equation}
+where $i$ runs over all partons of the identified core.
 
-\subsubsection{\textsc{LoopSim} merged $\bar{n}$NLO calculation of $pp\to h+0,1,2\,\text{jets}$}
+\subsubsection{\textsc{LoopSim} merged $\bar{n}$NLO calculation of $pp\to h+(1,2)\,\text{jets}$ and $pp\to h+(2,3)\,\text{jets}$}
 \label{sec:hjetscomp:tools:fo:hnjloopsim}
-
-\Todo{is it $pp\to h+0,1,2\,\text{jets}$ or $pp\to h+1,2\,\text{jets}$ ?}
 
 The fixed order Ntuples used for the can be combined using the LoopSim procedure to make
 an approximate NNLO prediciton which is missing the double virtual corrections but captures

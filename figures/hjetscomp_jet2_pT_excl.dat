@@ -1,6 +1,6 @@
 # BEGIN PLOT
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
-DrawOnly=powheg un2lops madgraph sherpa herwig hej gosam-h2j-nlo gosam-h2j-loopsim 
+DrawOnly=powheg un2lops madgraph sherpa herwig hej 
 Legend=1
 LegendXPos=0.5
 LogY=1
@@ -25,7 +25,7 @@ RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlot3=0
-RatioPlot3DrawOnly=powheg gosam-h2j-nlo gosam-h2j-loopsim 
+RatioPlot3DrawOnly=powheg gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
