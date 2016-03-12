@@ -1,7 +1,7 @@
 \section{RESULTS}
 \label{sec:hjetscomp:results}
 
-In the following comparisons, we will typically show the the central
+In the following comparisons, we will typically show the central
 values of each prediction on the left (both as absolute predictions
 and in ratio to a reference prediction), and a similar comparison of
 the predictions with uncertainty bands on the right. The reason for
@@ -14,16 +14,13 @@ scale uncertainty bands. In most cases, the predictions should be held
 to a higher standard, as the scale logs are common to all of the
 calculations that are being compared.
 
-\Todo{I have labelled the version of the plots with uncertainties with
-  an \_u; they have the same names on the two websites, so the
-  predictions with the uncertainty bands will have to be explicitly
-  renamed. To have a running version, they are commented out and the
-  actual plot is shown twice.}
-
-\Todo{ have to come up with uniform shorthand name for each of the
+\Todo{we have to come up with uniform shorthand name for each of the
 calculations, i.e. Madgraph5\_aMC@NLO, etc}
 
 \Todo{some words as to why the reference distributions have been chosen?}
+
+\Todo{some general words about how the plots are built up and why, ie
+  comment on structure of ratio plots.}
 
 \Todo{haven't said much about the HEJ or the nNLO predictions}
 
@@ -32,16 +29,27 @@ calculations, i.e. Madgraph5\_aMC@NLO, etc}
 \subsection{Inclusive observables}
 \label{sec:hjetscomp:results:inclobs}
 
+This section contains the observables characterizing the $h$~+~jets
+phase space in the most general way. We therefore compare the
+predictions for the rapidity and transverse momentum distributions of
+the Higgs boson where the latter observable is also shown for the case
+of vetoing the appearance of any jet. To get a first overview on the
+amount of jet activity accompanying the Higgs boson production, we
+look at the inclusive as well as exclusive $n_j$-jet cross sections
+predicted by the different approaches
+
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_H_y.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_H_y.pdf}
-  \caption{
+  \caption{\label{fig:higgscomp:results:inclobs:hy}%
     The inclusive Higgs boson rapidity without (left) and with (right)
-    uncertainties.
-    \label{fig:higgscomp:results:inclobs:hy}
-  }
+    uncertainties. To enhance visibility, the NNLOPS and MEPS@NLO
+    predictions are grouped together and shown wrt.~the same reference
+    curve in the upper and lower ratio plots, respectively. The
+    reference prediction is taken from the NNLO accurate description
+    of inclusive $h$ production.}
 \end{figure}
 
 First, in Figure~\ref{fig:higgscomp:results:inclobs:hy}, the inclusive
@@ -50,7 +58,8 @@ prediction in the top panel, and the ratio to the HNNLO prediction in
 the bottom panel.
 
 \Todo{I am confused here. It would seem to be natural to compare to
-HNNLO for this variable, but the reference seems to be Sherpa h NNLO.}
+HNNLO for this variable, but the reference seems to be Sherpa h
+NNLO. Shall we just call it h NNLO and explain in text?}
 
 Sherpa NNLO and Powheg NNLOPS agree well with the HNNLO prediction, as
 expected, while MG5, Sherpa and Herwig7 have slightly lower (NLO)
@@ -62,8 +71,6 @@ NLO-based predictions fall off more rapidly at higher $y$ than do the
 NNLO-based predictions. This is expected because of the influence of
 additional $ln(1-x)$ corrections present in the determination of NNLO
 PDFs.  Similar effects can be observed in going from LO to NLO.
-
-\Todo{add rapidity figure with uncertainty bands}
 
 \begin{figure}[t!]
   \centering
@@ -634,7 +641,8 @@ of approximately 20~GeV.
 
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_xs_jet_veto_j1_200.pdf}
+  \includegraphics[width=0.47\textwidth]{Micon.pdf}
+  %\includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_xs_jet_veto_j1_200.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_xs_jet_veto_j1_200.pdf}
   \caption{
@@ -673,4 +681,3 @@ The central jet veto cross section for $H+\ge2$ jets is shown as a
 function of the rapidity separation for the two leading jets in
 Figure~\ref{fig:higgscomp:results:jvobs:cjvxsvbf}. MG5, Sherpa and
 Herwig7 are all in excellent agreement with Powheg.
-
