@@ -36,7 +36,7 @@ the Higgs boson where the latter observable is also shown for the case
 of vetoing the appearance of any jet. To get a first overview on the
 amount of jet activity accompanying the Higgs boson production, we
 look at the inclusive as well as exclusive $n_j$-jet cross sections
-predicted by the different approaches
+predicted by the different approaches.
 
 \begin{figure}[t!]
   \centering
@@ -54,23 +54,25 @@ predicted by the different approaches
 
 First, in Figure~\ref{fig:higgscomp:results:inclobs:hy}, the inclusive
 Higgs boson rapidity distribution is shown, with the absolute
-prediction in the top panel, and the ratio to the HNNLO prediction in
+prediction in the top panel, and the ratio to the NNLO prediction in
 the bottom panel.
 
 \Todo{I am confused here. It would seem to be natural to compare to
 HNNLO for this variable, but the reference seems to be Sherpa h
 NNLO. Shall we just call it h NNLO and explain in text?}
 
-Sherpa NNLO and Powheg NNLOPS agree well with the HNNLO prediction, as
-expected, while MG5, Sherpa and Herwig7 have slightly lower (NLO)
-normalizations. Here, the MG5 choice of a scale that reduces to $mH$,
-rather than $mH/2$, is clearly noticeable. The upper edge of the MG5
-uncertainty band (equal to a scale that reduces to $mH/2$) agrees with
-the central value of the other NLO ME+PS predictions. Note that the
-NLO-based predictions fall off more rapidly at higher $y$ than do the
-NNLO-based predictions. This is expected because of the influence of
-additional $ln(1-x)$ corrections present in the determination of NNLO
-PDFs.  Similar effects can be observed in going from LO to NLO.
+The Sherpa and Powheg NNLOPS results agree well with the pure NNLO
+prediction, as expected, while MG5, Sherpa and Herwig7 have slightly
+lower (NLO) normalizations. The NNLO scale uncertainty band is smaller
+than those at NLO, as expected. Here, the MG5 choice of a scale that
+reduces to $m_h$, rather than $m_h/2$, is clearly noticeable. The
+upper edge of the MG5 uncertainty band (equal to a scale that reduces
+to $m_h/2$) agrees with the central value of the other NLO ME+PS
+predictions. Note that the NLO-based predictions fall off more rapidly
+at higher $y$ than do the NNLO-based predictions. This is expected
+because of the influence of additional $ln(1-x)$ corrections present
+in the determination of NNLO PDFs.  Similar effects can be observed in
+going from LO to NLO.
 
 \begin{figure}[t!]
   \centering
@@ -89,7 +91,8 @@ boson transverse momentum distribution is shown, with the ratio to HqT
 (Powheg NNLOPS) in the bottom panel.  In general, good agreement with
 HqT is observed, with some deviations evident at very low $p_T$.  The
 fixed order predictions are neither stable (nor reliable) at low
-$p_T$, as expected since this is a strong Sudakov region. Note the MG5
+$p_T$, as expected since this is a strong Sudakov region. The Powheg
+prediction seems to fall off more rapidly at high $p_T$. Note the MG5
 central scale choice becomes less significant as the Higgs boson
 transverse momentum increases.
 
@@ -125,10 +128,6 @@ good reflection of the true uncertainty.
     \label{fig:higgscomp:results:inclobs:njets}
   }
 \end{figure}
-
-\Todo{I have jumped the jet multiplicity distributions ahead [seems
-  right now that Marek updated stuff] compared to Marek's order; for
-  this figure no need to show without uncertainty bands}
 
 The inclusive and exclusive jet multiplicity distributions are shown
 in Figure~\ref{fig:higgscomp:results:inclobs:njets}. Fixed order
@@ -172,8 +171,8 @@ absent in the other predictions.
 \end{figure}
 
 The Higgs boson transverse momentum distribution with the presence of
-at least one jet is shown in the upper panels of
-Figure~\ref{fig:higgscomp:results:1obs:hpt_j}. These are variables for
+at least one jet is shown in
+Figure~\ref{fig:higgscomp:results:1obs:hpt}. These are variables for
 which large Sudakov effects are expected at low $p_T$ and indeed the
 fixed order predictions are somewhat unstable for transverse momenta
 less than 50 GeV/c. There are also shape differences between the ME+PS
@@ -184,8 +183,8 @@ nominal central scaler) is noticeable higher than the other
 predictions.
 
 The Higgs boson transverse momentum distribution with the presence of
-exactly one jet is shown in the lower row of
-Figure~\ref{fig:higgscomp:results:1obs:hpt_j}. In this case, the
+exactly one jet is shown in
+Figure~\ref{fig:higgscomp:results:1obs:hpt_excl}. In this case, the
 differences with respect to Powheg become larger for the full
 tranverse momentum range.
 
@@ -250,7 +249,9 @@ The exclusive lead jet transverse momentum distribution is shown in
 Figure~\ref{fig:higgscomp:results:1obs:j1pt_excl}. All predictions are
 in reasonably good agreement with Powheg. The MG5 prediction is lower
 than Powheg for basically the entire transverse momentum range, again
-because of the central scale choice.
+because of the central scale choice. Note that this is a variable in a
+strong Sudakov region, and the scale uncertainties shown do not
+reflect the true uncertainty.
 
 \begin{figure}[t!]
   \centering
@@ -509,7 +510,7 @@ are somewhat smaller with the VBF2 cuts than with the VBF cuts.
 
 The $\Delta\phi$ separation between the two leading jets applying the
 VBF cuts is shown in
-Figure~\ref{fig:higgscomp:results:2obs:dphijj_phi2}. All predictions
+Figure~\ref{fig:higgscomp:results:VBFobs:dphijj_phi2}. All predictions
 are in reasonable agreement with each other, although not as good
 agreement as for the inclusive case. Similar distributions (and
 agreement) are observed if the two most forward-backward jets are
@@ -559,7 +560,9 @@ The third jet $p_T$ for $H+\ge3$ jets is shown in
 Figure~\ref{fig:higgscomp:results:mobs:j3pt}. MG5, Herwig7 and Sherpa
 tend to be higher than Powheg (where the jet is produced by a parton
 shower), but lower than that from Gosam $H+\ge3$ jets, which has the
-correct NLO $K$-factor.
+correct NLO $K$-factor. The multijet phase space results in smaller
+Sudakov effects, and thus better agreement with the fixed-order
+predictions.
 
 \begin{figure}[t!]
   \centering
