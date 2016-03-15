@@ -45,7 +45,7 @@ RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlot3=1
-RatioPlot3DrawOnly=hqt stwz nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo 
+RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo hqt stwz nnlo-h nnlo-hj 
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
@@ -204,26 +204,26 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 2.500000e+00	3.500000e+00	1.319608e+00	3.295893e-01	4.234210e-01
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
 ErrorBandColor=blue!30!white
 ErrorBandOpacity=0.4
 ErrorBandStyle=hlines
-ErrorBands=0
+ErrorBands=1
 ErrorTubeLineColor=blue!50!white
-ErrorTubes=0
+ErrorTubes=1
 ErrorType=env
 LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	3.787619e+01	6.556910e+00	1.122462e+01
-5.000000e-01	1.500000e+00	1.540856e+01	3.521030e+00	7.158740e+00
-1.500000e+00	2.500000e+00	4.588431e+00	1.395768e+00	3.163295e+00
-2.500000e+00	3.500000e+00	1.401323e+00	4.322750e-01	7.573160e-01
+-5.000000e-01	5.000000e-01	3.806177e+01	2.210480e+00	0.000000e+00
+5.000000e-01	1.500000e+00	1.529615e+01	2.488330e+00	0.000000e+00
+1.500000e+00	2.500000e+00	4.542321e+00	3.820720e-01	1.531890e-01
+2.500000e+00	3.500000e+00	1.271153e+00	6.651900e-02	4.379200e-02
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_incl_30
@@ -425,7 +425,7 @@ Title=nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	1.354427e+01	1.988180e+00	1.830380e+00
-1.500000e+00	2.500000e+00	4.650574e+00	7.915570e-01	3.773920e-01
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
@@ -448,6 +448,6 @@ Title=nNLO
 -5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 1.500000e+00	2.500000e+00	4.549227e+00	7.226130e-01	1.980440e-01
-2.500000e+00	3.500000e+00	1.501916e+00	2.940840e-01	1.074500e-02
+2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 

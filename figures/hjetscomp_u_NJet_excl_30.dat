@@ -45,7 +45,7 @@ RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlot3=1
-RatioPlot3DrawOnly=hqt stwz nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo 
+RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo hqt stwz nnlo-h nnlo-hj 
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
@@ -151,19 +151,19 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 2.500000e+00	3.500000e+00	9.119875e-01	2.226533e-01	3.022885e-01
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-envelope_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
 LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-envelope_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	2.246764e+01	3.035890e+00	4.065860e+00
-5.000000e-01	1.500000e+00	1.082012e+01	2.125256e+00	3.995460e+00
-1.500000e+00	2.500000e+00	3.187108e+00	9.634930e-01	2.405979e+00
-2.500000e+00	3.500000e+00	9.823809e-01	3.028884e-01	5.669461e-01
+-5.000000e-01	5.000000e-01	2.276563e+01	2.142310e+00	2.778400e-01
+5.000000e-01	1.500000e+00	1.075383e+01	2.106260e+00	0.000000e+00
+1.500000e+00	2.500000e+00	3.271168e+00	3.155520e-01	1.093980e-01
+2.500000e+00	3.500000e+00	8.935863e-01	7.508160e-02	6.232850e-02
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_excl_30
@@ -301,7 +301,7 @@ Title=\textsc{GoSam} hj nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	8.893692e+00	1.196625e+00	1.452978e+00
-1.500000e+00	2.500000e+00	3.518515e+00	5.111160e-01	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
@@ -317,6 +317,6 @@ Title=\textsc{GoSam} hjj nNLO
 -5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 1.500000e+00	2.500000e+00	3.047311e+00	4.285280e-01	1.872970e-01
-2.500000e+00	3.500000e+00	1.146303e+00	3.365800e-01	0.000000e+00
+2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
