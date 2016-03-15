@@ -22,6 +22,8 @@ calculations, i.e. Madgraph5\_aMC@NLO, etc}
 \Todo{some general words about how the plots are built up and why, ie
   comment on structure of ratio plots.}
 
+\Todo{parameters of the analyis, cuts etc}
+
 \Todo{haven't said much about the HEJ or the nNLO predictions}
 
 
@@ -29,14 +31,14 @@ calculations, i.e. Madgraph5\_aMC@NLO, etc}
 \subsection{Inclusive observables}
 \label{sec:hjetscomp:results:inclobs}
 
-This section contains the observables characterizing the $h$~+~jets
-phase space in the most general way. We therefore compare the
-predictions for the rapidity and transverse momentum distributions of
-the Higgs boson where the latter observable is also shown for the case
-of vetoing the appearance of any jet. To get a first overview on the
-amount of jet activity accompanying the Higgs boson production, we
-look at the inclusive as well as exclusive $n_j$-jet cross sections
-predicted by the different approaches.
+This section contains the observables, which characterize the
+$h$~+~jets phase space in the most general way. We therefore compare
+the predictions for the rapidity and transverse momentum distributions
+of the Higgs boson where the latter observable is also shown for the
+case of vetoing the appearance of any jet. Also, to get a first
+overview on the amount of jet activity accompanying the Higgs boson
+production, we look at the inclusive as well as exclusive $n_j$-jet
+cross sections predicted by the different approaches.
 
 \begin{figure}[t!]
   \centering
@@ -52,38 +54,53 @@ predicted by the different approaches.
     of inclusive $h$ production.}
 \end{figure}
 
-First, in Figure~\ref{fig:higgscomp:results:inclobs:hy}, the inclusive
-Higgs boson rapidity distribution is shown, with the absolute
-prediction in the top panel, and the ratio to the NNLO prediction in
-the bottom panel.
-
 \Todo{I am confused here. It would seem to be natural to compare to
 HNNLO for this variable, but the reference seems to be Sherpa h
-NNLO. Shall we just call it h NNLO and explain in text?}
+NNLO. $\to$ Sherpa h NNLO is the same as HNNLO, shall we just call it
+h NNLO instead and explain in text?}
 
-The Sherpa and Powheg NNLOPS results agree well with the pure NNLO
-prediction, as expected, while MG5, Sherpa and Herwig7 have slightly
-lower (NLO) normalizations. The NNLO scale uncertainty band is smaller
-than those at NLO, as expected. Here, the MG5 choice of a scale that
-reduces to $m_h$, rather than $m_h/2$, is clearly noticeable. The
-upper edge of the MG5 uncertainty band (equal to a scale that reduces
-to $m_h/2$) agrees with the central value of the other NLO ME+PS
-predictions. Note that the NLO-based predictions fall off more rapidly
-at higher $y$ than do the NNLO-based predictions. This is expected
-because of the influence of additional $ln(1-x)$ corrections present
-in the determination of NNLO PDFs.  Similar effects can be observed in
-going from LO to NLO.
+We start by showing the inclusive Higgs boson rapidity distribution in
+Figure~\ref{fig:higgscomp:results:inclobs:hy}. While the absolute
+predictions are given in the top panel, the plots in the bottom panel
+depict the respective ratios to the NNLO prediction. For better
+visibility, we have divided the predictions into two groups based on
+their simulation type and/or claimed accuracy. The upper ratio plot
+contains the NNLO predictions while the lower one shows those obtained
+from different strategies to merge matrix elements plus parton showers
+at NLO. Overall, we find very good agreement in the description of the
+shape of the $y(h)$ distribution. The main source of deviations stems
+from the different normalizations given at NNLO or NLO and the
+different (core) scale choices. As expected, the Sherpa NNLOPS and
+Powheg NNLOPS results agree well with the pure NNLO prediction, while
+MG5, Sherpa and Herwig7 have slightly lower (NLO) normalizations.
+Here, the MG5 choice of a scale that reduces to $m_h$, rather than
+$m_h/2$, is clearly noticeable. The upper edge of the MG5 uncertainty
+band (equal to a scale that reduces to $m_h/2$) agrees with the
+central value of the other NLO ME+PS predictions. There are no major
+differences in the size of the uncertainty envelopes, although to some
+extent, the NNLO scale uncertainty bands are smaller than those at NLO.
+Note that the NLO-based predictions fall off more rapidly at higher
+$y$ than do the NNLO-based predictions. This is expected because of
+the influence of additional $ln(1-x)$ corrections present in the
+determination of NNLO PDFs. Similar effects can be observed in going
+from LO to NLO.
+
+\Todo{Do we say in the technicalities section how error bands are
+  obtained? Or do we rather say it at the appropriate places when
+  describing the plots?}
 
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_H_pT_incl.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_H_pT_incl.pdf}
-  \caption{
+  \caption{\label{fig:higgscomp:results:inclobs:hpt}%
     The Higgs boson transverse momentum in the inclusive event selection
-    without (left) and with (right) uncertainties.
-    \label{fig:higgscomp:results:inclobs:hpt}
-  }
+    without (left) and with (right) uncertainties. For the ratios in
+    the bottom panel, the same grouping strategy has been used as in
+    Figure~\ref{fig:higgscomp:results:inclobs:hy}, while the reference
+    prediction has been changed from that of pure NNLO to the one
+    given by HqT.}
 \end{figure}
 
 In Figure~\ref{fig:higgscomp:results:inclobs:hpt}, the inclusive Higgs
@@ -644,8 +661,8 @@ of approximately 20~GeV.
 
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=0.47\textwidth]{Micon.pdf}
-  %\includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_xs_jet_veto_j1_200.pdf}
+  %\includegraphics[width=0.47\textwidth]{Micon.pdf}
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_xs_jet_veto_j1_200.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_xs_jet_veto_j1_200.pdf}
   \caption{
