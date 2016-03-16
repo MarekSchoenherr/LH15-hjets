@@ -45,7 +45,7 @@ RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlot3=0
-RatioPlot3DrawOnly=hqt stwz nnlo-hj nnlo-h powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo 
+RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo hqt stwz nnlo-h nnlo-hj 
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
@@ -87,19 +87,19 @@ Title=\texttt{Powheg} \textsc{NnloPs}
 2.500000e+00	3.500000e+00	9.461898e-04	1.708146e-04	1.870532e-04
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
 LegendOrder=4
 LineColor=brilliantrose
 LineStyle=solid
 LineWidth=1.5pt
 Name=un2lops
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
 Title=\textsc{Sherpa} \textsc{NnloPs}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
-5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-1.500000e+00	2.500000e+00	7.073643e-01	1.329833e-01	1.923374e-01
-2.500000e+00	3.500000e+00	3.173121e-01	1.121353e-01	1.035929e-01
+-5.000000e-01	5.000000e-01	8.997017e-01	1.846206e-01	3.004363e-01
+5.000000e-01	1.500000e+00	8.997017e-01	1.846206e-01	3.004363e-01
+1.500000e+00	2.500000e+00	8.997017e-01	1.846206e-01	3.004363e-01
+2.500000e+00	3.500000e+00	4.209050e-01	1.382586e-01	1.725499e-01
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/MG5aMC/MG5aMC_envelope.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
@@ -117,19 +117,19 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 2.500000e+00	3.500000e+00	4.373105e-01	1.098244e-01	1.451819e-01
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
 LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
-5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-1.500000e+00	2.500000e+00	9.425391e-01	2.553605e-01	4.644899e-01
-2.500000e+00	3.500000e+00	5.001129e-01	1.429175e-01	2.575254e-01
+-5.000000e-01	5.000000e-01	8.990690e-01	8.602990e-02	5.841260e-02
+5.000000e-01	1.500000e+00	8.990690e-01	8.602990e-02	5.841260e-02
+1.500000e+00	2.500000e+00	8.990690e-01	8.602990e-02	5.841260e-02
+2.500000e+00	3.500000e+00	4.621272e-01	9.457500e-03	1.645970e-02
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_incl_30_VBF2
@@ -267,7 +267,7 @@ Title=\textsc{GoSam} hj nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-1.500000e+00	2.500000e+00	4.035740e-01	1.354342e-01	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
@@ -283,6 +283,6 @@ Title=\textsc{GoSam} hjj nNLO
 -5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 1.500000e+00	2.500000e+00	3.112976e-01	3.949200e-02	6.574100e-03
-2.500000e+00	3.500000e+00	6.047924e-04	9.311757e-04	1.173303e-04
+2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 

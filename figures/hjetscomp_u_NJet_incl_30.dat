@@ -53,7 +53,7 @@ RatioPlot3YMajorTickMarks=20
 RatioPlot3YMax=1.4999
 RatioPlot3YMin=0.5001
 RatioPlot3YSize=4
-RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/STWZ/sig0pTcut_LHC13_MMHT14_log.yoda/MC_HJETS_LH15/NJet_incl_30
+RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/STWZ/STWZ-env.yoda/MC_HJETS_LH15/NJet_incl_30
 RightMargin=0.45
 Title=Inclusive jet multiplicity
 UseExtendedPSTricks=1
@@ -74,17 +74,17 @@ YTwosidedTicks=1
 \rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
 # END SPECIAL
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/STWZ/sig0pTcut_LHC13_MMHT14_log.yoda/MC_HJETS_LH15/NJet_incl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/STWZ/STWZ-env.yoda/MC_HJETS_LH15/NJet_incl_30
 ErrorType=env
 LegendOrder=0
 LineColor=arylideyellow!80!black
 LineStyle=solid
 LineWidth=1.5pt
 Name=stwz
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/STWZ/sig0pTcut_LHC13_MMHT14_log.yoda/MC_HJETS_LH15/NJet_incl_30
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/STWZ/STWZ-env.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=STWZ
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	4.666192e+01	2.381230e+00	2.381230e+00
+-5.000000e-01	5.000000e-01	4.734000e+01	2.390000e+00	2.390000e+00
 5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -136,19 +136,19 @@ Title=\texttt{Powheg} \textsc{NnloPs}
 2.500000e+00	3.500000e+00	2.579478e-03	4.542070e-04	4.822840e-04
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
 LegendOrder=4
 LineColor=brilliantrose
 LineStyle=solid
 LineWidth=1.5pt
 Name=un2lops
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/nnlo-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{Sherpa} \textsc{NnloPs}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	4.205126e+01	3.548660e+00	4.535280e+00
-5.000000e-01	1.500000e+00	1.487167e+01	2.139060e+00	2.617660e+00
-1.500000e+00	2.500000e+00	4.351095e+00	7.608800e-01	9.975600e-01
-2.500000e+00	3.500000e+00	1.059964e+00	2.904455e-01	3.226610e-01
+-5.000000e-01	5.000000e-01	4.658654e+01	4.192950e+00	4.927260e+00
+5.000000e-01	1.500000e+00	1.748933e+01	2.470230e+00	2.895800e+00
+1.500000e+00	2.500000e+00	5.348655e+00	9.737150e-01	1.359512e+00
+2.500000e+00	3.500000e+00	1.382625e+00	3.306820e-01	5.400930e-01
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/MG5aMC/MG5aMC_envelope.yoda/MC_HJETS_LH15/NJet_incl_30
