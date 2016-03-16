@@ -30,13 +30,13 @@ stored in form of \textsc{Root} Ntuples as described
 in~\cite{Bern:2013zja}. Theoretical
 uncertainties are estimated by varying renormalization and
 factorization scales by factors of $\tfrac{1}{2}$ and $2$ 
-around the central scale defined as
-\begin{equation}\label{eq:gosamScale}
-  \mu_0\;\equiv\;\tfrac{1}{2}\,\hat{H}^\prime_T
-            \;=\;\tfrac{1}{2}\left(\sqrt{m_h^{2}+p_{T,h}^{2}}
-                                    +\sum_{i}p_{T,i}^{}\right)
+around the central scale
+\begin{equation}
+  \mu_0 \;=\; \tfrac{1}{2}\,\sqrt{m_{h}^2+\sum p_{T,j_i}^2}\;,
 \end{equation}
-where $i$ runs over all partons occurring in the final state.
+where $i$ runs over all identified jets.
+This scale was chosen to facilitate comparison with the $h+1$ jet NNLO 
+calculation of Sec.\ \ref{sec:hjetscomp:tools:fo:BFGLP}.
 
 
 \subsubsection{\textsc{MiNLO} calculation of $pp\to h+1,2,3\,\text{jets}$}
@@ -47,26 +47,23 @@ Reprocessing the \textsc{Root} Ntuples of Sec.\
 proceedings we present fixed order NLO results evaluated with a
 \textsc{MiNLO}~\cite{Hamilton:2012np} scale chioce, as implemented in
 \textsc{Sherpa}. Events are read-in by \textsc{Sherpa}, which applies
-the \textsc{MiNLO} prescription event by event. As a \Minlo core scale
-we choose
+the \textsc{MiNLO} prescription event by event. As a \textsc{MiNLO}
+core scale we choose
 \begin{equation}
-  \mu_\text{core}^\text{\Minlo}\;=\;\tfrac{1}{2}\,\hat{H}^\prime_T
+  \mu_\text{core}^\text{\textsc{MiNLO}}
+  \;=\;\tfrac{1}{2}\,\hat{H}^\prime_T
+  \;=\;\tfrac{1}{2}\left(\sqrt{m_h^{2}+p_{T,h}^{2}}
+       +\sum_{i}p_{T,i}^{}\right)\,
 \end{equation}
-where $i$ in Eq.~(\ref{eq:gosamScale}) runs over all partons of the
-identified core.
-
+where $i$ runs over all partons of the identified core.
 
 \subsubsection{\textsc{LoopSim} merged $\bar{n}$NLO calculation of $pp\to h+(1,2)\,\text{jets}$ and $pp\to h+(2,3)\,\text{jets}$}
 \label{sec:hjetscomp:tools:fo:hnjloopsim}
 
-The fixed order Ntuples used for obtaining the \GoSam+\Sherpa predictions can be combined using
-the LoopSim procedure to make an approximate NNLO prediciton which is missing the double virtual
-corrections but captures much of the double unresolved radiation contributions. There is a cut-off
-dependence on the additional real radiation since the fixed order Ntuples where generated with a
-jet $p_T>25$ GeV.
+The fixed order Ntuples used for the can be combined using the LoopSim procedure to make
+an approximate NNLO prediciton which is missing the double virtual corrections but captures
+much of the double unresolved radiation contributions. There is a cut-off dependence on the
+additional real radiation since the fixed order Ntuples where generated with a jet $p_T>25$ GeV.
 
-The LoopSim procedure uses a flavour sensitive $k_T$ algorithm where a jet radius of $R=1$ was used.
-The Ntuples were reweighted to incorporate the scale choice given in Eq.~(\ref{eq:bfglpScale}).
-This scale was chosen to facilitate comparison with the $h+1$ jet NNLO
-calculation of Sec.~\ref{sec:hjetscomp:tools:fo:BFGLP}.
+The LoopSim procedure uses a flavour sensitive $k_T$ algoritham where a jet radius of $R=1$ was used.
 All other parameters are the same as in the fixed order analysis.
