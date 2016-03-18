@@ -57,15 +57,6 @@ approaches.
     of inclusive $h$ production.}
 \end{figure}
 
-\Todo{I am confused here. It would seem to be natural to compare to
-HNNLO for this variable, but the reference seems to be Sherpa h
-NNLO. $\to$ Sherpa h NNLO is the same as HNNLO, shall we just call it
-h NNLO instead and explain in text? MS: Fine with
-me. After all, this is plain NNLO and Sherpa gives the same as HNNLO
-here. It is only faster and easier to use and produce uncertainties.
-For transparency, I would call it what it is in the plot, we did it
-for every other curve in the plot. Opinions?}
-
 We start by examining the inclusive Higgs boson rapidity distribution in
 Figure~\ref{fig:higgscomp:results:inclobs:hy}. While the absolute
 predictions are given in the top panel, the plots in the bottom panel
@@ -92,11 +83,6 @@ than the NNLO-based predictions do. This is expected because of the
 influence of additional $\ln(1-x)$ corrections present in the
 determination of NNLO PDFs. Similar effects can be observed in going
 from LO to NLO.
-
-\Todo{Do we say in the technicalities section how error bands are
-  obtained? Or do we rather say it at the appropriate places when
-  describing the plots? MS: Leave it in technicalities where it already 
-  is, otherwise it needs to be repetitive.}
 
 \begin{figure}[t!]
   \centering
@@ -189,16 +175,6 @@ they are very comparable in size among all predictions. We conclude
 that the deviation of the predictions probably provides us with a
 better reflection of the true uncertainty.
 
-\Todo{can we explain why HqT is the hardest, some scale choice thingy,
-  or just the fact that there's no notion of core scale plus dynamical
-  scale setting? Why is HqT's band so large, or is it compared to the
-  others that the others underestimate resummation uncertainties? Can
-  we say something? MS: The high tail in \HqT comes from the fixed 
-  scale choice. The band has the same size as for the \NNLOPS ones. 
-  The \Powheg one in contrast to \HqT and \Sherpa does not contain 
-  the resummation uncertainty as the public code does not offer this 
-  option.}
-
 \Todo{Shall we keep h NNLO in the exclusive plot?} 
 
 \Todo{Shall/Can we comment on Herwig's small variation in exclusive
@@ -214,47 +190,51 @@ better reflection of the true uncertainty.
     including theoretical uncertainties as predicted by fixed-order
     calculations, resummed calculations, NNLO and NLO Monte Carlos. The
     bottom panel is divided up into three subplots all showing the
-    ratios wrt.~\Powheg's \NNLOPS prediction. The upper of these plots
+    ratios wrt.\ the \Powheg \NNLOPS prediction. The upper of these plots
     contains the \Hej and \Sherpa \NNLOPS ratios, while the middle one
     includes all NLO merged predictions (\MGaMC, \Herwig and \Sherpa)
     and the lower one shows all those listed in the bottom left legend
     of the main panel.}
 \end{figure}
 
-We want to obtain a first impression of how the different predictions
-compare beyond the zero-jet bins ($n_j\ge0$ and $n_j=0$), and the
-easiest way for this is to look at the various $n_j$ cross sections.
+To obtain a first impression of how the different predictions 
+compare beyond the zero-jet bins ($n_j\ge0$ and $n_j=0$) we 
+look at the various inclusive and exclusive $n_j$ cross sections.
 Accordingly, Figure~\ref{fig:higgscomp:results:inclobs:njets} shows,
 to the left, the inclusive ($n_j\ge N$) and, to the right, the
-exclusive ($n_j=N$) jet multiplicity distributions up to $N=3$. Two
+exclusive ($n_j=N$) jet multiplicity distributions up to $N=3$ 
+using the previously defined \antikt jets with $p_\perp>30\gev$. Two
 statements can be made before discussing the individual results in
 more detail: first of all, the agreement between all results is
 remarkable, and second, the details of the comparison are barely
 altered when going from the inclusive description to the exclusive
 description of the jet cross sections, apart from the obvious fact
 that the exclusive jet bins always lie below the respective inclusive
-jet bins. Again, the bottom panels are split up into several ratio
+jet bins. Although not shown here, when increasing the minimum jet-$p_\perp$ 
+threshold to $50\gev$ the picture does not change significantly. 
+Again, the bottom panels are split up into several ratio
 plots with the common reference provided by the \Powheg \NNLOPS
 results. The upper ratio plot depicts the \NNLOPS methods together
-with \Hej, which only starts at $N=2$. \Sherpa is slightly below
-\Powheg (but well within the uncertainty band) while \Hej undershoots
-by 30\% in the two-jet bin, only to perform similarly to \NNLOPS for
-the three-jet bin. The ratio plot in the middle confronts the NLO
-merging predictions with each other and throws them against \Powheg.
-Except for the $3$-jet case, all predictions overlap well within
-uncertainties.  While \Herwig and \Sherpa show a mild positive slope
-wrt.~\Powheg resulting in a 10\% enhancement of the last bin, \MGaMC
-has a steeper slope wrt.~\Powheg, starting low for $N=0$ but finishing
-high for $N=3$. The slope against \Powheg can be understood from two
-facts: first, the merged calculations give NLO accuracy for the first
-three bins (for \Sherpa this holds true also for the last bin) while
-\Powheg describes the zero-, one- and two-jet bin with NNLO, NLO
-and LO accuracy, respectively. Second, considering that the higher
-order corrections in $h$~+~jets yield $K$-factors greater than one,
-\Powheg is expected to be above in the $0$-jet bin while it should be
-below in the $2$-jet bin. Of course, scale choices, dynamical scale
-setting and different parton shower performances can lead to shifts
-around this general picture.
+with \Hej, which only starts at $N=2$. Due to the scale choices in either 
+\NNLOPS calculation they share a common inclusive cross section, with 
+\Sherpa rising above \Powheg for higher jet multiplicities. Conversely,
+\Hej undershoots by 30\% in the two-jet bin, where all predictions in this 
+panel are LO accurate. In the three-jet bin, \Hej retains the LO accuracy 
+while in both \NNLOPS calculations it is described by their respective 
+parton showers only. Naturely, here the differences between the \NNLOPS 
+predictions are largest. Please note, that the resepctive parton showering 
+uncertainties are partially incorporated in the \Sherpa \NNLOPS uncertainty 
+estimate while they are not assessed for \Powheg, resulting in a very flat 
+uncertainty band. The central ratio plot confronts the NLO
+matched and merged predictions with each other and against the common reference 
+\Powheg \NNLOPS. All these predictions have claim NLO accuracy for $N=0,1,2$ 
+and overlap well within uncertainties where the lower value for \MGaMC can 
+again be attributed to the different scale choice. For $N=3$ only the \Sherpa 
+\MEPSatNLO prediction retains its NLO accuracy while \MGaMC and \Herwig 
+revert to LO, which is nicely reflected in the uncertainty estimates. 
+Unsurprisingly, in the $N=3$ case, described by the reference with its 
+parton shower only, all three NLO merged calculations predict larger 
+cross sections.
 
 Lastly, fixed-order predictions are shown for all jet multiplicities,
 at NLO (provided by \GoSam+\Sherpa) for the $1$-jet, $2$-jet and
