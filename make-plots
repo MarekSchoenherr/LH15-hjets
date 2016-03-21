@@ -507,7 +507,7 @@ class Plot:
             for color in inputdata.description['DefineColor'].split('\t'):
                 out += ('%s\n' %color)
         if inputdata.description.has_key('UseExtendedPSTricks') and inputdata.description['UseExtendedPSTricks']=='1':
-	    out += self.write_extended_pstricks()
+            out += self.write_extended_pstricks()
         out += ('\\begin{document}\n')
         out += ('\\pagestyle{empty}\n')
         out += ('\\SpecialCoor\n')
@@ -656,7 +656,7 @@ class MainPlot(Plot):
                 xcustomminorticks.append({'Value': float(FOO[i])})
         xticks = XTicks(inputdata.description, self.coors)
         drawlabels = True
-        if not (inputdata.description.has_key('PlotTickLabels') and inputdata.description['PlotTickLabels']=='0'):
+        if (inputdata.description.has_key('PlotTickLabels') and inputdata.description['PlotTickLabels']=='0'):
             drawlabels=False
         if (inputdata.description.has_key('RatioPlot') and inputdata.description['RatioPlot']=='1'):
             drawlabels=False
@@ -832,8 +832,11 @@ class RatioPlot(Plot):
         inputdata.ratiohistos = {}
         inputdata.ratiohistos = copy.deepcopy(inputdata.histos)
         foo=inputdata.description[self.name+'DrawOnly'].pop(inputdata.description[self.name+'DrawOnly'].index(self.refdata))
-        if inputdata.histos[self.refdata].description.has_key('ErrorBands') and inputdata.histos[self.refdata].description['ErrorBands']=='1':
-            inputdata.description[self.name+'DrawOnly'].insert(0,foo)
+        if inputdata.description.has_key(self.name+'DrawReferenceFirst') and inputdata.description[self.name+'DrawReferenceFirst']=='0':
+            if inputdata.histos[self.refdata].description.has_key('ErrorBands') and inputdata.histos[self.refdata].description['ErrorBands']=='1':
+		inputdata.description[self.name+'DrawOnly'].insert(0,foo)
+            else:
+                inputdata.description[self.name+'DrawOnly'].append(foo)
         else:
             inputdata.description[self.name+'DrawOnly'].append(foo)
         for i in inputdata.description[self.name+'DrawOnly']:
@@ -1708,7 +1711,7 @@ class Histogram(DrawableObject):
 #                self.data[i]['Error'][0] = sqrt(self.data[i]['Error'][0]**2 + name.data[i]['Error'][0]**2)
 #                self.data[i]['Error'][1] = sqrt(self.data[i]['Error'][1]**2 + name.data[i]['Error'][1]**2)
             else:
-                print '+++ Error in Histogram.divide(): Binning of histograms differs:', self.data[i]['LowEdge'], 'vs', name.data[i]['LowEdge'], ' and ', self.data[i]['UpEdge'], 'vs', name.data[i]['UpEdge']
+                print '+++ Error in Histogram.divide(): Binning of histograms differs:', self.getName(), 'vs', name.getName(), self.data[i]['LowEdge'], 'vs', name.data[i]['LowEdge'], ' and ', self.data[i]['UpEdge'], 'vs', name.data[i]['UpEdge']
 
     def dividereverse(self,name):
         if len(self.data)!=len(name.data):
@@ -2081,6 +2084,7 @@ class Histo1D(Histogram):
 class Frame:
     def __init__(self):
         self.framelinewidth = '0.3pt'
+        self.framelinecolor = "black"
 
     def draw(self,inputdata):
         out = ('\n%\n% Frame\n%\n')
@@ -2091,6 +2095,9 @@ class Frame:
 
             if inputdata.description.has_key('FrameLineWidth'):
                 self.framelinewidth=inputdata.description['FrameLineWidth']
+
+            if inputdata.description.has_key('FrameLineColor'):
+                self.framelinecolor=inputdata.description['FrameLineColor']
 
             # Calculate how high and wide the overall plot is
             height = [0,0]
@@ -2116,7 +2123,7 @@ class Frame:
             out += ('\\rput(1,0){\\psline[linewidth=%scm,linecolor=%s](%scm,%scm)(%scm,%scm)}\n' %(right, color, right/2, height[1]-0.05, right/2, height[0]+0.05))
 
 
-        out += ('\\psframe[linewidth='+self.framelinewidth+',dimen=middle](0,0)(1,1)\n')
+        out += ('\\psframe[linewidth='+self.framelinewidth+',linecolor='+self.framelinecolor+',dimen=middle](0,0)(1,1)\n')
         return out
 
 
@@ -2125,8 +2132,11 @@ class Ticks:
     def __init__(self, description, coors):
         self.majorticklinewidth = '0.3pt'
         self.minorticklinewidth = '0.3pt'
+        self.majorticklinecolor = 'black'
+        self.minorticklinecolor = 'black'
         self.majorticklength    = '9pt'
         self.minorticklength    = '4pt'
+        self.majorticklabelcolor = 'black'
         self.description = description
         self.coors = coors
         self.decimal = 0
@@ -2277,8 +2287,8 @@ class XTicks(Ticks):
             twosided = True
         out = ""
         out += ('\n%\n% X-Ticks\n%\n')
-        out += ('\\def\\majortickmarkx{\\psline[linewidth='+self.majorticklinewidth+'](0,0)(0,'+self.majorticklength+')}%\n')
-        out += ('\\def\\minortickmarkx{\\psline[linewidth='+self.minorticklinewidth+'](0,0)(0,'+self.minorticklength+')}%\n')
+        out += ('\\def\\majortickmarkx{\\psline[linewidth='+self.majorticklinewidth+',linecolor='+self.majorticklinecolor+'](0,0)(0,'+self.majorticklength+')}%\n')
+        out += ('\\def\\minortickmarkx{\\psline[linewidth='+self.minorticklinewidth+',linecolor='+self.minorticklinecolor+'](0,0)(0,'+self.minorticklength+')}%\n')
         out += self.draw_ticks(self.coors.xmin(), self.coors.xmax(),\
                                    plotlog=self.description['LogX'],\
                                    custommajorticks=custommajorticks,\
@@ -2306,7 +2316,7 @@ class XTicks(Ticks):
     def draw_majorticklabel(self, value, label=''):
         if label=='':
             label=self.get_ticklabel(value,self.description['LogX'])
-        return ('\\rput('+self.coors.strphys2frameX(value)+', 0){\\rput[B](0,-2.3\\labelsep){\\strut{}'+label+'}}\n')
+        return ('\\rput('+self.coors.strphys2frameX(value)+', 0){\\rput[B](0,-2.3\\labelsep){\\strut{}\\textcolor{'+self.majorticklabelcolor+'}{'+label+'}}}\n')
 
 
 
@@ -2317,8 +2327,8 @@ class YTicks(Ticks):
             twosided = True
         out = ""
         out += ('\n%\n% Y-Ticks\n%\n')
-        out += ('\\def\\majortickmarky{\\psline[linewidth='+self.majorticklinewidth+'](0,0)('+self.majorticklength+',0)}%\n')
-        out += ('\\def\\minortickmarky{\\psline[linewidth='+self.minorticklinewidth+'](0,0)('+self.minorticklength+',0)}%\n')
+        out += ('\\def\\majortickmarky{\\psline[linewidth='+self.majorticklinewidth+',linecolor='+self.majorticklinecolor+'](0,0)('+self.majorticklength+',0)}%\n')
+        out += ('\\def\\minortickmarky{\\psline[linewidth='+self.minorticklinewidth+',linecolor='+self.minorticklinecolor+'](0,0)('+self.minorticklength+',0)}%\n')
         out += self.draw_ticks(self.coors.ymin(), self.coors.ymax(),\
                                    plotlog=self.description['LogY'],\
                                    custommajorticks=custommajorticks,\
@@ -2363,9 +2373,9 @@ class YTicks(Ticks):
             label=self.get_ticklabel(value,self.description['LogY'])
         if self.description.has_key('RatioPlotMode') and self.description['RatioPlotMode']=='deviation' \
                 and self.description.has_key('PlotStage') and 'RatioPlot' in self.description['PlotStage']:
-            return ('\\uput[180]{0}(0, '+self.coors.strphys2frameY(value)+'){\\strut{}'+label+'}\n')
+            return ('\\uput[180]{0}(0, '+self.coors.strphys2frameY(value)+'){\\strut{}\\textcolor{'+self.majorticklabelcolor+'}{'+label+'}}\n')
         else:
-            return ('\\uput[180]{0}(0, '+self.coors.strphys2frameY(value)+'){\\strut{}'+label+'}\n')
+            return ('\\uput[180]{0}(0, '+self.coors.strphys2frameY(value)+'){\\strut{}\\textcolor{'+self.majorticklabelcolor+'}{'+label+'}}\n')
 
 
 
@@ -2380,8 +2390,8 @@ class ZTicks(Ticks):
     def draw(self, custommajorticks=[], customminorticks=[], custommajortickmarks=-1, customminortickmarks=-1):
         out = ""
         out += ('\n%\n% Z-Ticks\n%\n')
-        out += ('\\def\\majortickmarkz{\\psline[linewidth='+self.majorticklinewidth+'](0,0)('+self.majorticklength+',0)}%\n')
-        out += ('\\def\\minortickmarkz{\\psline[linewidth='+self.minorticklinewidth+'](0,0)('+self.minorticklength+',0)}%\n')
+        out += ('\\def\\majortickmarkz{\\psline[linewidth='+self.majorticklinewidth+',linecolor='+self.maforticklinecolor+'](0,0)('+self.majorticklength+',0)}%\n')
+        out += ('\\def\\minortickmarkz{\\psline[linewidth='+self.minorticklinewidth+',linecolor='+self.minorticklinecolor+'](0,0)('+self.minorticklength+',0)}%\n')
         out += self.draw_ticks(self.coors.zmin(), self.coors.zmax(),\
                                    plotlog=self.description['LogZ'],\
                                    custommajorticks=custommajorticks,\
