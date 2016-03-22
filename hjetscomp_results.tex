@@ -40,7 +40,7 @@ of the Higgs boson. The latter is differentiated into two cases: its
 inclusive spectrum and its exclusive spectrum vetoing the appearance 
 of any jet. Also, to get a first overview on the amount of jet activity 
 accompanying the Higgs boson production, we look at the inclusive as 
-well as exclusive $n_j$-jet cross sections predicted by the different 
+well as exclusive cross sections for various jet multiplicities predicted by the different 
 approaches.
 
 \begin{figure}[t!]
@@ -51,7 +51,7 @@ approaches.
   \caption{\label{fig:higgscomp:results:inclobs:hy}%
     The inclusive Higgs boson rapidity without (left) and with (right)
     uncertainties. To enhance visibility, the \NNLOPS and \MEPSatNLO
-    predictions are grouped together and shown wrt.~the same reference
+    predictions are grouped together and shown with respect to the same reference
     curve in the upper and lower ratio plots, respectively. The
     reference prediction is taken from the NNLO accurate description
     of inclusive $h$ production.}
@@ -66,10 +66,10 @@ their simulation type and/or claimed accuracy. The upper ratio plot
 contains the NNLO predictions while the lower one shows those obtained
 from different strategies to merge matrix elements plus parton showers
 at NLO. Overall, we find very good agreement in the description of the
-shape of the $y(h)$ distribution. The main source of deviations stems
+shape of the Higgs boson rapidity distribution. The main source of deviations stems
 from the different normalizations given at NNLO or NLO and the
 different (core) scale choices. As expected, the \Sherpa \NNLOPS and
-\Powheg \NNLOPS results agree well with the pure NNLO prediction,
+\Powheg \NNLOPS results agree well with the fixed order NNLO prediction,
 while \MGaMC, \Sherpa and \Herwig have slightly lower (NLO)
 normalizations.  Here, the \MGaMC scale choice reducing to
 $m_h$, rather than $\tfrac{1}{2}m_h$, is clearly noticeable. The upper edge of
@@ -128,7 +128,7 @@ spectra of the matched and merged predictions. While the
 in the fixed-order region. At the same time, \Powheg \NNLOPS follows 
 \HqT closely up to scales of $\sim m_h$. Beyond that value, the 
 dynamical scale employed \Powheg \NNLOPS accounts for the ensuing 
-difference. The multijet merged calculations, due to their similar 
+difference. The multi-jet merged calculations, due to their similar 
 scale choices, follow the pattern of the \Powheg \NNLOPS prediction.
 Note that the differences in \MGaMC's central scale
 choice becomes less significant as the Higgs boson transverse momentum
@@ -150,10 +150,10 @@ dominate the low-$p_\perp$ region, but resummation effects are also
 entering through the veto on any jet activity. It thus necessitates 
 both a proper description of small $p_\perp(h)$ region as well as 
 jet production. Thus,
-this is a stringent test of all ME-plus-PS combining predictions, as
+this is a stringent test of all predictions combining matrix elements and parton showers (ME+PS), as
 the high transverse momentum of the Higgs boson is produced by a
 combination of soft jets (those that are below the $30$\gev threshold)
-and soft gluon radiation. Note that the comparison is now taken wrt.\ 
+and soft gluon radiation. Note that the comparison is now taken with respect to
 \Powheg \NNLOPS. The inclusive 
 NNLO calculation is shown to exemplify the failure of a fixed-order 
 calculation on both accounts, and, thus, only the parton showered 
@@ -175,11 +175,6 @@ they are very comparable in size among all predictions. We conclude
 that the deviation of the predictions probably provides us with a
 better reflection of the true uncertainty.
 
-\Todo{Shall we keep h NNLO in the exclusive plot?} 
-
-\Todo{Shall/Can we comment on Herwig's small variation in exclusive
-  case? It's too small, probably underestimated?}
-
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_NJet_incl_30.pdf}
@@ -188,9 +183,9 @@ better reflection of the true uncertainty.
   \caption{\label{fig:higgscomp:results:inclobs:njets}%
     The inclusive (left) and exclusive (right) jet multiplicities
     including theoretical uncertainties as predicted by fixed-order
-    calculations, resummed calculations, NNLO and NLO Monte Carlos. The
+    calculations, re-summed calculations, NNLO and NLO Monte Carlos. The
     bottom panel is divided up into three subplots all showing the
-    ratios wrt.\ the \Powheg \NNLOPS prediction. The upper of these plots
+    ratios with respect to the \Powheg \NNLOPS prediction. The upper of these plots
     contains the \Hej and \Sherpa \NNLOPS ratios, while the middle one
     includes all NLO merged predictions (\MGaMC, \Herwig and \Sherpa)
     and the lower one shows all those listed in the bottom left legend
@@ -221,8 +216,8 @@ with \Hej, which only starts at $N=2$. Due to the scale choices in either
 \Hej undershoots by 30\% in the two-jet bin, where all predictions in this 
 panel are LO accurate. In the three-jet bin, \Hej retains the LO accuracy 
 while in both \NNLOPS calculations it is described by their respective 
-parton showers only. Naturely, here the differences between the \NNLOPS 
-predictions are largest. Please note, that the resepctive parton showering 
+parton showers only. Naturally, here the differences between the \NNLOPS 
+predictions are largest. Please note, that the respective parton showering 
 uncertainties are partially incorporated in the \Sherpa \NNLOPS uncertainty 
 estimate while they are not assessed for \Powheg, resulting in a very flat 
 uncertainty band. The central ratio plot confronts the NLO
@@ -236,12 +231,15 @@ Unsurprisingly, in the $N=3$ case, described by the reference with its
 parton shower only, all three NLO merged calculations predict larger 
 cross sections.
 
-Lastly, fixed-order predictions are shown for all jet multiplicities,
+Lastly, fixed-order predictions are shown for all jet multiplicities
 at NLO (provided by \GoSam+\Sherpa) for the $1$-jet, $2$-jet and
-$3$-jet bins, at NNLO for the $0$-jet and $1$-jet bins (apart from
-$n_j=1$) and at approximate NNLO (provided by \Loopsim) for the
-$1$-jet and $2$-jet bins. In addition, the zero-jet bin comparison
-also contains the resummation prediction of Stewart, Tackmann et
+$3$-jet bins and at approximate NNLO (provided by \Loopsim) for the
+$1$-jet and $2$-jet bins.
+Complete NNLO predictions are shown for the 0-jet inclusive and
+exclusive bins using \Sherpa without PS and for the 1-jet inclusive
+bin using the prediction of Boughezal et al.~\textsc{BFGLP}.
+In addition, the zero-jet bin comparison
+also contains the resummation prediction of Stewart et
 al.~(\textsc{STWZ}) whereas the comparison for non-zero jet bins also
 shows the \Minlo enhanced NLO calculations. All of the above are
 grouped together in the lower ratio plot. For the zeroth bin, nice
@@ -253,24 +251,46 @@ by the different scale choices. Unlike the inclusive Higgs boson
 production case, the NNLO corrections for inclusive $1$-jet production
 are small -- slightly negative for the central scale choice as given
 in Eq.~(\ref{eq:bfglpScale}). There is a notable decrease in the scale
-uncertainty wrt.~the NLO band given by \GoSam+\Sherpa. The $2$-jet bin
+uncertainty with respect to the NLO band given by \GoSam+\Sherpa. The $2$-jet bin
 shows the \GoSam NLO prediction just slightly above \Powheg, which
 gives a LO prediction in this case. For the same reason, the \Powheg
 uncertainties in the higher jet multiplicities are probably
 underestimated. In the $3$-jet bin (both inclusive and exclusive), the
 \GoSam+\Sherpa prediction clearly signals the NLO corrections absent
 in the other predictions. The \Loopsim results for $h$~+~$j$ and
-$h$~+~$jj$ are always somewhat below the respective \GoSam result.
+$h$~+~$jj$ are always somewhat below the respective \GoSam result
+though the relatively large MC generation cut of $25$ Gev mean
+the total rates predicted using \Loopsim should be interpreted with care.
 Furthermore, compared to the NLO benchmark, the \Minlo approach
-predicts 10-20\% larger cross sections for all non-zero jet bins. In
-both cases the main effect is likely to come from scale choice and
-scale setting differences. Note that the \Minlo ratio for inclusive
+predicts 10-20\% larger cross sections for all non-zero jet bins.
+Note that the \Minlo ratio for inclusive
 $h$~+~$jjj$ turns out to be outside the plot range appearing at around
 $1.65$ where the lower edge of the uncertainty band is seen kicking in
-at a ratio value of $1.5$.
+at a ratio value of $1.5$. In the cases where NNLO precision is available
+the reduction in scale uncertainty is clear. For $n_j\geq1$ the variation around
+$\mu_R=\sqrt{\Sigma_T}/2$ is about $5.5\%$ while for $n_j\geq0$ it is about $10\%$
+around $\mu_R=m_H/2$. The latter result can be improved using the N${}^3$LO prediction
+of Anastasiou et al. \cite{Anastasiou:2015ema} to only a few $\%$. In order to compare more
+easily with results presented previously in the literature we give numerical values at NLO and NNLO
+for different scale choices in Table \ref{tab:H1jXS}. As observed previously \cite{Boughezal:2015dra},
+the convergence of the total cross-section is improved for scales that limit to $m_H/2$. The dynamical scale
+of $\sqrt{\Sigma_T}$ defined in eq. \eqref{eq:bfglpScale} is slightly harder than the fixed scale given the
+minimum jet $p_{T,j}>30$. On the other hand it is softer than $\hat{H}_T'$ defined in eq. \eqref{eq:hthatprime} which explains
+the differences at NLO.
 
-\Todo{Can't believe the BFGLP NNLO for h+1 gives the correct result,
-  this has to be double-checked.}
+\begin{table}
+  \centering
+  \begin{tabular}{cccc}
+    order & $\mu_R=m_H/2$ & $\mu_R=\hat{H}_T'/2$ & $\mu_R=\sqrt{\Sigma_T}/2$ \\
+    \hline \\
+    NLO   & $17.0^{+3.0}_{-2.9}$ pb & $13.5^{+2.0}_{-2.1}$ pb & $16.2^{+3.1}_{-2.8}$ pb \\
+    NNLO  & -     & -     & $16.4^{+0.0}_{-0.9}$ pb \\
+    \hline
+  \end{tabular}
+  \caption{The total cross-section for inclusive production of a Higgs boson and one additional jet using different core scale choices.
+  The two dynamical scales are $\hat{H}_T'=m_{H,T} + \sum_{\rm partons} p_T$ (see also eq. \eqref{eq:hthatprime}) and $\Sigma_T = m_H^2 + \sum_{\rm jets} p_T^2$ (see also eq. \eqref{eq:bfglpScale}).}
+  \label{tab:H1jXS}
+\end{table}
 
 
 \subsection{One-jet observables}
