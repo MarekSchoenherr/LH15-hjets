@@ -762,8 +762,26 @@ $HT_{jets}$).
 
 
 \clearpage
-\subsection{Jet veto observables}
+\subsection{Jet veto cross sections}
 \label{sec:hjetscomp:results:jvobs}
+
+This section is concerned with the cummulative jet veto cross sections. 
+In the first three cases, Figures 
+\ref{fig:higgscomp:results:jvobs:jvxs0}-\ref{fig:higgscomp:results:jvobs:jvxs1j200}, 
+additional radiation is vetoed by means of a maximal transverse 
+momentum of the (sub)leading jet, $p_\perp^\text{veto}$. These 
+observables recover the respective inclusive cross section as 
+$p_\perp^\text{veto}\to\infty$. In this region, the fixed order 
+part of the respective calculations dominates the cross section 
+and associated uncertainties. The opposite regime, $p_\perp^\text{veto}\to 0$, 
+is a classic example of a resummation dominated observable. Here, the 
+properties of the respective parton showers come fully into play and 
+differences are largely due to their characteristics. The last case 
+investigated is cross section after VBF cuts when vetoing additional 
+central jet activity in dependence of the rapidity distance of the 
+tagging jet pair, $y_\text{dist}<y_\text{dist}^\text{max}$. Here, 
+DGLAP-type resummation regions are present throughout the spectrum and 
+this observable should be ideal to study BFKL-like dynamics.
 
 \begin{figure}[t!]
   \centering
@@ -771,18 +789,27 @@ $HT_{jets}$).
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_xs_jet_veto_j0.pdf}
   \caption{
-    The exclusive zero jet cross section in dependence on / as a
-    function of the vetoed minimal leading jet transverse momentum,
+    The exclusive zero jet cross section as a function of 
+    the vetoed minimal leading jet transverse momentum,
     without (left) and with (right) uncertainties.
     \label{fig:higgscomp:results:jvobs:jvxs0}
   }
 \end{figure}
 
-The cross section for the production of a Higgs boson and no
-additional jets as a function of the minimum jet transverse momentum
-is shown in Figure~\ref{fig:higgscomp:results:jvobs:jvxs0}. Good
-agreement with the Powheg predictions is observed above a jet veto cut
-of approximately 20~GeV.
+We start by considering 
+the cross section for the production of a Higgs boson and no 
+additional jets as a function of the minimum jet transverse momentum 
+is shown in Figure~\ref{fig:higgscomp:results:jvobs:jvxs0}. Remarkable 
+agreement between both \NNLOPS simulations and the dedicated resummation 
+of STWZ is found, typically well with 5\% within the considered range. 
+However, as both \NNLOPS' resummation accuracy is limited by their parton 
+shower's accuracy and both do not (\Powheg) or only partially (\Sherpa) 
+assess their intrinsic uncertainty and interplay with the hard process' 
+scale variations, their uncertainties remain much larger than those of 
+STWZ. The multijet merged calculations show a wider spread. In addition to 
+suffering from their NLO normalisation in the $p_\perp^\text{veto}\to\infty$ 
+limit, they show different behaviour as $p_\perp^\text{veto}\to 0$. Here, 
+\Sherpa \MEPSatNLO exhibits more QCD activity than the other computations. 
 
 \begin{figure}[t!]
   \centering
@@ -790,12 +817,11 @@ of approximately 20~GeV.
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_xs_jet_veto_j1_30.pdf}
   \caption{
-    The cross
-    section for a Higgs boson plus exactly one jet as a function on
+    The cross section for events containing a Higgs boson 
+    and one jet with $p_\perp>30\,\gev$ as a function of
     the vetoed minimal second jet transverse momentum without
-    (left) and with (right) uncertainties. Also, Joey picked the
-    30~GeV requirement for $H$ or jet1.
-    \label{fig:higgscomp:results:jvobs:jvxs1j}
+    (left) and with (right) uncertainties.
+    \label{fig:higgscomp:results:jvobs:jvxs1j30}
   }
 \end{figure}
 
@@ -805,22 +831,60 @@ of approximately 20~GeV.
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_xs_jet_veto_j1_200.pdf}
   \caption{
-    The cross
-    section for a Higgs boson plus exactly one jet as a function on
+    The cross section for events containing a Higgs boson 
+    and one jet with $p_\perp>200\,\gev$ as a function of
     the vetoed minimal second jet transverse momentum without
-    (left) and with (right) uncertainties. Also, Joey picked the
-    30~GeV requirement for $H$ or jet1.
-    \label{fig:higgscomp:results:jvobs:jvxs1j}
+    (left) and with (right) uncertainties.
+    \label{fig:higgscomp:results:jvobs:jvxs1j200}
   }
 \end{figure}
 
-The cross section for the production of $H$ plus exactly one jet and
-no additional jets as a function of the sub-leading minimum jet
-transverse momentum is shown in
-Figure~\ref{fig:higgscomp:results:jvobs:jvxs1h_jvxs1j}. Again, good
-agreement with the Powheg predictions (almost perfect for Herwig7 and
-Sherpa) is observed above a jet veto cut of approximately 20~GeV. The
-effects of the higher central scale for MG5 is evident.
+Next, we require the presence of at least one jet with 
+a minimal transverse momentum of $30$ and $200$ \gev, respectively. 
+The cross section as a function of 
+the sub-leading jets maximal transverse momentum is displayed in 
+Figure~\ref{fig:higgscomp:results:jvobs:jvxs1j30} and 
+Figure~\ref{fig:higgscomp:results:jvobs:jvxs1j200}, respectively. 
+Before starting the discussion it worthy to note that although all parton 
+shower matched or merged calculations have the same accuracy as 
+$p_\perp^\text{veto}\to\infty$ and in the resummation dominated region, 
+the multijet merged calculation possess a better description of the 
+second jet emission and thus should lead to more accurate results 
+throughout the spectrum provided the merging systematics are under control. 
+Currently employed uncertainty estimates, however, will not reflect this 
+as resummation uncertainties are not assessed or only incompletely assessed.
+
+Putting no special requirements on the leading jet, cf.\ Figure 
+\ref{fig:higgscomp:results:jvobs:jvxs1j30}, good agreement 
+between all calculations is found. The \NNLOPS ones agreen again within 
+5\% of one another with very similar uncertainties. This is noteworthy 
+in sofar as, in comparison with the results of 
+Figure~\ref{fig:higgscomp:results:jvobs:jvxs0}, both calculations' 
+accuracies have degraded by one order. The multijet merged calculations 
+also show a similar behaviour as in the previous case, also showing the 
+same features as before: \MGaMC exhibits a smaller cross section due to 
+its scale choice while \Sherpa \MEPSatNLO predicts more soft radiation. 
+Only the slight relative lack of small $p_\perp$ radiation is more 
+pronounced in \Herwig now. Again, the uncertainties of \MGaMC and \Sherpa 
+are of similar size while \Herwig's are somewhat smaller than the \NNLOPS 
+ones, especially in the resummation dominated region as 
+$p_\perp^\text{veto}\to 0$.
+
+Raising the requirements on the leading jet to $200$ \gev in Figure 
+\ref{fig:higgscomp:results:jvobs:jvxs1j200} now shows clear distinctions 
+between the different calculations now. Among the \NNLOPS calculations, 
+\Sherpa starts out at a higher asymtotic cross section but remains within 
+20\% and of \Powheg, the respective uncertainties covering one another. 
+The multijet merged calculations show \Herwig largely agreeing with 
+\Powheg with a constant offset of $-10\%$ and the familiar lower 
+probability of low-$p_\perp$ jet emissions. \Sherpa \MEPSatNLO's 
+asymtotic cross section is as large as the \Sherpa \NNLOPS one and, 
+unsurprisingly due to the use of the same parton shower, shows a 
+similar radiation pattern for a large range. As before, it exhibits 
+a relative overabundance of soft jet radiation. Lastly, \MGaMC's 
+asymtotic cross section now is the same level as \Powheg's, despite 
+its higher scale choice. The pattern of the uncertainties, however, 
+remains the same as before.
 
 \begin{figure}[t!]
   \centering
@@ -836,7 +900,11 @@ effects of the higher central scale for MG5 is evident.
   }
 \end{figure}
 
-The central jet veto cross section for $H+\ge2$ jets is shown as a
-function of the rapidity separation for the two leading jets in
-Figure~\ref{fig:higgscomp:results:jvobs:cjvxsvbf}. MG5, Sherpa and
-Herwig7 are all in excellent agreement with Powheg.
+Finally, we consider the cross section after VBF cuts applying a veto 
+on additional central jet activity with $p_\perp>30\,\gev$ in dependence 
+of the maximal rapidity distance of the tagging jets, 
+$y_\text{dist}<y_\text{dist}^\text{max}$. Here, all parton shower based 
+resummation calculations give very similar results with \MGaMC possessing 
+a reduced cross section due to its scale choice. \Hej, being based on 
+BFKL dynamics, does not deviate substantially in its predicted shape. 
+However, its cross section is reduced by a constant 50-60\%.
