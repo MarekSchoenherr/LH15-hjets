@@ -1,6 +1,7 @@
 # BEGIN PLOT
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=hqt stwz nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo nnlo-hj 
+DrawReferenceFirst=0
 IgnorePlot=1
 Legend=1
 LegendXPos=0.45
@@ -158,7 +159,7 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 8.500000e+00	9.000000e+00	-1.066091e-04	1.636211e-04	2.006489e-03
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-corescalecorr-23-env_scaled.yoda/MC_HJETS_LH15/jjfb_dy
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/jjfb_dy
 ErrorBandColor=blue!30!white
 ErrorBandOpacity=0.4
 ErrorBandStyle=hlines
@@ -171,27 +172,27 @@ LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-corescalecorr-23-env_scaled.yoda/MC_HJETS_LH15/jjfb_dy
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/jjfb_dy
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
-0.000000e+00	5.000000e-01	1.102310e+00	8.285660e-02	1.342394e-01
-5.000000e-01	1.000000e+00	1.105405e+00	9.874020e-02	1.614560e-01
-1.000000e+00	1.500000e+00	9.977536e-01	1.038218e-01	1.551284e-01
-1.500000e+00	2.000000e+00	9.420228e-01	6.848700e-02	1.213434e-01
-2.000000e+00	2.500000e+00	9.204430e-01	6.928320e-02	1.139426e-01
-2.500000e+00	3.000000e+00	8.412400e-01	2.185260e-02	8.295660e-02
-3.000000e+00	3.500000e+00	7.656058e-01	3.958320e-02	4.862580e-02
-3.500000e+00	4.000000e+00	6.463674e-01	2.077420e-02	4.553980e-02
-4.000000e+00	4.500000e+00	5.231572e-01	3.345600e-03	1.725740e-02
-4.500000e+00	5.000000e+00	4.100072e-01	1.794540e-02	0.000000e+00
-5.000000e+00	5.500000e+00	3.064370e-01	1.329700e-02	1.685020e-02
-5.500000e+00	6.000000e+00	2.008034e-01	7.271840e-03	0.000000e+00
-6.000000e+00	6.500000e+00	1.376604e-01	6.925800e-03	2.356800e-04
-6.500000e+00	7.000000e+00	7.192198e-02	0.000000e+00	5.263120e-03
-7.000000e+00	7.500000e+00	2.538804e-02	1.619220e-03	2.501900e-03
-7.500000e+00	8.000000e+00	1.415266e-02	0.000000e+00	9.917960e-04
-8.000000e+00	8.500000e+00	4.293842e-03	1.953320e-04	1.181710e-03
-8.500000e+00	9.000000e+00	3.700494e-04	2.699500e-05	7.298660e-05
+0.000000e+00	5.000000e-01	1.157187e+00	2.204968e-01	3.989978e-01
+5.000000e-01	1.000000e+00	1.190318e+00	2.361422e-01	4.309970e-01
+1.000000e+00	1.500000e+00	1.054078e+00	1.959060e-01	3.749964e-01
+1.500000e+00	2.000000e+00	9.686960e-01	1.489304e-01	3.743872e-01
+2.000000e+00	2.500000e+00	9.258886e-01	1.104192e-01	3.359758e-01
+2.500000e+00	3.000000e+00	9.154208e-01	1.337848e-01	2.783882e-01
+3.000000e+00	3.500000e+00	7.943546e-01	1.188870e-01	3.086980e-01
+3.500000e+00	4.000000e+00	6.887004e-01	9.313160e-02	2.268936e-01
+4.000000e+00	4.500000e+00	5.553230e-01	6.905600e-02	1.925002e-01
+4.500000e+00	5.000000e+00	4.383746e-01	6.349240e-02	1.395528e-01
+5.000000e+00	5.500000e+00	3.117410e-01	2.901760e-02	1.496466e-01
+5.500000e+00	6.000000e+00	2.174672e-01	1.955552e-02	8.606860e-02
+6.000000e+00	6.500000e+00	1.348600e-01	2.826406e-02	6.220774e-02
+6.500000e+00	7.000000e+00	7.112774e-02	8.079500e-03	2.870442e-02
+7.000000e+00	7.500000e+00	3.378800e-02	5.391320e-03	1.371960e-02
+7.500000e+00	8.000000e+00	1.771591e-02	5.542148e-03	9.697750e-03
+8.000000e+00	8.500000e+00	4.162844e-03	0.000000e+00	8.982320e-04
+8.500000e+00	9.000000e+00	3.237538e-04	8.756112e-04	1.198576e-04
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/jjfb_dy
@@ -208,7 +209,7 @@ LineStyle=solid
 LineWidth=1.5pt
 Name=herwig
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/jjfb_dy
-Title=\textsc{Herwig}7
+Title=\textsc{Herwig} 7.1
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e-01	1.236734e+00	1.796642e-01	2.510724e-01
 5.000000e-01	1.000000e+00	1.178274e+00	6.606422e-01	0.000000e+00

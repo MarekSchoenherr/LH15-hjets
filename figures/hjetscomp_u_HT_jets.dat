@@ -1,6 +1,7 @@
 # BEGIN PLOT
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=powheg un2lops madgraph sherpa herwig gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo 
+DrawReferenceFirst=0
 Legend=1
 Legend2=1
 Legend2Only=nnlo-hj 
@@ -238,32 +239,32 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 8.000000e+02	1.000000e+03	7.036200e-05	2.305285e-05	1.447905e-05
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-corescalecorr-23-env_scaled.yoda/MC_HJETS_LH15/HT_jets
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/HT_jets
 LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-corescalecorr-23-env_scaled.yoda/MC_HJETS_LH15/HT_jets
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/HT_jets
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
-0.000000e+00	3.000000e+01	7.327030e-01	6.418000e-02	6.282133e-02
-3.000000e+01	4.000000e+01	3.736307e-01	1.927400e-02	2.136790e-02
-4.000000e+01	5.000000e+01	2.120247e-01	7.285600e-03	8.318100e-03
-5.000000e+01	6.000000e+01	1.292476e-01	2.072500e-03	3.970000e-03
-6.000000e+01	7.000000e+01	1.030792e-01	1.270200e-03	0.000000e+00
-7.000000e+01	9.000000e+01	8.183240e-02	7.476500e-04	2.496700e-03
-9.000000e+01	1.100000e+02	5.601295e-02	1.545300e-03	2.811050e-03
-1.100000e+02	1.300000e+02	3.995227e-02	1.269615e-03	3.421505e-03
-1.300000e+02	1.500000e+02	2.900181e-02	1.653020e-03	2.647240e-03
-1.500000e+02	2.000000e+02	1.910766e-02	1.383026e-03	2.271396e-03
-2.000000e+02	2.500000e+02	1.077979e-02	9.409280e-04	1.009236e-03
-2.500000e+02	3.000000e+02	6.655360e-03	6.291940e-04	7.691660e-04
-3.000000e+02	4.000000e+02	3.260306e-03	2.474170e-04	3.727820e-04
-4.000000e+02	5.000000e+02	1.423851e-03	6.119500e-05	2.010450e-04
-5.000000e+02	6.000000e+02	7.051329e-04	3.771240e-05	7.616500e-05
-6.000000e+02	8.000000e+02	2.617787e-04	1.819000e-06	2.768240e-05
-8.000000e+02	1.000000e+03	9.116195e-05	2.022840e-05	0.000000e+00
+0.000000e+00	3.000000e+01	7.502143e-01	7.938067e-02	1.672767e-01
+3.000000e+01	4.000000e+01	3.953586e-01	4.015260e-02	1.563381e-01
+4.000000e+01	5.000000e+01	2.284721e-01	2.653030e-02	9.564740e-02
+5.000000e+01	6.000000e+01	1.365274e-01	1.529450e-02	5.606200e-02
+6.000000e+01	7.000000e+01	1.078517e-01	1.579672e-02	4.007700e-02
+7.000000e+01	9.000000e+01	8.741020e-02	1.446725e-02	3.159245e-02
+9.000000e+01	1.100000e+02	5.931600e-02	1.047425e-02	2.147860e-02
+1.100000e+02	1.300000e+02	4.140096e-02	7.410060e-03	1.449708e-02
+1.300000e+02	1.500000e+02	3.189598e-02	5.390595e-03	9.985065e-03
+1.500000e+02	2.000000e+02	1.979699e-02	3.322008e-03	6.292394e-03
+2.000000e+02	2.500000e+02	1.101146e-02	1.745180e-03	2.814264e-03
+2.500000e+02	3.000000e+02	6.479972e-03	9.121560e-04	1.691778e-03
+3.000000e+02	4.000000e+02	3.050235e-03	2.778150e-04	4.386860e-04
+4.000000e+02	5.000000e+02	1.334170e-03	1.246940e-04	1.884260e-04
+5.000000e+02	6.000000e+02	5.518498e-04	2.583900e-05	6.287960e-05
+6.000000e+02	8.000000e+02	2.125160e-04	1.239450e-05	4.483465e-05
+8.000000e+02	1.000000e+03	5.593100e-05	4.228450e-06	0.000000e+00
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/HT_jets
@@ -273,7 +274,7 @@ LineStyle=solid
 LineWidth=1.5pt
 Name=herwig
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/HT_jets
-Title=\textsc{Herwig}7
+Title=\textsc{Herwig} 7.1
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	3.000000e+01	8.201310e-01	6.184200e-02	8.228367e-02
 3.000000e+01	4.000000e+01	3.934914e-01	2.396620e-02	3.956200e-02

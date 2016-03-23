@@ -2,6 +2,7 @@
 ConnectBins=0
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=hqt stwz nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo nnlo-hj 
+DrawReferenceFirst=0
 Legend=1
 Legend2=1
 Legend2Only=stwz nnlo-h nnlo-hj 
@@ -170,19 +171,19 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 2.500000e+00	3.500000e+00	1.319608e+00	3.295893e-01	4.234210e-01
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-corescalecorr-23-env_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
 LegendOrder=6
 LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-corescalecorr-23-env_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	3.674320e+01	1.721900e+00	1.923360e+00
-5.000000e-01	1.500000e+00	1.476211e+01	0.000000e+00	2.035000e-01
-1.500000e+00	2.500000e+00	4.507670e+00	2.760390e-01	4.489660e-01
-2.500000e+00	3.500000e+00	1.446143e+00	8.317300e-02	1.125410e-01
+-5.000000e-01	5.000000e-01	3.800768e+01	4.459580e+00	1.067033e+01
+5.000000e-01	1.500000e+00	1.550126e+01	2.078170e+00	5.652020e+00
+1.500000e+00	2.500000e+00	4.739764e+00	7.428040e-01	1.705727e+00
+2.500000e+00	3.500000e+00	1.466027e+00	1.549970e-01	2.903740e-01
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_incl_30
@@ -192,7 +193,7 @@ LineStyle=solid
 LineWidth=1.5pt
 Name=herwig
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_incl_30
-Title=\textsc{Herwig}7
+Title=\textsc{Herwig} 7.1
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e-01	5.000000e-01	4.017146e+01	3.345690e+00	4.266470e+00
 5.000000e-01	1.500000e+00	1.556753e+01	1.490430e+00	1.797970e+00

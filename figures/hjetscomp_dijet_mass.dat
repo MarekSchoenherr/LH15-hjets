@@ -1,6 +1,7 @@
 # BEGIN PLOT
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=powheg un2lops madgraph sherpa herwig hej gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
+DrawReferenceFirst=0
 Legend=1
 Legend2=1
 Legend2Only=gosam-h2j-nlo gosam-h2j-nlo gosam-h2j-loopsim 
@@ -18,9 +19,9 @@ RatioPlot1DrawReferenceFirst=0
 RatioPlot1Reference=powheg
 RatioPlot1SameStyle=1
 RatioPlot1YLabel=Ratio to \texttt{Powheg}
-RatioPlot1YMajorTickMarks=20
-RatioPlot1YMax=1.4999
-RatioPlot1YMin=0.5001
+RatioPlot1YMajorTickMarks=5
+RatioPlot1YMax=1.9999
+RatioPlot1YMin=0.0001
 RatioPlot1YSize=4
 RatioPlot2=1
 RatioPlot2DrawOnly=powheg madgraph sherpa herwig 
@@ -28,19 +29,19 @@ RatioPlot2DrawReferenceFirst=0
 RatioPlot2Reference=powheg
 RatioPlot2SameStyle=1
 RatioPlot2YLabel=Ratio to \texttt{Powheg}
-RatioPlot2YMajorTickMarks=20
-RatioPlot2YMax=1.4999
-RatioPlot2YMin=0.5001
+RatioPlot2YMajorTickMarks=5
+RatioPlot2YMax=1.9999
+RatioPlot2YMin=0.0001
 RatioPlot2YSize=4
 RatioPlot3=1
-RatioPlot3DrawOnly=powheg gosam-h2j-nlo gosam-h2j-nlo gosam-h2j-loopsim 
+RatioPlot3DrawOnly=powheg gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
 RatioPlot3DrawReferenceFirst=0
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
-RatioPlot3YMajorTickMarks=20
-RatioPlot3YMax=1.4999
-RatioPlot3YMin=0.5001
+RatioPlot3YMajorTickMarks=5
+RatioPlot3YMax=1.9999
+RatioPlot3YMin=0.0001
 RatioPlot3YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/dijet_mass
 RightMargin=0.45
@@ -174,7 +175,7 @@ Title=\texttt{MG5\_aMC} \textsc{FxFx}
 9.500000e+02	1.000000e+03	2.750514e-04	6.731300e-05	1.332564e-04
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-corescalecorr-23-env_scaled.yoda/MC_HJETS_LH15/dijet_mass
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/dijet_mass
 ErrorBandColor=blue!30!white
 ErrorBandOpacity=0.4
 ErrorBandStyle=hlines
@@ -187,29 +188,29 @@ LineColor=blue!80!white
 LineStyle=solid
 LineWidth=1.5pt
 Name=sherpa
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-corescalevar-corescalecorr-23-env_scaled.yoda/MC_HJETS_LH15/dijet_mass
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/dijet_mass
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
-0.000000e+00	5.000000e+01	8.589806e-03	2.650720e-04	4.924040e-04
-5.000000e+01	1.000000e+02	1.625188e-02	1.222582e-03	1.756950e-03
-1.000000e+02	1.500000e+02	1.494666e-02	9.961420e-04	2.035420e-03
-1.500000e+02	2.000000e+02	1.111531e-02	9.568040e-04	1.430616e-03
-2.000000e+02	2.500000e+02	8.056456e-03	5.910780e-04	8.735560e-04
-2.500000e+02	3.000000e+02	6.023790e-03	4.474180e-04	6.497040e-04
-3.000000e+02	3.500000e+02	4.696308e-03	3.535120e-04	3.321340e-04
-3.500000e+02	4.000000e+02	3.388570e-03	1.237960e-04	1.742540e-04
-4.000000e+02	4.500000e+02	2.671514e-03	6.256600e-05	3.256100e-04
-4.500000e+02	5.000000e+02	2.310128e-03	1.128960e-04	1.571020e-04
-5.000000e+02	5.500000e+02	1.735150e-03	8.443020e-05	2.612026e-04
-5.500000e+02	6.000000e+02	1.408759e-03	5.118000e-06	1.251958e-04
-6.000000e+02	6.500000e+02	1.195388e-03	6.345700e-05	4.076560e-05
-6.500000e+02	7.000000e+02	1.009992e-03	2.122960e-05	3.969820e-05
-7.000000e+02	7.500000e+02	7.695130e-04	0.000000e+00	7.628140e-05
-7.500000e+02	8.000000e+02	8.152364e-04	9.113220e-05	0.000000e+00
-8.000000e+02	8.500000e+02	6.398086e-04	8.886380e-05	4.970520e-05
-8.500000e+02	9.000000e+02	5.785370e-04	2.644400e-06	2.208960e-05
-9.000000e+02	9.500000e+02	4.207132e-04	0.000000e+00	3.788540e-05
-9.500000e+02	1.000000e+03	3.940104e-04	0.000000e+00	2.984180e-05
+0.000000e+00	5.000000e+01	9.218916e-03	1.775260e-03	3.152560e-03
+5.000000e+01	1.000000e+02	1.823190e-02	3.205538e-03	6.182122e-03
+1.000000e+02	1.500000e+02	1.604366e-02	2.514200e-03	5.800382e-03
+1.500000e+02	2.000000e+02	1.134851e-02	1.766890e-03	3.522202e-03
+2.000000e+02	2.500000e+02	8.436476e-03	1.288338e-03	3.383204e-03
+2.500000e+02	3.000000e+02	5.955806e-03	6.718720e-04	2.302936e-03
+3.000000e+02	3.500000e+02	4.411808e-03	5.269200e-04	1.760718e-03
+3.500000e+02	4.000000e+02	3.423636e-03	3.918660e-04	1.566668e-03
+4.000000e+02	4.500000e+02	2.847980e-03	4.511840e-04	1.091330e-03
+4.500000e+02	5.000000e+02	2.307882e-03	3.861034e-04	1.002066e-03
+5.000000e+02	5.500000e+02	1.680019e-03	1.738760e-04	5.775894e-04
+5.500000e+02	6.000000e+02	1.377951e-03	2.420520e-04	5.341768e-04
+6.000000e+02	6.500000e+02	1.252086e-03	1.019828e-04	3.750332e-04
+6.500000e+02	7.000000e+02	1.154326e-03	1.087308e-04	2.830274e-04
+7.000000e+02	7.500000e+02	9.254974e-04	1.898918e-04	3.399926e-04
+7.500000e+02	8.000000e+02	7.604074e-04	1.205424e-04	3.079360e-04
+8.000000e+02	8.500000e+02	6.518220e-04	1.100668e-04	2.411628e-04
+8.500000e+02	9.000000e+02	5.049378e-04	2.721620e-05	2.318696e-04
+9.000000e+02	9.500000e+02	4.150756e-04	4.596820e-05	6.170200e-05
+9.500000e+02	1.000000e+03	4.098472e-04	6.033980e-05	1.467046e-04
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/dijet_mass
@@ -226,7 +227,7 @@ LineStyle=solid
 LineWidth=1.5pt
 Name=herwig
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/dijet_mass
-Title=\textsc{Herwig}7
+Title=\textsc{Herwig} 7.1
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+01	9.106902e-03	1.807272e-03	2.101970e-03
 5.000000e+01	1.000000e+02	1.681554e-02	4.249914e-03	0.000000e+00
