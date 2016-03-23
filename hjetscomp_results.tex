@@ -14,6 +14,8 @@ scale uncertainty bands. In most cases, the predictions should be held
 to a higher standard, as the scale logs are common to all of the
 calculations that are being compared.
 
+\Rivet \cite{Buckley:2010ar}
+
 \Todo{we have to come up with uniform shorthand name for each of the
 calculations, i.e. Madgraph5\_aMC@NLO, etc}
 
@@ -280,15 +282,21 @@ the differences at NLO.
 
 \begin{table}
   \centering
-  \begin{tabular}{cccc}
-    order & $\mu_R=m_H/2$ & $\mu_R=\hat{H}_T'/2$ & $\mu_R=\sqrt{\Sigma_T}/2$ \\
-    \hline \\
-    NLO   & $17.0^{+3.0}_{-2.9}$ pb & $13.5^{+2.0}_{-2.1}$ pb & $16.2^{+3.1}_{-2.8}$ pb \\
-    NNLO  & -     & -     & $16.4^{+0.0}_{-0.9}$ pb \\
+  \begin{tabular}{c||c|c|c}
+    order \vphantom{$\int\limits_a^b$} & $\mu_R=\mu_F=\tfrac{1}{2}\,m_h$ & $\mu_R=\mu_F=\tfrac{1}{2}\,\hat{H}_T'$ & $\mu_R=\mu_F=\tfrac{1}{2}\,\sqrt{\vphantom{\big[}\Sigma_T}$ \\
+    \hline\hline
+    NLO \vphantom{$\int\limits_a^b$}  & $17.0^{+3.0}_{-2.9}$ pb & $13.5^{+2.0}_{-2.1}$ pb & $16.2^{+3.1}_{-2.8}$ pb \\\hline
+    NNLO \vphantom{$\int\limits_a^b$} & -     & -     & $16.4^{+0.0}_{-0.9}$ pb \\
     \hline
   \end{tabular}
-  \caption{The total cross-section for inclusive production of a Higgs boson and one additional jet using different core scale choices.
-  The two dynamical scales are $\hat{H}_T'=m_{H,T} + \sum_{\rm partons} p_T$ (see also eq. \eqref{eq:hthatprime}) and $\Sigma_T = m_H^2 + \sum_{\rm jets} p_T^2$ (see also eq. \eqref{eq:bfglpScale}).}
+  \caption{
+    The total cross-section for inclusive production of a Higgs boson and 
+    one additional jet using different core scale choices.  The two 
+    dynamical scales are $\hat{H}_T'=m_{T,h} + \sum_{\rm partons} p_T$ 
+    (see also eq.~\eqref{eq:hthatprime}) and 
+    $\Sigma_T = m_h^2 + \sum_{\rm jets} p_T^2$ 
+    (see also eq.~\eqref{eq:bfglpScale}).
+  }
   \label{tab:H1jXS}
 \end{table}
 
