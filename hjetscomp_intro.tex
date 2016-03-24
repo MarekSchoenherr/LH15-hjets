@@ -1,54 +1,72 @@
 \section{INTRODUCTION}
 \label{sec:hjetscomp:intro}
 
-Here is what we did two years ago \cite{AlcarazMaestre:2012vp}.
+As discussed in \textbf{Section X}, there has been a great deal of progress in
+the attack on the Les Houches precision wish list. Such higher order
+calculations are needed for the full exploitation of precision LHC
+measurements. It is more common in ATLAS and CMS, however, to compare
+to predictions involving parton shower Monte Carlos, often
+supplemented with matrix element information at leading order (LO) and
+next-to-leading order (NLO). Such frameworks allow for the generation
+of fully exclusive final states, often more amenable to comparisons
+with experimental data. There are a number of such matrix-element plus
+parton-shower (ME+PS) frameworks used by the LHC collider experiments,
+as can be seen from the predictions in this section. But the higher
+(fixed) order calculations often provide the highest precision. It is
+thus important to understand: (1) the degree to which the various
+ME+PS predictions agree with each other, (2) how well the ME+PS
+predictions agree with fixed-order predictions and (3) the impact of
+Sudakov regions\,\footnote{By Sudakov region, we refer to kinematic
+situations where there is a severe restriction on phase space for
+gluon emission, such as the Higgs boson transverse momentum
+distribution at low $p_\perp$.} and/or the imposition of jet
+vetoes/binning on both fixed-order and ME+PS predictions.  We come to
+these comparisons with expectations: outside of Sudakov regions, the
+influence of parton showering/resummation should be mild, and cross
+sections that are fairly inclusive (such as the lead-jet transverse
+momentum distribution for $h$~+~$\ge1$ jet) should not be subject to
+large jet veto logs.
 
-As discussed in Section X, there has been a great deal of progress in the attack on the Les Houches precision wish list. Such higher order calculations are needed for the full 
-exploitation of precision LHC measurements. It is more common in ATLAS and CMS, however, 
-to compare to predictions involving parton shower Monte Carlos, often supplemented with matrix element information at leading order and next-to-leading order. Such frameworks 
-allow for the generation of fully exclusive final states, often more amenable to 
-comparison with experimental data. There are a number of such ME+PS frameworks used by the LHC collider experiments~\cite{MEPS}. But the higher (fixed) order calculations often 
-provide the highest precision. It is thus important to understand: (1) the degree to 
-which the various ME+PS predictions agree with each other, (2) how well the ME+PS 
-predictions agree with fixed order predictions and (3), the impact of Sudakov regions
-~\footnote{By Sudakov region, we refer to kinematic situations where there is a
-severe restriction on phase space for gluon emission, such as the Higgs boson transverse
-momentum distribution at low $p_T$.} 
-and/or the imposition of jet vetoes/binning on both fixed order and ME+PS predictions. 
-We come to these comparisons with expectations: outside of Sudakov regions, the influence
-of parton showering/resummation should be mild, and cross sections that are fairly 
-inclusive (such as the lead jet transverse momentum distribution for $H+\ge1$ jet) 
-should not be subject to large jet veto logs. 
+The production of a Higgs boson through gluon--gluon fusion is an
+excellent testing ground for such comparisons, both because of the
+importance of the process, and the enhanced rate for additional jet
+production associated with gluon--gluon fusion. This process of
+comparison was started in Les Houches
+2013~\cite{AlcarazMaestre:2012vp}, with comparisons of various
+predictions for $h$~+~$\ge2$ jets from gluon--gluon fusion, a critical
+background for the measurement of vector boson fusion. Here, in this
+contribution to the Les Houches 2015 proceedings, we extend that study
+to more observables, for a variety of jet multiplicities, and with
+comparisons to fixed-order predictions as well as to ME+PS frameworks.
 
-The production of a Higgs boson through gluon-gluon fusion is an excellent testing ground
-for such comparisons, both because of the importance of the process, and the enhanced 
-rate for additional jet production associated with gluon-gluon fusion. This process  was started in Les Houches 2015, with comparisons of predictions for $H+\ge2$ jets, critical
-for the measurement of vector boson fusion~\cite{2013}. Here, in this contribution to 
-the Les Houches 2015 proceedings, we extend that study to more observables, for various 
-jet multiplicities. 
+To allow for as standardized a comparison as possible, a group of
+generation parameters were agreed upon. MMHT2014 NLO PDFs (and the
+NNLO version for the NNLO calculations) were to be used, with a
+central value of $\alpha_s(m_Z)=0.118$, and variations thereof of
+$\pm0.0015$.  Variations of scale choice are allowed; however, they
+should reproduce a scale of $\tfrac{1}{2}m_h$ in the zero-jet limit.
 
-To allow for as standardized a comparison as possible, a group of generation parameters 
-were agreed upon. MMHT2014 NLO PDFs were to be used, with a central value of 
-$\alpha_s(m_Z)$ of 0.118, and variations thereof of $\pm 0.0015$. 
+Alas, in some cases, there are deviations from these standards. These
+will be noted where present, and the impact on the comparisons will be
+discussed.  The Higgs boson was left undecayed. Jets were
+reconstructed with the anti-$k_T$ jet clustering algorithm using
+$R=0.4$, and a transverse momentum constraint of $30\gev$ was imposed,
+along with a rapidity cut of $\eta(j)<|4.5|$.  To provide a common
+framework for the display of the results, a Rivet
+routine~\cite{Rivet_routine} was created and distributed to each group
+providing a prediction.
 
-\Todo{do the NNLO predictions used MMHT2014 NNLO?}
-
-Variations of scale choice are allowed; however, they should reproduce a scale of $mH/2$ in the zero jet 
-limit. 
-
-\Todo{define general form of scale (for Sherpa?)}
-
-Alas, in some cases, there are deviations from these standards. These will be 
-noted where present, and the impact on the comparisons will be discussed. 
-The Higgs boson was left undecided. Jets were reconstructed with the antikT4 jet 
-clustering algorithm, and a transverse momentum of 30 GeV/c was imposed, along with 
-a rapidity cut of $|4.5|$. 
-To provide a common framework for the display of the results, a Rivet routine ~\cite{Rivet_routine} was created and distributed to each group providing a prediction. 
-
-In this contribution, predictions have been made with fixed order calculations at NLO 
-(gosam~\cite{gosam}), at full NNLO ~\cite{Petriello} and approximate NNLO~\cite{LoopSim}, 
-to resummation calculations~\cite{HqT, HEJ, etc}, to parton shower predictions of
-inclusive Higgs production at NNLO~\cite{PowhegNNLOPS, SherpaNNLOPS}, and ME+PS
-predictions~\cite{MG5,Sherpa,Herwig7}, using NLO matrix element information for 1 and 2
-jets. In addition, fixed order predictions with the gosam ntuples using MINLO scales (and Sudakov suppression)  are presented for 
-some of the 1 and 2 jet observables.  Technical information is provided in the next section (correct?). 
+In this contribution, predictions have been made with fixed-order
+calculations at NLO (using \GoSam~\cite{gosam}), at full
+NNLO (using results of the BFGLP group~\cite{Petriello}) \Todo{mention
+  \Sherpa NNLO?} and approximate NNLO (using the \Loopsim
+approach~\cite{LoopSim} operating on NLO results provided by
+\GoSam+\Sherpa~\cite{LoopSim}), and are compared to resummation
+calculations~\cite{HqT,HEJ,etc}, to parton shower predictions of
+inclusive Higgs boson production at NNLO~\cite{PowhegNNLOPS, SherpaNNLOPS},
+and ME+PS predictions~\cite{MG5,Sherpa,Herwig7}, using NLO matrix
+element information for up to two (three) jets (\Sherpa). In addition,
+fixed-order predictions based on the \GoSam Ntuples using the \Minlo
+scales setting procedure (and Sudakov suppression) are presented for
+some of the one- and two-jet observables. Technical information for
+each of the predictions is provided in the next section.
