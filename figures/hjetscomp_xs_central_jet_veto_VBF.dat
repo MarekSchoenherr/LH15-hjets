@@ -42,17 +42,12 @@ RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/Pow
 RightMargin=0.45
 Title=Central jet veto cross section
 UseExtendedPSTricks=1
-XLabel=$y_\text{dist}^\text{max}$
+XLabel=$y_\text{dist}^\text{min}$
 XTwosidedTicks=1
-YLabel=$\sigma(y_\text{dist}^\text{max})$ [pb]
+YLabel=$\sigma_\text{VBF}(p_\perp^\text{veto},y_\text{dist}^\text{min})$ [pb]
 YMax=1.4
 YTwosidedTicks=1
 # END PLOT
-
-
-# BEGIN SPECIAL /MC_HJETS_LH15/xs_central_jet_veto_VBF
-\rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
-# END SPECIAL
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/xs_central_jet_veto_VBF
 ErrorBandColor=black!30!white

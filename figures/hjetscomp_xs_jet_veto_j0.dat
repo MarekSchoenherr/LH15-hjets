@@ -1,5 +1,4 @@
 # BEGIN PLOT
-CustomLegend=\textbf{inclusive}
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=stwz powheg un2lops madgraph sherpa herwig 
 DrawReferenceFirst=0
@@ -7,7 +6,7 @@ Legend=1
 Legend2=1
 Legend2Only=madgraph sherpa herwig 
 Legend2XPos=0.5
-Legend2YPos=0.3
+Legend2YPos=0.35
 LegendOnly=stwz powheg un2lops 
 LegendXPos=0.07
 LegendYPos=0.93
@@ -56,7 +55,7 @@ XLabel=$p_\perp^\text{veto}$ [GeV]
 XMax=200
 XMin=10
 XTwosidedTicks=1
-YLabel=$\sigma(p_\perp^\text{veto})$ [pb]
+YLabel=$\sigma_0(p_\perp^\text{veto})$ [pb]
 YMax=50
 YMin=0
 YTwosidedTicks=1
@@ -65,6 +64,7 @@ YTwosidedTicks=1
 
 # BEGIN SPECIAL /MC_HJETS_LH15/xs_jet_veto_j0
 \rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
+\rput[Br]{0}(0.95,0.07){\textbf{inclusive}}
 # END SPECIAL
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/STWZ/STWZ-env.yoda/MC_HJETS_LH15/xs_jet_veto_j0

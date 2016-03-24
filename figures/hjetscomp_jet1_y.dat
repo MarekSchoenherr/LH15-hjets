@@ -13,7 +13,7 @@ Legend3Title=\textsc{GoSam+Sherpa} hj
 Legend3XPos=0.1
 Legend3YPos=0.27
 LegendOnly=powheg un2lops madgraph sherpa herwig 
-LegendXPos=0.5
+LegendXPos=0.55
 LogY=0
 PlotSize=10,8
 RatioPlot=0
@@ -58,11 +58,6 @@ YLabel=d$\sigma$/d$p_\perp$ [pb/GeV]
 YMax=4
 YTwosidedTicks=1
 # END PLOT
-
-
-# BEGIN SPECIAL /MC_HJETS_LH15/jet1_y
-\rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
-# END SPECIAL
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/jet1_y
 ErrorBandColor=black!30!white

@@ -1,10 +1,9 @@
 # BEGIN PLOT
-CustomLegend=$\mathbf{p_\perp^{j_1}>200\;\text{GeV}}$
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=powheg un2lops madgraph sherpa herwig 
 DrawReferenceFirst=0
 Legend=1
-LegendXPos=0.05
+LegendXPos=0.07
 LegendYPos=0.9
 LogX=1
 LogY=0
@@ -51,7 +50,7 @@ XLabel=$p_\perp^\text{veto}$ [GeV]
 XMax=3e2
 XMin=10
 XTwosidedTicks=1
-YLabel=$\sigma(p_\perp^\text{veto})$ [pb]
+YLabel=$\sigma_1(p_{\perp,\text{min}}^{j_1},p_\perp^\text{veto})$ [pb]
 YMax=0.7
 YMin=0
 YTwosidedTicks=1
@@ -60,6 +59,7 @@ YTwosidedTicks=1
 
 # BEGIN SPECIAL /MC_HJETS_LH15/xs_jet_veto_j1_200
 \rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
+\rput[Br]{0}(0.95,0.07){$\boldsymbol{p_\perp^{j_1}>200\;\text{GeV}}$}
 # END SPECIAL
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/xs_jet_veto_j1_200

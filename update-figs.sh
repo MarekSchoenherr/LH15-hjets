@@ -6,7 +6,7 @@ OBS_HJJ="H_jj_pT_incl jet2_pT_incl jet2_pT_excl Hjj_pT_incl dijet_mass deltay_jj
 OBS_HJJJ="H_jjj_pT_incl jet3_pT_incl"
 OBS_MULTI="HT_jets HT_all"
 OBS_VBF="NJet_incl_30_VBF NJet_incl_30_VBF2 deltaphi_jj_VBF deltaphi2_VBF H_jj_pT_VBF"
-OBS_JV="xs_central_jet_veto_VBF xs_jet_veto_j0 xs_jet_veto_j1_30 xs_jet_veto_j1_200"
+OBS_JV="xs_central_jet_veto_VBF xs_central_jet_veto_VBF2 xs_jet_veto_j0 xs_jet_veto_j1_30 xs_jet_veto_j1_200"
 
 if [ -d /home/marek/work/LH15/Sherpa-GoSamComparison ];
 then

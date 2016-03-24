@@ -994,25 +994,72 @@ asymtotic cross section now is the same level as \Powheg's, despite
 its higher scale choice. The pattern of the uncertainties, however, 
 remains the same as before.
 
-\begin{figure}[t!]
-  \centering
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_xs_central_jet_veto_VBF.pdf}
-  \hfill
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_xs_central_jet_veto_VBF.pdf}
-  \caption{
-    The cross section after VBF cuts as a function of the rapidity
-    distance of the two ($p_T$-ordered) tagging jets. A veto has been
-    applied on the leading central jet with transverse momentum larger
-    than 30~GeV.
-    \label{fig:higgscomp:results:jvobs:cjvxsvbf}
-  }
-\end{figure}
+\Todo{The central jet veto cross sections are a mess. Looking into the 
+      analysis this is Ivan's code. It defines $y_\text{dist}$ as the 
+      minimal rapidity distance between the centre of the forward and 
+      backward jets and any jet inbetween,
+      $$
+	y_\text{dist}\;=\;\min\limits_{j|y(j_\text{bw})<y(j)<y(j_\text{fw})}
+	                  \left|y(j)-\frac{y_\text{fw}+y_\text{bw}}{2}\right|\;.
+      $$
+      It can thus take the maximum value of $4.4$. The cummulative cross 
+      section is then defined as 
+      $\sigma_2(y_\text{dist}>y_\text{dist}^\text{min})$. Thus, this 
+      observable vetoes events with too central additional radiation. 
+      It has one flaw in the implementation, however, in the absence of 
+      any third jet $y_\text{dist}$ is set to $>4.4$. Its asymtotic behaviour 
+      at large $y_\text{dist}$ converges thus to the exclusive VBF 
+      cross section, instead of zero. I just do not see what kind of 
+      dynamics we are probing or what kind of relevance a construction 
+      like this has. Especially since the forward backward jet are 
+      generally not the VBF tagging jets. We do also have the same observable 
+      in the pure dijet selection, which would then at least be nicely defined. 
+      Only the effects there are even smaller. 
+      Too many cooks, I guess. One should have had a recipe first.
+      }
 
-Finally, we consider the cross section after VBF cuts applying a veto 
-on additional central jet activity with $p_\perp>30\,\gev$ in dependence 
-of the maximal rapidity distance of the tagging jets, 
-$y_\text{dist}<y_\text{dist}^\text{max}$. Here, all parton shower based 
-resummation calculations give very similar results with \MGaMC possessing 
-a reduced cross section due to its scale choice. \Hej, being based on 
-BFKL dynamics, does not deviate substantially in its predicted shape. 
-However, its cross section is reduced by a constant 50-60\%.
+
+% \begin{figure}[t!]
+%   \centering
+%   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_xs_central_jet_veto_VBF.pdf}
+%   \hfill
+%   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_xs_central_jet_veto_VBF.pdf}
+%   \caption{
+%     The cross section after VBF cuts as a function of the maximal minimum 
+%     rapidity distance of a central jet to the centre of the most forward 
+%     and most backward jet.
+%     \label{fig:higgscomp:results:jvobs:cjvxsvbf}
+%   }
+% \end{figure}
+% 
+% \begin{figure}[t!]
+%   \centering
+%   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_xs_central_jet_veto_VBF2.pdf}
+%   \hfill
+%   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_xs_central_jet_veto_VBF2.pdf}
+%   \caption{
+%     The cross section after generalised VBF cuts as a function of the maximal minimum 
+%     rapidity distance of a central jet to the centre of the most forward 
+%     and most backward jet.
+%     \label{fig:higgscomp:results:jvobs:cjvxsvbf2}
+%   }
+% \end{figure}
+% 
+% Finally, we consider the cross section after VBF cuts applying a veto 
+% on additional central jet activity with $p_\perp>30\,\gev$ in dependence 
+% of the maximal rapidity distance of the tagging jets, 
+% $y_\text{dist}<y_\text{dist}^\text{max}$, as displayed in 
+% Figure \ref{fig:higgscomp:results:jvobs:cjvxsvbf}. Here, all parton shower based 
+% resummation calculations give very similar results with \MGaMC possessing 
+% a reduced cross section due to its scale choice. \Hej, being based on 
+% BFKL dynamics, does not deviate substantially in its predicted shape. 
+% However, its cross section is reduced by a constant 50-60\%. Alternatively, 
+% when applying the generalised version of the VBF cuts, labelled VBF2, 
+% a similar picture presents itself in 
+% Figure \ref{fig:higgscomp:results:jvobs:cjvxsvbf2}. While, of course, the 
+% asymtotic cross section at large $y_\text{dist}^\text{max}$ coincides with 
+% the one of the standard VBF cuts, for small $y_\text{dist}^\text{max}$ the 
+% generalised VBF cuts allow for a much larger cross section.
+
+
+

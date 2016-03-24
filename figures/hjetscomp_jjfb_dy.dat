@@ -2,7 +2,6 @@
 DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
 DrawOnly=hqt stwz nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo nnlo-hj 
 DrawReferenceFirst=0
-IgnorePlot=1
 Legend=1
 LegendXPos=0.45
 LogY=1
@@ -44,11 +43,6 @@ UseExtendedPSTricks=1
 XTwosidedTicks=1
 YTwosidedTicks=1
 # END PLOT
-
-
-# BEGIN SPECIAL /MC_HJETS_LH15/jjfb_dy
-\rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
-# END SPECIAL
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/jjfb_dy
 ErrorBandColor=black!30!white

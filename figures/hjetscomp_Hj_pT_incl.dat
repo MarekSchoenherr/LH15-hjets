@@ -56,11 +56,6 @@ YMin=1e-5
 YTwosidedTicks=1
 # END PLOT
 
-
-# BEGIN SPECIAL /MC_HJETS_LH15/Hj_pT_incl
-\rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
-# END SPECIAL
-
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/Hj_pT_incl
 ErrorBandColor=black!30!white
 ErrorBandOpacity=0.1

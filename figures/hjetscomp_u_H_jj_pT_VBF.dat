@@ -7,7 +7,7 @@ Legend2=1
 Legend2Only=gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
 Legend2Title=\textsc{GoSam+Sherpa} hjjj
 Legend2XPos=0.6
-Legend2YPos=0.9
+Legend2YPos=0.93
 LegendOnly=powheg un2lops madgraph sherpa herwig hej 
 LegendXPos=0.1
 LegendYPos=0.45
@@ -55,11 +55,6 @@ YMax=1e-2
 YMin=1e-5
 YTwosidedTicks=1
 # END PLOT
-
-
-# BEGIN SPECIAL /MC_HJETS_LH15/H_jj_pT_VBF
-\rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
-# END SPECIAL
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/H_jj_pT_VBF
 LegendOrder=3
