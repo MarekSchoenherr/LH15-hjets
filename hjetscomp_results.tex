@@ -604,11 +604,11 @@ therefore be strongly affected by the level at which resummation is
 taken into account. Formally, for the observable in question, the
 predictions of highest accuracy are facilitated by the NLO merging
 approaches as they provide an NLO description of the second jet; all
-other predictions are only LO accurate, i.e.~larger differences can be
-expected. In the exclusive ($=1$-jet) case, all predictions that
-include parton showering operate at the same level of precision
-while the fixed-order calculations cannot do anything but fail in
-describing the $p_\perp(hj_1)$ distribution.
+other predictions are only LO accurate in the second jet, i.e.~larger
+differences can be expected. In the exclusive ($=1$-jet) case, all
+predictions that include parton showering operate at the same level of
+precision while the fixed-order calculations cannot do anything but
+fail in describing the $p_\perp(hj_1)$ distribution.
 
 For the $h\pl\ge1$-jet events, differences of $\mathcal{O}(30\%)$ are
 observed among the ME+PS predictions below the jet threshold, while
@@ -619,7 +619,7 @@ surprisingly fits right in with the ME+PS results, while \Sherpa's
 a 40\% increase at $p_\perp\sim400\gev$ (again owing to the different
 treatment of scales in both approaches). The mostly comparable
 behaviour of the \NNLOPS results to those obtained from NLO merging is
-not what one expects a priori, however the NNLO matching seems to
+not what one would expect a priori, however the NNLO matching seems to
 constrain the parton showers in a beneficial way (via sophisticated
 choices for setting the renormalization, factorization and resummation
 scales) such that the LO+PS treatment of the $h\pl\ge2$-jet rate
@@ -634,56 +634,86 @@ $p_\perp=50\gev$ due to missing higher (than two-) jet multiplicity
 contributions. It is interesting to see that the \Loopsim procedure
 lifts this large discrepancy in the $p_\perp$ tail. The good agreement
 with the ME+PS results is largely driven by the $hjj$ NLO component
-used to build the nNLO prediction for the $h\pl\ge1$ process. As a
-result of the cut-off dependence of the procedure nothing however can
+used to build the nNLO prediction for the $h\pl\ge1$ process. However,
+as a result of the cut-off dependence of the procedure nothing can
 be said about the $p_\perp<25\gev$ region. Lastly, we comment on the
 uncertainties quoted by the different calculations: the \GoSam, \Minlo
 and \Loopsim envelopes have an appropriate size reflecting the
-underlying LO nature of the prediction, and similarly for \Sherpa's
-\NNLOPS result. \MGaMC and \Herwig produce NLO variations that are
-fairly different in size. However, the \Herwig as well as the \Powheg
-envelopes are most likely underestimated, in particular the \Powheg
-band does not behave as expected from a LO variation.
+underlying LO nature of the $p_\perp(hj_1)$ prediction above the jet
+threshold, and similarly for \Sherpa's \NNLOPS result. \MGaMC and
+\Herwig produce NLO variations that are fairly different in size.
+However, the \Herwig as well as the \Powheg envelopes are most likely
+underestimated, in particular the \Powheg band does not behave as
+expected from a LO variation for above-jet-threshold $p_\perp$.
 
-The exclusive (exactly one jet) case in describing the $p_\perp(hj_1)$
-observable is shown in Figure~\ref{fig:hjetscomp:results:1obs:hj_pt_excl}.
-Apart from the \NNLOPS outcomes, there is a much greater divergence of
-the predictions for exactly one jet, especially at high $p_\perp$.
-Recall this time the recoil is generated only from soft emissions, and
-it is clear that a highly exclusive distribution such as the one in
-question serves as a stress test for the ME+PS as well as \NNLOPS
+The exclusive (exactly one jet) case for describing the
+$p_\perp(hj_1)$ observable is shown in
+Figure~\ref{fig:hjetscomp:results:1obs:hj_pt_excl}. Apart from the
+\NNLOPS outcomes, there is a much greater divergence of the
+predictions for exactly one jet, especially at high $p_\perp$. Recall
+this time, the recoil is generated only from soft emissions, and it is
+clear that a highly exclusive distribution such as the one in question
+serves as a stress test for the ME+PS as well as the \NNLOPS
 predictions (in fact any parton shower or resummed prediction). For
 the same reason, caution has to be taken in interpreting the shown
 uncertainties. The current case is similar to the case for the Higgs
 boson $p_\perp$ distribution with no jets and it is no surprise that
 different approaches can lead to different answers. Most notably, we
-observe the expected complete failure of the \GoSam results (including
-the \Loopsim result where the one-jet requirement obliterates the
-effect that yielded the improvement in the inclusive case),%
-\footnote{Owing to the kinematic constraints on the jets, harder
-  radiation that goes forward does not get identified as a jet;
-  these contributions actually form the (naively unexpected)
-  $p_\perp>30\gev$ tail of the \GoSam results though the mechanism is
+observe \NNLOPS predictions that are in much better agreement as
+compared to the inclusive case, the expected complete failure of the
+\GoSam results (including the \Loopsim result where the one-jet
+requirement obliterates the effect that yielded the improvement in the
+inclusive case),\footnote{Owing to the kinematic constraints on the
+  jets, harder radiation that goes forward does not get identified as a
+  jet; these contributions actually form the (naively unexpected)
+  $p_\perp>30\gev$ tail of the \GoSam results, though the mechanism is
   highly suppressed.}
-the much more severe decline of the \Herwig differential cross section
-for larger $p_\perp$ and \NNLOPS predictions that are in much better
-agreement as compared to the inclusive case.
+and the severe decline of the \Herwig differential cross section
+dropping to about 25\% wrt.~the \Powheg result at $p_\perp\sim100\gev$.
+
+\Todo{the pT plot range of the hj1 sytem goes out to 400, in the pT
+  observables before we mainly did do 200? Any opinions? pro: it's a
+  system pT; contra: mainly LO, all others are 200.}
 
 
 
 \subsection{Dijet observables}
 \label{sec:hjetscomp:results:2jobs}
 
+\Todo{similarly to previous todo: plot range of hj1j2 system goes out
+  to 400, but here also for pThiggs,
+  fig~\ref{fig:hjetscomp:results:2obs:hpt_j2pt}, for the latter at
+  least we should go to 200 as in the other pThiggs plots}
+
+\Todo{single-particle rapidity plots, yHiggs, yJet1, in paper have a
+  [GeV] legend ... need be corrected}
+
+\Todo{some of the plots in paper (e.g. nj, HT, veto xsecs) carry this
+  vertical LH15 comparison line on their right ... extend to all plots
+  in paper?}
+
+\Todo{the gosam legend description of the no-uncertainty plots is
+  different from that of the have-uncertainty plots ... the latter
+  legend description looks better.}
+
+\Todo{fig~\ref{fig:hjetscomp:results:2obs:dyjj_fb}, the DeltaY(j,j)
+  using forward/backward tagging seems incomplete,
+  also carries just Minlo results? Missing axis titles.}
+
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_H_jj_pT_incl.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_H_jj_pT_incl.pdf}
-  \caption{
-    The transverse momentum of the Higgs boson in the presence
-    of at least two jets without (left) and with (right) uncertainties.
-    \label{fig:hjetscomp:results:2obs:hpt_j2pt}
-  }
+  \caption{\label{fig:hjetscomp:results:2obs:hpt_j2pt}%
+    The transverse momentum of the Higgs boson in the presence of at
+    least two jets without (left) and with (right) uncertainties,
+    supplemented by three ratio plots using the reference result as
+    obtained from \Powheg's \NNLOPS calculation for $h$ production.
+    The predictions are grouped -- from top to bottom -- according to
+    the categories \NNLOPS $h$ production, ME+PS merging at NLO (at
+    least up to two jets) and NLO fixed-order $hjj$ production. \Hej's
+    prediction is added to the first, the \NNLOPS, subpanel.}
 \end{figure}
 
 The Higgs boson $p_T$, in the presence of at least two jets, is shown
@@ -700,11 +730,10 @@ the MG5/Sherpa predictions).
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_jet2_pT_incl.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet2_pT_incl.pdf}
-  \caption{
-    The sub-leading jet $p_T$ for $H+\ge2$ jets production without
-    (left) and with (right) uncertainties.
-    \label{fig:hjetscomp:results:2obs:jet2_pt}
-  }
+  \caption{\label{fig:hjetscomp:results:2obs:jet2_pt}%
+    The subleading jet $p_\perp$ for $h\pl\ge2$-jets production shown
+    without (left) and with (right) theoretical uncertainties. The
+    plot layout is the same as in the previous figure.}
 \end{figure}
 
 \begin{figure}[t!]
@@ -712,11 +741,13 @@ the MG5/Sherpa predictions).
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_jet2_pT_excl.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet2_pT_excl.pdf}
-  \caption{
-    The sub-leading jet $p_T$ for $H$ + exactly 2 jets production without
-    (left) and with (right) uncertainties.
-    \label{fig:hjetscomp:results:2obs:jet2_pt}
-  }
+  \caption{\label{fig:hjetscomp:results:2obs:jet2_pt}%
+    The subleading jet $p_\perp$ for exclusive $h\pl2$-jets production
+    shown without (left) and with (right) theoretical uncertainties.
+    Again, the layout is similar to that of
+    Figure~\ref{fig:hjetscomp:results:2obs:hpt_j2pt} except for
+    dropping the results of the NLO fixed-order $hjj$ production and
+    the associated ratio subpanel.}
 \end{figure}
 
 The sub-leading jet $p_T$ for $H+\ge2$ jets is shown in the upper row
