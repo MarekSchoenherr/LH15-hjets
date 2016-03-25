@@ -545,8 +545,7 @@ inclusive cross section.
     uncertainties. Ratio plots are displayed in the lower part of the
     plot using the \Powheg \NNLOPS result for $h$ production as their
     reference. Predictions are grouped, from top to bottom, according
-    to the categories \NNLOPS, ME+PS at NLO and NLO fixed order.
-  }
+    to the categories \NNLOPS, ME+PS at NLO and NLO fixed order.}
 \end{figure}
 
 Did we talk about great agreement in the previous case where we
@@ -569,11 +568,13 @@ predictions.
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_Hj_pT_incl.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_Hj_pT_incl.pdf}
-  \caption{
-    The transverse momentum of the Higgs-boson-leading-jet system in the 
-    presence of at least one jet without (left) and with (right) uncertainties.
-    \label{fig:hjetscomp:results:1obs:hj_pt}
-  }
+  \caption{\label{fig:hjetscomp:results:1obs:hj_pt}%
+    The transverse momentum of the Higgs-boson-leading-jet system in
+    the presence of at least one jet. For better visibility, results
+    are shown without (left) and with (right) theoretical
+    uncertainties. The plot layout exactly corresponds to that of
+    Figure~\ref{fig:hjetscomp:results:1obs:j1y}, except for the
+    extended $\hat y$-axis range in the ratio plots.}
 \end{figure}
 
 \begin{figure}[t!]
@@ -581,32 +582,95 @@ predictions.
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_Hj_pT_excl.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_Hj_pT_excl.pdf}
-  \caption{
-    The transverse momentum of the Higgs-boson-leading-jet system in the 
-    presence of exactly one jet without (left) and with (right) uncertainties.
-    \label{fig:hjetscomp:results:1obs:hj_pt_excl}
-  }
+  \caption{\label{fig:hjetscomp:results:1obs:hj_pt_excl}%
+    The transverse momentum of the Higgs-boson-leading-jet system in
+    the presence of exactly one jet. Again, results are shown without
+    (left) and with (right) theoretical uncertainties as given by the
+    different groups. Note that the plot layout corresponds exactly to
+    that of Figure~\ref{fig:hjetscomp:results:1obs:j1y}, except for
+    the extended $\hat y$-axis range used in the ratio plots.}
 \end{figure}
 
-Next we examine the transverse momentum of the Higgs boson + leading
-jet system. The inclusive case ($\ge 1$ jet) is shown in the upper
-part of Figure~\ref{fig:hjetscomp:results:1obs:hj_pt}.  Again,
-differences can be observed for the $\ge 1$ jet ME+PS predictions at
-low $p_T$, while there is better agreement at higher $p_T$.
+We finish this section by examining the results for the transverse
+momentum of the Higgs-boson plus leading-jet system. In other words,
+we are interested in studying the different answers in describing the
+recoil of the $hj_1$ system. In the inclusive one-jet case depicted in
+Figure~\ref{fig:hjetscomp:results:1obs:hj_pt}, the system may recoil
+against a second jet (or secondary jets) plus soft radiation, while
+for the exclusive jet scenario shown in
+Figure~\ref{fig:hjetscomp:results:1obs:hj_pt_excl}, it is only soft
+radiation that recoils against the $hj_1$ system. The latter case will
+therefore be strongly affected by the level at which resummation is
+taken into account. Formally, for the observable in question, the
+predictions of highest accuracy are facilitated by the NLO merging
+approaches as they provide an NLO description of the second jet; all
+other predictions are only LO accurate, i.e.~larger differences can be
+expected. In the exclusive ($=1$-jet) case, all predictions that
+include parton showering operate at the same level of precision
+while the fixed-order calculations cannot do anything but fail in
+describing the $p_\perp(hj_1)$ distribution.
 
-\Todo{but what is happening with MG5 at high pT}
+For the $h\pl\ge1$-jet events, differences of $\mathcal{O}(30\%)$ are
+observed among the ME+PS predictions below the jet threshold, while
+there is better agreement at higher $p_\perp$ values, where again
+\Herwig turns out to be on the softer side. The \Powheg curve
+surprisingly fits right in with the ME+PS results, while \Sherpa's
+\NNLOPS prediction only starts deviating for larger $p_\perp$ yielding
+a 40\% increase at $p_\perp\sim400\gev$ (again owing to the different
+treatment of scales in both approaches). The mostly comparable
+behaviour of the \NNLOPS results to those obtained from NLO merging is
+not what one expects a priori, however the NNLO matching seems to
+constrain the parton showers in a beneficial way (via sophisticated
+choices for setting the renormalization, factorization and resummation
+scales) such that the LO+PS treatment of the $h\pl\ge2$-jet rate
+obtains a more appropriate normalization. The $hj$ NLO calculations
+(i.e.~the pure and \Minlo reweighted \GoSam+\Sherpa results) cannot
+compete with this performance since the scale setting is global and
+the second-jet description is purely one of LO accuracy.
+Correspondingly, the $p_\perp(hj_1)$ observable is described poorely
+with values clearly overshooting below the jet threshold due to the
+missing Sudakov suppression and undershooting by 60\% beyond
+$p_\perp=50\gev$ due to missing higher (than two-) jet multiplicity
+contributions. It is interesting to see that the \Loopsim procedure
+lifts this large discrepancy in the $p_\perp$ tail. The good agreement
+with the ME+PS results is largely driven by the $hjj$ NLO component
+used to build the nNLO prediction for the $h\pl\ge1$ process. As a
+result of the cut-off dependence of the procedure nothing however can
+be said about the $p_\perp<25\gev$ region. Lastly, we comment on the
+uncertainties quoted by the different calculations: the \GoSam, \Minlo
+and \Loopsim envelopes have an appropriate size reflecting the
+underlying LO nature of the prediction, and similarly for \Sherpa's
+\NNLOPS result. \MGaMC and \Herwig produce NLO variations that are
+fairly different in size. However, the \Herwig as well as the \Powheg
+envelopes are most likely underestimated, in particular the \Powheg
+band does not behave as expected from a LO variation.
 
-The exclusive case (exactly jet) is shown in the lower part of
-Figure~\ref{fig:hjetscomp:results:1obs:hj_pt}.  There is a much
-greater divergence of the predictions for exactly one jet, especially
-at high $p_T$.  A highly exclusive distribution such as this serves as
-a stress test for ME+PS prediction, similar to the case for the Higgs
-$p_T$ distribution with no jets and it is no surprise that different
-approaches can lead to different answers.
+The exclusive (exactly one jet) case in describing the $p_\perp(hj_1)$
+observable is shown in Figure~\ref{fig:hjetscomp:results:1obs:hj_pt_excl}.
+Apart from the \NNLOPS outcomes, there is a much greater divergence of
+the predictions for exactly one jet, especially at high $p_\perp$.
+Recall this time the recoil is generated only from soft emissions, and
+it is clear that a highly exclusive distribution such as the one in
+question serves as a stress test for the ME+PS as well as \NNLOPS
+predictions (in fact any parton shower or resummed prediction). For
+the same reason, caution has to be taken in interpreting the shown
+uncertainties. The current case is similar to the case for the Higgs
+boson $p_\perp$ distribution with no jets and it is no surprise that
+different approaches can lead to different answers. Most notably, we
+observe the expected complete failure of the \GoSam results (including
+the \Loopsim result where the one-jet requirement obliterates the
+effect that yielded the improvement in the inclusive case),%
+\footnote{Owing to the kinematic constraints on the jets, harder
+  radiation that goes forward does not get identified as a jet;
+  these contributions actually form the (naively unexpected)
+  $p_\perp>30\gev$ tail of the \GoSam results though the mechanism is
+  highly suppressed.}
+the much more severe decline of the \Herwig differential cross section
+for larger $p_\perp$ and \NNLOPS predictions that are in much better
+agreement as compared to the inclusive case.
 
 
 
-\clearpage
 \subsection{Dijet observables}
 \label{sec:hjetscomp:results:2jobs}
 
