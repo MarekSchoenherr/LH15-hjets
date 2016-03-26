@@ -58,15 +58,20 @@ core scale we choose
 \end{equation}
 where $i$ runs over all partons of the identified core.
 
-\subsubsection{\textsc{LoopSim} merged $\bar{n}$NLO calculation of $pp\to h+(1,2)\,\text{jets}$ and $pp\to h+(2,3)\,\text{jets}$}
+\subsubsection{\textsc{LoopSim} merged nNLO calculation of 
+               $pp\to h+(1,2)\,\text{jets}$ and $pp\to h+(2,3)\,\text{jets}$}
 \label{sec:hjetscomp:tools:fo:hnjloopsim}
 
-The fixed order Ntuples produced by \textsc{GoSam} + \textsc{Sherpa} for fixed order can be combined using the LoopSim \cite{Rubin:2010xp}
-procedure to make an approximate NNLO prediciton which is missing the double virtual corrections but captures
-much of the double unresolved radiation contributions. There is a cut-off dependence on the
-additional real radiation since the fixed order Ntuples where generated with a jet $p_T>25$ GeV.
-
-The LoopSim procedure uses a flavour sensitive $k_T$ algoritham where a jet radius of $R=1$ was used.
-All other parameters are the same as in the fixed order analysis. The other parameters were the same as in the
-fixed order case except that the NNLO PDF set \texttt{MMHT2014nnlo68cl} was used.
+The fixed order Ntuples produced by \textsc{GoSam}{} +\textsc{Sherpa} 
+detailed in Sec.\ \ref{sec:hjetscomp:tools:fo:hnj} can be combined 
+using the \Loopsim \cite{Rubin:2010xp} procedure to make an approximate 
+NNLO prediction, labelled nNLO in the following, which is missing the 
+double virtual corrections but captures much of the double unresolved 
+radiation contributions. There is a cut-off dependence on the additional 
+real radiation since the fixed order Ntuples where generated with a jet 
+$p_T>25$ GeV. The \Loopsim procedure uses a flavour sensitive 
+$k_T$-algorithm where a jet radius of $R=1$ was used. All other 
+parameters and scales were chosen the same as in the fixed order case 
+with the exception of the PDF where the NNLO PDF set 
+\texttt{MMHT2014nnlo68cl} was used.
 
