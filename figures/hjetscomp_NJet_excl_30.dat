@@ -144,7 +144,7 @@ Title=\texttt{Powheg} \textsc{NnloPs}
 2.500000e+00	3.500000e+00	1.892460e-03	3.266750e-04	3.419360e-04
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops-envelope_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops_incl-envelope_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
 ErrorBandColor=brilliantrose!50!white
 ErrorBandOpacity=0.1
 ErrorBandStyle=vlines,hatchangle=90
@@ -157,13 +157,13 @@ LineColor=brilliantrose
 LineStyle=solid
 LineWidth=1.5pt
 Name=un2lops
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops-envelope_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops_incl-envelope_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
 Title=\textsc{Sherpa} \textsc{NnloPs}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	2.694048e+01	1.074330e+00	2.117220e+00
-5.000000e-01	1.500000e+00	1.145002e+01	1.474265e+00	1.383140e+00
-1.500000e+00	2.500000e+00	3.741036e+00	6.164640e-01	7.820720e-01
-2.500000e+00	3.500000e+00	1.042159e+00	2.419077e-01	3.597810e-01
+-5.000000e-01	5.000000e-01	2.651822e+01	9.447200e-01	8.539700e-01
+5.000000e-01	1.500000e+00	1.141185e+01	1.624804e+00	1.762170e+00
+1.500000e+00	2.500000e+00	3.813342e+00	6.149730e-01	7.419670e-01
+2.500000e+00	3.500000e+00	1.121413e+00	1.893043e-01	1.961300e-01
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/MG5aMC/MG5aMC_envelope.yoda/MC_HJETS_LH15/NJet_excl_30
@@ -204,10 +204,10 @@ Name=sherpa
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/NJet_excl_30
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	2.250643e+01	2.381420e+00	5.018300e+00
-5.000000e-01	1.500000e+00	1.076149e+01	1.335359e+00	3.946300e+00
-1.500000e+00	2.500000e+00	3.273737e+00	5.878070e-01	1.415353e+00
-2.500000e+00	3.500000e+00	1.044071e+00	1.550802e-01	2.573360e-01
+-5.000000e-01	5.000000e-01	2.248176e+01	2.405430e+00	5.017770e+00
+5.000000e-01	1.500000e+00	1.077410e+01	1.354950e+00	3.897580e+00
+1.500000e+00	2.500000e+00	3.240547e+00	5.696970e-01	1.400300e+00
+2.500000e+00	3.500000e+00	1.031868e+00	1.410343e-01	2.681820e-01
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_excl_30

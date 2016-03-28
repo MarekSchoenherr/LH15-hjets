@@ -33,9 +33,9 @@ RatioPlot1DrawReferenceFirst=0
 RatioPlot1Reference=powheg
 RatioPlot1SameStyle=1
 RatioPlot1YLabel=Ratio to \texttt{Powheg}
-RatioPlot1YMajorTickMarks=20
-RatioPlot1YMax=1.4999
-RatioPlot1YMin=0.5001
+RatioPlot1YMajorTickMarks=5
+RatioPlot1YMax=1.9999
+RatioPlot1YMin=0.0001
 RatioPlot1YSize=4
 RatioPlot2=1
 RatioPlot2DrawOnly=powheg madgraph sherpa herwig 
@@ -43,19 +43,19 @@ RatioPlot2DrawReferenceFirst=0
 RatioPlot2Reference=powheg
 RatioPlot2SameStyle=1
 RatioPlot2YLabel=Ratio to \texttt{Powheg}
-RatioPlot2YMajorTickMarks=20
-RatioPlot2YMax=1.4999
-RatioPlot2YMin=0.5001
+RatioPlot2YMajorTickMarks=5
+RatioPlot2YMax=1.9999
+RatioPlot2YMin=0.0001
 RatioPlot2YSize=4
 RatioPlot3=1
-RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo hqt stwz nnlo-h nnlo-hj 
+RatioPlot3DrawOnly=powheg gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo 
 RatioPlot3DrawReferenceFirst=0
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
 RatioPlot3YLabel=Ratio to \texttt{Powheg}
-RatioPlot3YMajorTickMarks=20
-RatioPlot3YMax=1.4999
-RatioPlot3YMin=0.5001
+RatioPlot3YMajorTickMarks=5
+RatioPlot3YMax=1.9999
+RatioPlot3YMin=0.0001
 RatioPlot3YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/NJet_incl_30_VBF
 RightMargin=0.45
@@ -93,19 +93,19 @@ Title=\texttt{Powheg} \textsc{NnloPs}
 2.500000e+00	3.500000e+00	4.521170e-04	8.118780e-05	8.900950e-05
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops_incl-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF
 LegendOrder=4
 LineColor=brilliantrose
 LineStyle=solid
 LineWidth=1.5pt
 Name=un2lops
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLOPS/mh0.5/nnlops_incl-envelope_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF
 Title=\textsc{Sherpa} \textsc{NnloPs}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	6.605157e-01	1.281520e-01	2.165569e-01
-5.000000e-01	1.500000e+00	6.605157e-01	1.281520e-01	2.165569e-01
-1.500000e+00	2.500000e+00	6.605157e-01	1.281520e-01	2.165569e-01
-2.500000e+00	3.500000e+00	2.070872e-01	5.494930e-02	9.398670e-02
+-5.000000e-01	5.000000e-01	6.940958e-01	1.064007e-01	1.385477e-01
+5.000000e-01	1.500000e+00	6.940958e-01	1.064007e-01	1.385477e-01
+1.500000e+00	2.500000e+00	6.940958e-01	1.064007e-01	1.385477e-01
+2.500000e+00	3.500000e+00	2.474436e-01	4.013200e-02	3.695910e-02
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/MG5aMC/MG5aMC_envelope.yoda/MC_HJETS_LH15/NJet_incl_30_VBF
@@ -132,10 +132,10 @@ Name=sherpa
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-l3-n3/pphjets-l3-n3-env_scaled.yoda/MC_HJETS_LH15/NJet_incl_30_VBF
 Title=\textsc{Sherpa} \textsc{MePs@Nlo}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	7.517670e-01	1.178746e-01	2.975280e-01
-5.000000e-01	1.500000e+00	7.517670e-01	1.178746e-01	2.975280e-01
-1.500000e+00	2.500000e+00	7.517670e-01	1.178746e-01	2.975280e-01
-2.500000e+00	3.500000e+00	2.736827e-01	2.428490e-02	6.676000e-02
+-5.000000e-01	5.000000e-01	7.214431e-01	1.026727e-01	3.086729e-01
+5.000000e-01	1.500000e+00	7.214431e-01	1.026727e-01	3.086729e-01
+1.500000e+00	2.500000e+00	7.214431e-01	1.026727e-01	3.086729e-01
+2.500000e+00	3.500000e+00	2.638181e-01	2.288770e-02	7.865340e-02
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Herwig/herwig-envelope.yoda/MC_HJETS_LH15/NJet_incl_30_VBF
