@@ -388,7 +388,7 @@ LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h1j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H1j/H1j-MMHT2014nlo68clas118_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-NLO.yoda/MC_HJETS_LH15/H_pT_incl
-Title=\textsc{GoSam} hj NLO
+Title=NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	3.770206e-03	1.346020e-03	2.349272e-03
 5.000000e+00	1.000000e+01	1.335895e-02	4.758828e-03	8.290510e-03
@@ -429,7 +429,7 @@ LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h2j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/H2j-MMHT2014nlo68clas118_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-NLO_scaled.yoda/MC_HJETS_LH15/H_pT_incl
-Title=\textsc{GoSam} hjj NLO
+Title=NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	3.059892e-03	3.942520e-04	0.000000e+00
 5.000000e+00	1.000000e+01	1.043351e-02	1.809924e-03	7.638180e-04
@@ -470,7 +470,7 @@ LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h3j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H3j/H3j-MMHT2014nlo68clas118_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-NLO.yoda/MC_HJETS_LH15/H_pT_incl
-Title=\textsc{GoSam} hjjj NLO
+Title=NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	6.351550e-04	1.553830e-04	9.752520e-05
 5.000000e+00	1.000000e+01	1.898586e-03	4.614020e-04	2.072816e-04
@@ -637,7 +637,7 @@ LineStyle=dashdotted
 LineWidth=1.5pt
 Name=gosam-h1j-loopsim
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H1j/H1j-MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-LS-nNLO_scaled.yoda/MC_HJETS_LH15/H_pT_incl
-Title=\textsc{GoSam} hj nNLO
+Title=nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	6.594556e-03	1.566130e-03	1.830706e-03
 5.000000e+00	1.000000e+01	1.911676e-02	4.136646e-03	4.088776e-03
@@ -678,7 +678,7 @@ LineStyle=dashdotted
 LineWidth=1.5pt
 Name=gosam-h2j-loopsim
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/H2j-MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-LS-nNLO_scaled.yoda/MC_HJETS_LH15/H_pT_incl
-Title=\textsc{GoSam} hjj nNLO
+Title=nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	2.941576e-03	3.303560e-04	0.000000e+00
 5.000000e+00	1.000000e+01	9.721512e-03	1.602746e-03	6.835040e-04

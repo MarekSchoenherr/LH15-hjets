@@ -310,7 +310,7 @@ LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h2j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H2j/H2j-MMHT2014nlo68clas118_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-NLO_scaled.yoda/MC_HJETS_LH15/jet3_pT_incl
-Title=\textsc{GoSam} hjj NLO
+Title=NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
@@ -351,7 +351,7 @@ LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h3j-nlo
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_FixedOrder/H3j/H3j-MMHT2014nlo68clas118_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-NLO.yoda/MC_HJETS_LH15/jet3_pT_incl
-Title=\textsc{GoSam} hjjj NLO
+Title=NLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
@@ -518,7 +518,7 @@ LineStyle=dashdotted
 LineWidth=1.5pt
 Name=gosam-h2j-loopsim
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H2j/H2j-MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-LS-nNLO_scaled.yoda/MC_HJETS_LH15/jet3_pT_incl
-Title=\textsc{GoSam} hjj nNLO
+Title=nNLO
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
