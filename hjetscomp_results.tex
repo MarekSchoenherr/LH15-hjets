@@ -14,23 +14,23 @@ scale uncertainty bands. In most cases, the predictions should be held
 to a higher standard, as the scale logs are common to all of the
 calculations that are being compared.
 
-\Rivet \cite{Buckley:2010ar}
-
-\Todo{some words as to why the reference distributions have been chosen?}
-
-\Todo{some general words about how the plots are built up and why, ie
-  comment on structure of ratio plots.}
-
-\Todo{parameters of the analyis, cuts etc}
-
-\Todo{haven't said much about the HEJ or the nNLO predictions}
+In general, the \Powheg \NNLOPS calculation has been chosen as the 
+reference of the ratios presented. Only for observables where a 
+dedicated calculation exhibits a higher accuracy throughout the 
+highest accuracy available is chosen. The rations themselves group 
+the predictions by likeness to improve readability. The top most 
+ratio shown always compares the \NNLOPS predictions to the reference. 
+The second ratio then contains the multijet merged predictions while 
+the third ratio collects the fixed order predictions lacking parton 
+showering. Additional ratios are added as needed. The BFKL resummation 
+of \Hej is inserted into the top ratio where applicable.
 
 
 
 \subsection{Inclusive observables}
 \label{sec:hjetscomp:results:inclobs}
 
-This section contains observables which characterize the $h\pl$jets
+This section contains observables which characterize the $h+{}$jets
 phase space in the most inclusive way. Only the presence of a Higgs
 boson is required, with no restrictions on its momentum. We therefore
 compare the predictions for the rapidity and transverse momentum
@@ -349,7 +349,8 @@ jet.
 The Higgs boson transverse momentum distribution in the presence of at
 least one jet is shown in
 Figure~\ref{fig:hjetscomp:results:1obs:hpt}. The exclusive version of
-this plot, i.e.~where one requires the $hj$ final states to be exact,
+this plot, i.e.~where one requires the Higgs boson and the jet to be 
+the only resolved final states present,
 is presented in Figure~\ref{fig:hjetscomp:results:1obs:hpt_excl}.  As
 for the zero-jet cases discussed earlier in
 Figures~\ref{fig:hjetscomp:results:inclobs:hpt}~and~\ref{fig:hjetscomp:results:exclobs:hpt},
@@ -362,59 +363,59 @@ non-smooth behaviour of the $p_\perp(h)$ observable at LO, and
 therefore to the existence of a critical point at $30\gev$ for which
 the cancellations between real and virtual soft-gluon singularities
 will be imperfect at any given fixed, higher order in perturbation
-theory~\cite{Catani-Webber}. For the NNLO $hj$~\cite{.} prediction, an
+theory~\cite{Catani:1997xc}. For the BFGLP $hj$ NNLO  prediction, an
 averaging procedure has been used to dampen the effect around the jet
 threshold while for the NLO predictions, the large oscillations are a
 clear indication of the instability emerging at the jet threshold.
-Comparing the different fixed-order predictions, which is done best by
-looking at the ratio plot in the middle, noticeable differences only
+Comparing the different fixed-order predictions, which are detailed in 
+the third ratio plot, noticeable differences only
 occur between the NNLO prediction and the four NLO predictions as
 obtained from \Powheg and the three version of \GoSam+\Sherpa (pure
 NLO, \Minlo and \Loopsim). The NNLO tail is harder by about 15\% which
 is expected since the $p_\perp$ tail is affected by multi-jet
 contributions. The NNLO treatment includes these contributions to a
 larger extent, as it respectively includes $h\pl2$-jet and
-$h\pl3$-jet contributions at the NLO and LO. Another difference is
-that for $p_\perp(h)\to0$, the NNLO description gets closer to the
-resummed result (\Powheg) because it reproduces more terms of the
-all-orders expression than the pure NLO predictions do. However, it
-can be noticed that apart from \Powheg and BFGLP's NNLO $hj$
-calculation, all other approaches predict a more steeply falling
-shoulder when $p_\perp(h)\to0$ resulting in a significantly lower
-intercept point with the $\hat y$-axis.
-
-\Todo{Don't have a good explanation why Powheg and BFGLP are so
-  different regarding intercept ... anybody else?}
-
+$h\pl3$-jet contributions at the NLO and LO. For $p_\perp(h)< 30\,\gev$, 
+the (N)NLO description is degraded to (N)LO. Here, the inclusion of 
+the first term of the Sudakov resummation included in \Powheg benefits 
+the BFGLP $hj$ NNLO calculation. However, it
+can be noticed that apart from \Powheg and the BFGLP $hj$ NNLO
+calculation all other approaches predict a more steeply falling
+shoulder resulting in a significantly lower
+cross section as $p_\perp(h)\to0$.
 For larger $p_\perp(h)$ values, $p_\perp(h)>70\gev$, in general there
 is good agreement between \Powheg, \MGaMC, \Sherpa and the NLO curves;
 this can be expected as these predictions are all NLO-accurate. As
 before, \Herwig tends to be softer, whereas \MGaMC using the nominal
 $\tfrac{1}{2}m_h$ core scale turns out to be harder by almost 40\% as
-inidcated by the upper edge of the corresponding uncertainty band, see
+inidcated by the upper edge of its corresponding uncertainty band, see
 second or last subplot to the right in
 Figure~\ref{fig:hjetscomp:results:1obs:hpt}. \Sherpa's \NNLOPS
 prediction also features a harder tail than \Powheg owing to the
 different scale setting procedures employed by the two approaches.
 While in \Powheg the scale setting is accomplished through the \Minlo
-procedure, \Sherpa uses the fixed scale choice of $\tfrac{1}{2}m_h$
-and therefore enhances the $p_\perp$ tail wrt.~\Powheg's result. We
-furthermore observe that apart from the BFGLP NNLO computation, all
+procedure, \Sherpa's \NNLOPS uses the fixed scale choice of $\tfrac{1}{2}m_h$
+and therefore enhances the $p_\perp$ tail with respect to the \Powheg's result. We
+furthermore observe that apart from the BFGLP $hj$ NNLO computation, all
 uncertainty envelopes are of similar size, which does not come as a
 surprise because all of these predictions are effectively given at
 NLO. The NNLO uncertainty band (shown in grey) is found to be
 significantly smaller. Comparing the second and last ratio plots with
 each other, we also notice that the ME+PS predictions are in better
-overall agreement with the pure NLO prediction given by \GoSam+\Sherpa
-than they are in agreement with \Powheg. This may be a result of the
-global scale choice, cf.~Eq.~(\ref{eq:bfglpScale}), used by the NLO
-calculation as it seems to be a more decent proxy to the ME+PS local
-and dynamical scale setting procedures than it is one to the \Powheg
-approach.
+overall agreement with the pure NLO prediction given by \GoSam{}+\Sherpa
+than they are in agreement with \Powheg, with the exception of \MGaMC 
+below $p_\perp(h)\lesssim \tfrac{1}{2}m_h$. This is surprising since all parton 
+shower matched calculations are of the same intrinsic accuracy (NLO) and 
+use similar local scale definitions along the lines of CKKW and include 
+Sudakov factors of NLL accuracy. It may, however, be related to the way 
+the resummation is controlled in \Powheg and the \MCatNLO-type matchings 
+used in \MGaMC, \Herwig and \Sherpa. The different parton shower starting 
+scales employed in \Herwig and \Sherpa ($\sim \tfrac{1}{2}m_h$), 
+\MGaMC ($\sim m_h$) and \Powheg ($E_\text{CMS}$) do also play a role.
 
 For the exclusive one-jet case, we reduce the number of ratio plots
 and show only those that display the ratios to \Powheg in the same way
-as before. Note that for the exclsuive version of the observable, the
+as before. Note that for the exclusive version of the observable, the
 NNLO result is not available turning this comparison into one between
 NLO-accurate predictions, except for the NNLO-approximate result given
 by \Loopsim, labelled \GoSam $hj$ nNLO.
@@ -424,16 +425,18 @@ in the inclusive case; they are however pronounced such that the
 deviations wrt.~the \Powheg \NNLOPS prediction for $h$ production
 become larger for the full tranverse momentum range. There is one
 exception to this: \Loopsim predicts a softer tail of the $p_\perp(h)$
-distribution by about 20\%. \Todo{Not quite sure why that is.}
+distribution by about 20\%. This is easily understood as the tail of 
+the exclusive distributions is made up of multiple soft emissions not 
+captured by the \Loopsim approach.
 
-\begin{figure}[p!]
+\begin{figure}[t!]
   \centering
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_jet1_pT_incl.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet1_pT_incl.pdf}
   \caption{\label{fig:hjetscomp:results:1obs:j1pt}%
     The leading jet transverse momentum distribution for
-    $h\pl\ge1$-jet production, to the right (left) shown with
+    $h\,+\!\ge\!\!1$-jet production, to the right (left) shown with
     (without) the uncertainty bands provided by the various
     calculations. The part below the main plot contains ratio plots
     taken wrt.~the NNLO result of the BFGLP group (subpanel one
@@ -459,12 +462,12 @@ distribution by about 20\%. \Todo{Not quite sure why that is.}
 \end{figure}
 
 Next we discuss the leading jet transverse momentum distribution for
-$h\pl\ge1$-jet final states. For this type of observable, we do not
+$h\,+\!\ge\!\!1$-jet final states. For this type of observable, we do not
 expect large Sudakov effects (i.e. shifts owing to parton
 showering/resummation). The impact of jet veto logarithms (owing to
 the restriction that all jets be greater than $30\gev$) has been
 examined and found to be reasonably small at NLO and
-NNLO~\cite{monni}. \Todo{provide numbers from Monni?} \Todo{MS: Dowe have any?}
+NNLO~\cite{Banfi:2012jm,Banfi:2015pju}. 
 In the exclusive jet case, the $p_\perp(j_1)$ variable however is
 prone to larger resummation effects, and we note that the scale
 uncertainties shown will not reflect the true uncertainty. The
@@ -477,11 +480,8 @@ Carlo tools only; no fixed-order predictions are shown. Accordingly,
 different reference predictions (NNLO and \Powheg) are used in the
 ratio plots associated with
 Figures~\ref{fig:hjetscomp:results:1obs:j1pt} and
-\ref{fig:hjetscomp:results:1obs:j1pt_excl}; for the inclusive one-jet
-scenario, two additional ratio plots are displayed using the NLO
-\GoSam+\Sherpa reference but otherwise correspond to the upper two
-ratio plots. \Todo{these last two rplots may be removed since BFGLP
-NNLO == GoSam NLO here} Overall we find a rather remarkable agreement
+\ref{fig:hjetscomp:results:1obs:j1pt_excl}. 
+Overall we find a rather remarkable agreement
 between all results where the largest deviations rarely exceed the
 20\% mark. For the exclusive lead-jet transverse momentum distribution
 of Figure~\ref{fig:hjetscomp:results:1obs:j1pt_excl}, this means that
@@ -493,44 +493,42 @@ transverse momentum spectrum (see
 Figure~\ref{fig:hjetscomp:results:1obs:j1pt}), the remarkable
 agreement implies that all predictions indeed lie within each other's
 uncertainty bands. The quoted uncertainties are similar in size, with
-values at and around the 20\% level, and only those of the BFGLP NNLO
-calculation and the \MGaMC simulation using the higher central scale
-turn out to be significantly smaller and somewhat wider, respectively.
+values at and around the 20\% level, and only those of the BFGLP $hj$ NNLO
+calculation are significantly smaller. 
 
 Despite the good agreement seen among all predictions in
 Figure~\ref{fig:hjetscomp:results:1obs:j1pt}, it is worthwhile to go
 through the ratio plots and discuss some of the interesting features.
-In the second panel, the two \NNLOPS predictions are compared to the
-NNLO $h\pl\ge1$-jet prediction. The agreement among all three is
+In the top ratio panel, the two \NNLOPS predictions are compared to the
+NNLO $h\,+\!\ge\!\!1$-jet prediction. The agreement among all three is
 good at low transverse momentum, but at higher $p_\perp(j_1)$ there is
-a tendency for \Sherpa \NNLOPS to be slightly higher and \Powheg
-NNLOPS to be slightly lower, resulting in a 20\% net difference
-between the two. Again, this is a result of using
-$\mu=\tfrac{1}{2}m_h$ within \Sherpa versus using \Minlo within the
-\Powheg approach. In the third panel, \Herwig, \Sherpa and \MGaMC
+a tendency for \Sherpa \NNLOPS to move to the upper edge of the NNLO 
+uncertainty band and \Powheg \NNLOPS to move slightly below, resulting 
+in a 20\% net difference between the two. Again, this is a result of using
+$\mu=\tfrac{1}{2}m_h$ within \Sherpa versus using \Minlo/CKKW scales within the
+\Powheg approach. In the second ratio panel, \Herwig, \Sherpa and \MGaMC
 (taking into account its larger limit scale) agree reasonably well
 with each other over the entire transverse momentum range, but fall
 about 15\% low wrt.~the BFGLP prediction in the mid-range of the
-$p_\perp$ distribution. The fourth panel shows that there is almost no
+$p_\perp$ distribution. The third ratio panel shows that there is almost no
 difference in normalization nor shape between the NNLO and the NLO
-$h\pl\ge1$-jet predictions using the given scale choice,
+$h\,+\!\ge\!\!1$-jet predictions using the given scale choice,
 cf.~Eq.~(\ref{eq:bfglpScale}). This extends to the \Minlo reweighted
-NLO result and the nNLO prediction provided by \Loopsim, although the
-latter is somewhat softer. In the fifth panel, the STWZ prediction
+NLO result and the nNLO prediction provided by the \Loopsim approach, although the
+latter is somewhat softer. In the bottom ratio panel, the STWZ prediction, 
+constituting a resummation improved NLO calculation for this observable,  
 agrees with the NNLO prediction at low $p_\perp$, but rises up to 30\%
-higher at the largest $p_\perp$ values. As mentioned earlier, in the
-bottom two panels, comparisons are made to the NLO $h\pl\ge1$-jet
-prediction, basically reproducing the results of the first and second
-subpanel as the similarity of the NNLO and NLO curves is perfect for
-the scale choice given by Eq.~(\ref{eq:bfglpScale}).
+higher at the largest $p_\perp$ values, mainly due to its fixed scale choice. 
 
 In summary, the fixed-order NNLO prediction of the BFGLP group, which
 has the best theoretical uncertainties available, is in good agreement
-with the \Sherpa predictions (\NNLOPS and \MEPSatNLO), and to a
-somewhat lesser extent with the other ME+PS predictions. The level of
-moderate disagreements observed with the latter may be due to the
-somewhat different scale choices that are still important at
-NLO. There is no sign of any serious impact of the merging of the
+with the \Sherpa \NNLOPS prediction, and to a
+somewhat lesser extent, with the \Powheg \NNLOPS predictions. The level of
+moderate disagreements observed with the multijet merged calculations 
+may be due to the somewhat different scale choices that are still important 
+at NLO. The largest deviation seen with \MGaMC is can mainly be traced to 
+its different choice of central scales. There is no sign of any serious 
+impact of the merging of the
 fixed-order predictions with parton showers, as expected for such an
 inclusive cross section.
 
@@ -540,7 +538,7 @@ inclusive cross section.
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet1_y.pdf}
   \caption{\label{fig:hjetscomp:results:1obs:j1y}%
-    The rapidity distribution for the leading jet in $h\pl\ge1$-jet
+    The rapidity distribution for the leading jet in $h\,+\!\ge\!\!1$-jet
     production, shown without (left) and with (right) theoretical
     uncertainties. Ratio plots are displayed in the lower part of the
     plot using the \Powheg \NNLOPS result for $h$ production as their
@@ -548,11 +546,13 @@ inclusive cross section.
     to the categories \NNLOPS, ME+PS at NLO and NLO fixed order.}
 \end{figure}
 
+\Todo{MS: Too colloquial?}
+
 Did we talk about great agreement in the previous case where we
 discussed the $p_\perp(j_1)$ distribution, the agreement found for the
 rapidity distribution of the lead jet, $y(j_1)$, is magnificient, as
 demonstrated by Figure~\ref{fig:hjetscomp:results:1obs:j1y}. We were
-to expect that due to the $p_\perp(j_1)$ agre and earlier findings
+to expect that due to the consistency of the $p_\perp(j_1)$ predictions and earlier findings
 concerning $y(h)$, see Figure~\ref{fig:hjetscomp:results:inclobs:hy}.
 We basically do not observe any shape differences, and the rate
 differences follow the already established pattern where most
@@ -560,8 +560,8 @@ noticeably the \MGaMC cross section is reduced owing to their choice
 of using a higher central scale. Again, uncertainty envelopes are
 by and large similar in size and do not point to any shape changes
 when varying the scales; \Herwig's band is slightly narrower while
-\MGaMC's band is somewhat wider compared to all other NLO-accurate
-predictions.
+\Sherpa \MEPSatNLO's and \MGaMC's band are somewhat wider compared 
+to all other NLO-accurate predictions.
 
 \begin{figure}[t!]
   \centering
@@ -610,40 +610,42 @@ include parton showering operate at the same level of precision
 while the fixed-order calculations cannot do anything but fail in
 describing the $p_\perp(hj_1)$ distribution.
 
-For the $h\pl\ge1$-jet events, differences of $\mathcal{O}(30\%)$ are
+For the $h\,+\!\ge\!\!1$-jet events, differences of $\mathcal{O}(30\%)$ are
 observed among the ME+PS predictions below the jet threshold, while
 there is better agreement at higher $p_\perp$ values, where again
-\Herwig turns out to be on the softer side. The \Powheg curve
-surprisingly fits right in with the ME+PS results, while \Sherpa's
-\NNLOPS prediction only starts deviating for larger $p_\perp$ yielding
-a 40\% increase at $p_\perp\sim400\gev$ (again owing to the different
-treatment of scales in both approaches). The mostly comparable
+\Herwig turns out to be on the softer side. The \Powheg and \Sherpa \NNLOPS 
+curves surprisingly fits right in with the ME+PS results throughout 
+the spectrum. The mostly comparable
 behaviour of the \NNLOPS results to those obtained from NLO merging is
 not what one expects a priori, however the NNLO matching seems to
 constrain the parton showers in a beneficial way (via sophisticated
 choices for setting the renormalization, factorization and resummation
-scales) such that the LO+PS treatment of the $h\pl\ge2$-jet rate
+scales) such that the LO+PS treatment of the $h\,+\!\ge\!2$-jet rate
 obtains a more appropriate normalization. The $hj$ NLO calculations
-(i.e.~the pure and \Minlo reweighted \GoSam+\Sherpa results) cannot
-compete with this performance since the scale setting is global and
-the second-jet description is purely one of LO accuracy.
-Correspondingly, the $p_\perp(hj_1)$ observable is described poorely
+(i.e.~the pure and \Minlo reweighted \GoSam{}+\Sherpa results) cannot
+compete with this performance since they miss an adaquate description 
+of the second jet giving recoil to the $hj$-system.
+Correspondingly, the $p_\perp(hj_1)$ observable is described poorly
 with values clearly overshooting below the jet threshold due to the
 missing Sudakov suppression and undershooting by 60\% beyond
 $p_\perp=50\gev$ due to missing higher (than two-) jet multiplicity
 contributions. It is interesting to see that the \Loopsim procedure
-lifts this large discrepancy in the $p_\perp$ tail. The good agreement
+lifts this large discrepancy in the $p_\perp$ tail, concluding that 
+an adequate description of a second and third jet is sufficient to 
+describe this observable in this regime. Thus, the good agreement
 with the ME+PS results is largely driven by the $hjj$ NLO component
-used to build the nNLO prediction for the $h\pl\ge1$ process. As a
+used to build the nNLO prediction for the $h\,+\!\ge\!\!1$ process. As a
 result of the cut-off dependence of the procedure nothing however can
 be said about the $p_\perp<25\gev$ region. Lastly, we comment on the
 uncertainties quoted by the different calculations: the \GoSam, \Minlo
 and \Loopsim envelopes have an appropriate size reflecting the
-underlying LO nature of the prediction, and similarly for \Sherpa's
-\NNLOPS result. \MGaMC and \Herwig produce NLO variations that are
+underlying LO nature of the prediction. \MGaMC and \Sherpa \MEPSatNLO 
+on the side and \Herwig on the other produce NLO variations that are
 fairly different in size. However, the \Herwig as well as the \Powheg
 envelopes are most likely underestimated, in particular the \Powheg
-band does not behave as expected from a LO variation.
+band does not behave as expected from a LO variation. The \Sherpa 
+\NNLOPS bands here are somewhat larger than \Powheg's but still do not 
+reflect the LO nature of the prediction.
 
 The exclusive (exactly one jet) case in describing the $p_\perp(hj_1)$
 observable is shown in Figure~\ref{fig:hjetscomp:results:1obs:hj_pt_excl}.
@@ -657,7 +659,7 @@ the same reason, caution has to be taken in interpreting the shown
 uncertainties. The current case is similar to the case for the Higgs
 boson $p_\perp$ distribution with no jets and it is no surprise that
 different approaches can lead to different answers. Most notably, we
-observe the expected complete failure of the \GoSam results (including
+observe the expected complete failure of the \GoSam{}+\Sherpa results (including
 the \Loopsim result where the one-jet requirement obliterates the
 effect that yielded the improvement in the inclusive case),%
 \footnote{Owing to the kinematic constraints on the jets, harder
@@ -666,7 +668,7 @@ effect that yielded the improvement in the inclusive case),%
   $p_\perp>30\gev$ tail of the \GoSam results though the mechanism is
   highly suppressed.}
 the much more severe decline of the \Herwig differential cross section
-for larger $p_\perp$ and \NNLOPS predictions that are in much better
+for larger $p_\perp$ and \NNLOPS predictions that are in slightly worse 
 agreement as compared to the inclusive case.
 
 
@@ -908,7 +910,7 @@ are similar for the two cases, and only the VBF cut scenario will be presented.
 %the application of the above detailed VBF cuts in 
 The inclusive jet multiplicity distributions after the application of the VBF (VBF2)
 cuts are shown in 
-Figure~\ref{fig:hjetscomp:results:inclobs:njets_VBF} (Figure~\ref{fig:hjetscomp:results:inclobs:njets_VBF2).
+Figure~\ref{fig:hjetscomp:results:inclobs:njets_VBF} (Figure~\ref{fig:hjetscomp:results:inclobs:njets_VBF2}).
  The hierarchy observed
 is essentially the same as for the inclusive jet multiplicity
 distribution without any cuts. The differences among the predictions
