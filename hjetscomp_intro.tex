@@ -42,8 +42,8 @@ comparisons to fixed-order predictions as well as to ME+PS frameworks.
 To allow for as standardized a comparison as possible, a group of
 generation parameters were agreed upon. MMHT2014 NLO PDFs (and the
 NNLO version for the NNLO calculations) were to be used, with a
-central value of $\alpha_s(m_Z)=0.118$, and variations thereof of
-$\pm0.0015$.  Variations of scale choice are allowed; however, they
+central value of $\alpha_s(m_Z)=0.118$.  
+Variations of scale choice are allowed; however, they
 should reproduce a scale of $\tfrac{1}{2}m_h$ in the zero-jet limit.
 
 Alas, in some cases, there are deviations from these standards. These
@@ -57,16 +57,26 @@ routine~\cite{Buckley:2010ar,webpage} was created and distributed to each group
 providing a prediction.
 
 In this contribution, predictions have been made with fixed-order
-calculations at NLO (using \GoSam~\cite{gosam}), at full
-NNLO (using results of the BFGLP group~\cite{Petriello}) \Todo{mention
-  \Sherpa NNLO?} and approximate NNLO (using the \Loopsim
-approach~\cite{LoopSim} operating on NLO results provided by
-\GoSam+\Sherpa~\cite{LoopSim}), and are compared to resummation
-calculations~\cite{HqT,HEJ,etc}, to parton shower predictions of
-inclusive Higgs boson production at NNLO~\cite{PowhegNNLOPS, SherpaNNLOPS},
-and ME+PS predictions~\cite{MG5,Sherpa,Herwig7}, using NLO matrix
-element information for up to two (three) jets (\Sherpa). In addition,
-fixed-order predictions based on the \GoSam Ntuples using the \Minlo
-scales setting procedure (and Sudakov suppression) are presented for
-some of the one- and two-jet observables. Technical information for
-each of the predictions is provided in the next section.
+calculations at NLO for $pp\to h+1,2,3j$ with standard scale choices 
+and the \Minlo approach including Sudakov factors (using \GoSam in 
+comnbination with \Sherpa, cf.\ Secs.\ 
+\ref{sec:hjetscomp:tools:fo:hnj}-\ref{sec:hjetscomp:tools:fo:hnjminlo}), 
+at approximate NNLO (using the \Loopsim approach, cf. Sec.\ 
+\ref{sec:hjetscomp:tools:fo:hnjloopsim}) and full NNLO for $pp\to h$ 
+(using \Sherpa, cf.\ Sec.\ \ref{sec:hjetscomp:tools:fo:sherpa}) and 
+$pp\to h+j$ (using the results of the BFGLP group, cf.\ 
+\ref{sec:hjetscomp:tools:fo:BFGLP}). These are compared to explicit 
+high-precision resummation calculations for observables of interest, 
+i.e.\ the inclusive Higgs boson transverse momentum (using \HqT, cf.\ 
+Sec.\ \ref{sec:hjetscomp:tools:ares:hqt}) and jet-vetoed zero jet 
+cross section (using the results of the STWZ group, cf.\ Sec.\ 
+\ref{sec:hjetscomp:tools:ares:jvres}), as well as to the generic 
+parton shower matched predictions of inclusive Higgs boson production 
+at NNLO (using \Powheg and \Sherpa, cf.\ Secs.\ 
+\ref{sec:hjetscomp:tools:nnlops:powheg} and 
+\ref{sec:hjetscomp:tools:nnlops:sherpa}) and the multijet merged 
+predictions (provided by \MGaMC, \Herwig and \Sherpa, cf.\ Secs.\ 
+\ref{sec:hjetscomp:tools:mc:mgamc}-\ref{sec:hjetscomp:tools:mc:sherpa}), 
+using NLO matrix element information for up to two (three) jets (\Sherpa). 
+Sec.\ \ref{sec:hjetscomp:results} then presents the results in detail 
+for a multitude of relevant observables.
