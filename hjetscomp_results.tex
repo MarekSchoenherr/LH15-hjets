@@ -232,7 +232,7 @@ parton shower only, all three NLO merged calculations predict larger
 cross sections.
 
 Lastly, fixed-order predictions are shown for all jet multiplicities
-at NLO (provided by \GoSam+\Sherpa) for the $1$-jet, $2$-jet and
+at NLO (provided by \GoSam{}+\Sherpa) for the $1$-jet, $2$-jet and
 $3$-jet bins and at approximate NNLO (labeled nNLO, provided by \Loopsim) 
 for the $1$-jet and $2$-jet bins.
 Complete NNLO predictions are shown for the 0-jet inclusive and
@@ -251,15 +251,15 @@ by the different scale choices. Unlike the inclusive Higgs boson
 production case, the NNLO corrections for inclusive $1$-jet production
 are small -- slightly negative for the central scale choice as given
 in Eq.~(\ref{eq:bfglpScale}). There is a notable decrease in the scale
-uncertainty with respect to the NLO band given by \GoSam+\Sherpa. The $2$-jet bin
-shows the \GoSam NLO prediction just slightly above \Powheg, which
+uncertainty with respect to the NLO band given by \GoSam{}+\Sherpa. The $2$-jet bin
+shows the \GoSam{}+\Sherpa NLO prediction just slightly above \Powheg, which
 gives a LO prediction in this case. For the same reason, the \Powheg
 uncertainties in the higher jet multiplicities are probably
 underestimated. In the $3$-jet bin (both inclusive and exclusive), the
-\GoSam+\Sherpa and \Sherpa \MEPSatNLO predictions clearly signal the absence of 
+\GoSam{}+\Sherpa and \Sherpa \MEPSatNLO predictions clearly signal the absence of 
 NLO corrections 
 in the other predictions. The \Loopsim results for $h+j$ and
-$h+jj$ are always somewhat below the respective \GoSam result
+$h+jj$ are always somewhat below the respective \GoSam{}+\Sherpa result
 though the relatively large MC generation cut of $25$ \gev mean
 the total rates predicted using \Loopsim should be interpreted with care.
 Furthermore, compared to the NLO benchmark, the \Minlo approach
@@ -324,8 +324,8 @@ jet.
     one jet without (left) and with (right) uncertainty bands. The
     ratio plot panel is divided into five parts where the upper three
     exhibit the ratios wrt.~the \Powheg \NNLOPS result while the lower
-    two show them wrt.~the NLO calculation for $h\pl1$~jet as
-    provided by \GoSam+\Sherpa. The grouping in the ratio plots has
+    two show them wrt.~the NLO calculation for $h+1$~jet as
+    provided by \GoSam{}+\Sherpa. The grouping in the ratio plots has
     been arranged to separately compare with each other the \NNLOPS
     predictions (first and fourth subplot), the NLO merging
     predictions (second and fifth subplot) and the fixed-order
@@ -370,12 +370,12 @@ clear indication of the instability emerging at the jet threshold.
 Comparing the different fixed-order predictions, which are detailed in 
 the third ratio plot, noticeable differences only
 occur between the NNLO prediction and the four NLO predictions as
-obtained from \Powheg and the three version of \GoSam+\Sherpa (pure
+obtained from \Powheg and the three version of \GoSam{}+\Sherpa (pure
 NLO, \Minlo and \Loopsim). The NNLO tail is harder by about 15\% which
 is expected since the $p_\perp$ tail is affected by multi-jet
 contributions. The NNLO treatment includes these contributions to a
-larger extent, as it respectively includes $h\pl2$-jet and
-$h\pl3$-jet contributions at the NLO and LO. For $p_\perp(h)< 30\,\gev$, 
+larger extent, as it respectively includes $h+2$-jet and
+$h+3$-jet contributions at the NLO and LO. For $p_\perp(h)< 30\,\gev$, 
 the (N)NLO description is degraded to (N)LO. Here, the inclusion of 
 the first term of the Sudakov resummation included in \Powheg benefits 
 the BFGLP $hj$ NNLO calculation. However, it
@@ -418,7 +418,7 @@ and show only those that display the ratios to \Powheg in the same way
 as before. Note that for the exclusive version of the observable, the
 NNLO result is not available turning this comparison into one between
 NLO-accurate predictions, except for the NNLO-approximate result given
-by \Loopsim, labelled \GoSam $hj$ nNLO.
+by \Loopsim, labelled \GoSam{}+\Sherpa $hj$ nNLO.
 Figure~\ref{fig:hjetscomp:results:1obs:hpt_excl} clearly shows that
 the differences among the results are very similar to those discussed
 in the inclusive case; they are however pronounced such that the
@@ -440,7 +440,7 @@ captured by the \Loopsim approach.
     (without) the uncertainty bands provided by the various
     calculations. The part below the main plot contains ratio plots
     taken wrt.~the NNLO result of the BFGLP group (subpanel one
-    through four) and the NLO result given by \GoSam+\Sherpa (lowest
+    through four) and the NLO result given by \GoSam{}+\Sherpa (lowest
     two subpanels) following the same strategy for grouping the
     predictions as before (\NNLOPS versus NLO ME+PS versus fixed-order
     results). Note the layout of the first and last two subpanels is
@@ -454,7 +454,7 @@ captured by the \Loopsim approach.
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet1_pT_excl.pdf}
   \caption{\label{fig:hjetscomp:results:1obs:j1pt_excl}%
     The leading jet transverse momentum distribution for exclusive
-    $h\pl1$-jet production, to the right (left) shown with (without)
+    $h+1$-jet production, to the right (left) shown with (without)
     the uncertainty bands provided by the various calculations. Ratio
     plots are displayed in the lower part of the plot using the
     \Powheg \NNLOPS result for $h$ production as their reference.
@@ -610,7 +610,7 @@ predictions that include parton showering operate at the same level of
 precision while the fixed-order calculations cannot do anything but
 fail in describing the $p_\perp(hj_1)$ distribution.
 
-For the $h\pl\ge1$-jet events, differences of $\mathcal{O}(30\%)$ are
+For the $h\,+\!\ge\!\!1$-jet events, differences of $\mathcal{O}(30\%)$ are
 observed among the ME+PS predictions below the jet threshold, while
 there is better agreement at higher $p_\perp$ values, where again
 \Herwig turns out to be on the softer side. The \Powheg and \Sherpa \NNLOPS 
@@ -638,7 +638,7 @@ used to build the nNLO prediction for the $h\,+\!\ge\!\!1$-jet
 process. However, as a result of the cut-off dependence of the
 procedure nothing can be said about the $p_\perp<25\gev$ region.
 Lastly, we comment on the uncertainties quoted by the different
-calculations: the \GoSam, \Minlo and \Loopsim envelopes have an
+calculations: the \GoSam{}+\Sherpa NLO, \Minlo and \Loopsim envelopes have an
 appropriate size reflecting the underlying LO nature of the
 $p_\perp(hj_1)$ prediction above the jet threshold. \MGaMC and \Sherpa
 \MEPSatNLO on the one side and \Herwig on the other side produce NLO
@@ -669,14 +669,10 @@ improvement in the inclusive case),%
 \footnote{Owing to the kinematic constraints on the jets, harder
   radiation that goes forward does not get identified as a jet;
   these contributions actually form the (naively unexpected)
-  $p_\perp>30\gev$ tail of the \GoSam results though the mechanism is
+  $p_\perp>30\gev$ tail of the \GoSam{}+\Sherpa results though the mechanism is
   highly suppressed.}
 and the severe decline of the \Herwig differential cross section
 dropping to about 25\% wrt.~the \Powheg result at $p_\perp\sim100\gev$.
-
-\Todo{the pT plot range of the hj1 sytem goes out to 400, in the pT
-  observables before we mainly did do 200? Any opinions? pro: it's a
-  system pT; contra: mainly LO, all others are 200.}
 
 
 
@@ -703,19 +699,19 @@ dropping to about 25\% wrt.~the \Powheg result at $p_\perp\sim100\gev$.
   using forward/backward tagging seems incomplete,
   also carries just Minlo results? Missing axis titles.}
 
-Moving to jettier `terrain', we discuss a number of $h\pl2$-jet
+Moving to jettier `terrain', we discuss a number of $h+2$-jet
 observables in this section. Again, we compare predictions from three
 different categories with each other: \NNLOPS $h$ production,
-\MEPSatNLO $h\pl\text{jets}$ production and fixed-order (plus related)
+\MEPSatNLO $h+\text{jets}$ production and fixed-order (plus related)
 $hjj$ production at ${\cal O}(\alpha^5_\mathrm{s})$. It is important
 to understand, in detail, the level of (dis-)agreement among the
-available predictions since the $h\pl2$-jet gluon fusion contribution
+available predictions since the $h+2$-jet gluon fusion contribution
 constitutes the major irreducible background in any LHC Run2 analysis
 targeting the prominent vector boson fusion channel. As before we have
 provided one ratio plot for each category in order to enhance the
 readability of our plots; common to all figures is the use of \Powheg's
 \NNLOPS prediction to serve as the reference result. Note that for
-each category, the accuracy with which the $h\pl2$-jet events are
+each category, the accuracy with which the $h+2$-jet events are
 described is different: the \NNLOPS predictions are at the LO+PS level
 while the \MEPSatNLO results incorporate the precision given by NLO+PS
 matching. \Hej generates predictions derived from the bevaviour of QCD
@@ -748,13 +744,13 @@ more than 40\% at $p_\perp(h)\sim400\gev$. Harder tails are also
 generated by \Sherpa \NNLOPS ($\sim30\%$), \Sherpa \MEPSatNLO and
 \MGaMC ($\sim20\%$), where those two obtained from merging ME+PS at
 NLO are consistent with the results emerging from the different
-\GoSam+\Sherpa calculations (which basically do not differ from one
+\GoSam{}+\Sherpa calculations (which basically do not differ from one
 another) at high $p_\perp$. \Herwig (giving the softest spectrum)
 however does not agree with the other NLO central predictions although
 it remains by and large within their uncertainty envelopes. Apart from
-the very first bin, the \GoSam based calculations show a rather
+the very first bin, the \GoSam{}+\Sherpa based calculations show a rather
 constant rate increase of about 20\% wrt.~\Powheg pointing to a
-$K$-factor size one more or less expects for $h\pl2$-jet production.
+$K$-factor size one more or less expects for $h+2$-jet production.
 
 \begin{figure}[t!]
   \centering
@@ -762,7 +758,7 @@ $K$-factor size one more or less expects for $h\pl2$-jet production.
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet2_pT_incl.pdf}
   \caption{\label{fig:hjetscomp:results:2obs:jet2_pt}%
-    The subleading jet $p_\perp$ for $h\pl\ge2$-jets production shown
+    The subleading jet $p_\perp$ for $h\,+\!\ge\!\!2$-jets production shown
     without (left) and with (right) theoretical uncertainties. The
     plot layout is the same as in the previous figure.
     \Todo{the Hey legend fell off the plot.}}
@@ -774,7 +770,7 @@ $K$-factor size one more or less expects for $h\pl2$-jet production.
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet2_pT_excl.pdf}
   \caption{\label{fig:hjetscomp:results:2obs:jet2_pt}%
-    The subleading jet $p_\perp$ for exclusive $h\pl2$-jets production
+    The subleading jet $p_\perp$ for exclusive $h+2$-jets production
     shown without (left) and with (right) theoretical uncertainties.
     Again, the layout is similar to that of
     Figure~\ref{fig:hjetscomp:results:2obs:hpt_j2pt} except for
@@ -825,7 +821,7 @@ low $p_T$, and significantly lower at high $p_T$.
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_deltay_jj.pdf}
   \caption{\label{fig:hjetscomp:results:2obs:dyjj}%
     The rapidity separation between the leading and subleading jets
-    for $h\pl\ge2$-jets production, shown without (left) and with
+    for $h\,+\!\ge\!\!2$-jets production, shown without (left) and with
     (right) theoretical uncertainties. The plot layout is the same as
     the one used in Figure~\ref{fig:hjetscomp:results:2obs:hpt_j2pt}.}
 \end{figure}
@@ -837,29 +833,30 @@ low $p_T$, and significantly lower at high $p_T$.
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_dijet_mass.pdf}
   \caption{\label{fig:hjetscomp:results:2obs:mjj}%
     The invariant mass distribution of the leading dijet system in
-    $h\pl\ge2$-jets production, shown without (left) and with (right)
+    $h\,+\!\ge\!\!2$-jets production, shown without (left) and with (right)
     theoretical uncertainties. The plot layout is the same as the one
     used in Figure~\ref{fig:hjetscomp:results:2obs:hpt_j2pt}.}
 \end{figure}
 
 The rapidity separation between the leading and sub-leading jets is
-shown in Figure~\ref{fig:hjetscomp:results:2obs:dyjj}, for $H+\ge2$
+shown in Figure~\ref{fig:hjetscomp:results:2obs:dyjj}, for $h\,+\!\ge\!\!2$
 jets. MG5 is lower than Powheg at high $\Delta y$ (while Sherpa is
 slightly higher).  Powheg is in good agreement with the fixed order
-gosam results for $H+\ge2$ jets. Similar conclusions hold for for the
+gosam results for $h\,+\!\ge\!\!2$ jets. Similar conclusions hold for for the
 dijet mass distribution, as shown in
 Figure~\ref{fig:hjetscomp:results:2obs:mjj}, although the differences
 among predictions are smaller.
 
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_jjfb_dy.pdf}
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_jjdy_dy.pdf}
   \hfill
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jjfb_dy.pdf}
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jjdy_dy.pdf}
   \caption{\label{fig:hjetscomp:results:2obs:dyjj_fb}%
     The rapidity separation between the two most forward-backward jets
     for $H+\ge2$ jets, without (left) and with (right) uncertainties.
-    \Todo{this plot doesn't seem to be up-to-date -- do we want it?}}
+    \Todo{this plot doesn't seem to be up-to-date -- do we want it?} 
+    \Todo{MS: Updated. Still, do we want it?}}
 \end{figure}
 
 \Todo{Do we want to show and discuss this plot? Seems outdated
@@ -879,7 +876,7 @@ among predictions are smaller.
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_deltaphi_jj_incl.pdf}
   \caption{\label{fig:hjetscomp:results:2obs:dphi_jj}%
     The $\Delta\phi$ separation between the two leading jets for
-    $h\pl\ge2$-jets production, presented without (left) and with
+    $h\,+\!\ge\!\!2$-jets production, presented without (left) and with
     (right) the associated theoretical uncertainties. Again, the
     plot layout is the same as the one used in
     Figure~\ref{fig:hjetscomp:results:2obs:hpt_j2pt}.}
@@ -1067,7 +1064,7 @@ element in \MGaMC.
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_deltaphi_jj_VBF.pdf}
   \caption{\label{fig:hjetscomp:results:VBFobs:dphijj}%
     The azimuthal separation of the leading jet pair (VBF cuts) shown
-    without (left) and with (right) uncertainities in $h\pl\ge2$-jet
+    without (left) and with (right) uncertainities in $h\,+\!\ge\!\!2$-jet
     production.}
 \end{figure}
 

@@ -71,6 +71,11 @@ YMin=1e-3
 YTwosidedTicks=1
 # END PLOT
 
+
+# BEGIN SPECIAL /MC_HJETS_LH15/jet1_pT_incl
+\rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
+# END SPECIAL
+
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/STWZ/STWZ-env.yoda/MC_HJETS_LH15/jet1_pT_incl
 ErrorBandColor=arylideyellow
 ErrorBandOpacity=0.5

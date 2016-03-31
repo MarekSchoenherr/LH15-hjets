@@ -4,15 +4,12 @@ DrawOnly=powheg un2lops madgraph sherpa herwig hej gosam-h2j-nlo gosam-h2j-minlo
 DrawReferenceFirst=0
 Legend=1
 Legend2=1
-Legend2Only=madgraph sherpa herwig hej 
-Legend2XPos=0.5
-Legend3=1
-Legend3Only=gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
-Legend3Title=\textsc{GoSam+Sherpa} hjj
-Legend3XPos=0.5
-Legend3YPos=0.67
-LegendOnly=powheg un2lops 
-LegendXPos=0.125
+Legend2Only=gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim 
+Legend2Title=\textsc{GoSam+Sherpa} hjj
+Legend2XPos=0.25
+Legend2YPos=0.27
+LegendOnly=powheg un2lops madgraph sherpa herwig hej 
+LegendXPos=0.55
 LogY=1
 PlotSize=10,8
 RatioPlot=0
@@ -48,16 +45,21 @@ RatioPlot3YMin=0.0001
 RatioPlot3YSize=4
 RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/Hjj_pT_incl
 RightMargin=0.45
-Title=Transverse momentum of Higgs boson and leading dijet system ($n_j\ge 2$)
+Title=Transverse momentum of Higgs and leading dijet system ($n_j\ge 2$)
 UseExtendedPSTricks=1
 XLabel=$p_\perp(hj_1j_2)$ [GeV]
-XMax=400
+XMax=150
 XTwosidedTicks=1
 YLabel=d$\sigma$/d$p_\perp$ [pb/GeV]
 YMax=1e0
-YMin=1e-6
+YMin=1e-4
 YTwosidedTicks=1
 # END PLOT
+
+
+# BEGIN SPECIAL /MC_HJETS_LH15/Hjj_pT_incl
+\rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
+# END SPECIAL
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/Hjj_pT_incl
 ErrorBandColor=black!30!white
