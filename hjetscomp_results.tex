@@ -1046,14 +1046,18 @@ agreement) are observed if the generalised tagging jet definition
 %% \end{figure}
 
 
-\clearpage
+
 \subsection{Multijet observables}
 \label{sec:hjetscomp:results:mjobs}
 
 In this section we consider observables sensitive to more than two jets.
-The most accurate predictions here come from the NLO computation of \GoSam+\Sherpa
-and \Sherpa \MEPSatNLO both of which include the 3rd jet at NLO accuracy and the 4th jet at LO accuracy.
-\MGaMC and \Herwig both include the 3rd jet at LO while the 4th jet is LO in \Herwig but showered in \MGaMC.
+The most accurate predictions here come from the NLO computations of 
+\GoSam{}+\Sherpa and \Sherpa \MEPSatNLO both of which include the 3rd 
+jet at NLO accuracy and the 4th jet at LO accuracy. \MGaMC and \Herwig 
+both include the 3rd jet at LO while the 4th jet is LO in \Herwig but 
+showered in \MGaMC. \Hej also includes LO matrix elements for the production 
+of the thirf jet. The \NNLOPS codes only have parton shower accuracy 
+throughout the observables of this section.
 
 
 \begin{figure}[t!]
@@ -1068,22 +1072,22 @@ and \Sherpa \MEPSatNLO both of which include the 3rd jet at NLO accuracy and the
   }
 \end{figure}
 
-The Higgs boson transverse momentum distribution for $H+\ge3$ jets is shown in
+The Higgs boson transverse momentum distribution for $h\,+\!\ge\!\!3$ jets is shown in
 Figure~\ref{fig:hjetscomp:results:mobs:hpt_j3}. In general we see larger
 results from predictions with at least LO accuracy over \Powheg which includes
 the 3rd jet via the parton shower. The \Sherpa \NNLOPS result is also
 significantly larger than \Powheg which shows that the \Sherpa shower generates
-more radiation than Pythia8. The \Hej prediction begins to increase over
-\Powheg at high $p_T$ and is closer to the NLO results of \GoSam+\Sherpa and
+more radiation than \Pythia~8. The \Hej prediction begins to increase over
+\Powheg at high $p_T$ and is closer there to the NLO results of \GoSam{}+\Sherpa and
 \Sherpa \MEPSatNLO. The multijet merged calculations on the whole agree well
 within scale uncertainties though these are rather large for \MGaMC and the
 central value for \Herwig shows a clear deviation below the jet $p_T$ cut.. The
-benefit of NLO accuracy is clearly seen in the \GoSam+\Sherpa which has large
+benefit of NLO accuracy is clearly seen in the \GoSam{}+\Sherpa which has large
 corrections over \Powheg. The \Minlo scale choice used in the fixed order
 computation has a central value that is almost identical to the dynamical scale
 of $\tfrac{1}{2}\,\sqrt{m_{h}^2+\sum p_{T,j_i}^2}$. The scale variations
 however are much larger on the lower end of the scale band, as observed in
-di-jet observables, yet for this observable grow with $p_T$.
+di-jet observables, yet for this observable they grow with $p_T$.
 
 \begin{figure}[t!]
   \centering
@@ -1097,12 +1101,13 @@ di-jet observables, yet for this observable grow with $p_T$.
   }
 \end{figure}
 
-The third jet $p_T$ for $H+\ge3$ jets is shown in
+The third jet $p_T$ for $h\,+\!\ge\!\!3$ jets is shown in
 Figure~\ref{fig:hjetscomp:results:mobs:j3pt}. Overall, a similar pattern to the
 previous Higgs boson transverse momentum distribution is followed. \Sherpa
-\MEPSatNLO has much smaller scale uncertainty than \MGaMC which . The fixed
-order \GoSam+\Sherpa results show more than 50\% increase over \Powheg at large
-$p_T$.  The close agreement between central values \GoSam+\Sherpa using the
+\MEPSatNLO has much smaller scale uncertainty than \MGaMC which mirrors 
+the small scale uncertainty of the NLO \GoSam{}+\Sherpa calculation. The fixed
+order \GoSam{}+\Sherpa results show more than 50\% increase over \Powheg at large
+$p_T$.  The close agreement between central values \GoSam{}+\Sherpa using the
 dynamical scale of $\tfrac{1}{2}\,\sqrt{m_{h}^2+\sum p_{T,j_i}^2}$ and \Minlo
 is somewhat suprising. The \Minlo scale variations in this case are more than
 double the NLO variations in this case though do not increase with $p_T$. Care
@@ -1139,29 +1144,39 @@ play.
 %Figure~\ref{fig:hjetscomp:results:mobs:HT_all} and the $H_T$ distribution for
 %jets only is shown in in Figure~\ref{fig:hjetscomp:results:mobs:HT_jets}.
 
-The $H_T$ distribution for the sum of jet transverse momenta in $H+\ge1$ jets
-is shown in Figure~\ref{fig:hjetscomp:results:mobs:HT_jets}. This observable is
-extremly sensitive to additional radiation and is a useful case to see the impact
-of different jet multiplicities. The NNLO+PS tools of \Sherpa\NNLOPS and \Powheg
-deviate significantly for $150 < H_T < 600$. \Sherpa\NNLOPS agrees better with the
-NNLO fixed order prediction for $H+1$ jet and to a certain extent the \Sherpa\MEPSatNLO
-computation. \Herwig and \MGaMC give results consistent with \Powheg except for deviations
-at low energies but with relatively large errors.
+The $H_T^\text{jet}$ distribution, defined as sum scalar sum of all jet 
+transverse momenta, is shown in Figure~\ref{fig:hjetscomp:results:mobs:HT_jets}. 
+Requiring $h\,+\!\ge\!\!1$-jet final states this observable is
+extremly sensitive to additional radiation and is a useful case to see 
+the impact of different jet multiplicities. While the \NNLOPS 
+computations of \Sherpa and \Powheg deviate significantly for 
+$150 < H_T^\text{jet} < 600$, \Sherpa \NNLOPS agrees better with 
+the BFGLP $hj$ NNLO fixed order prediction and, to a certain extent, 
+the \Sherpa \MEPSatNLO computation. \Herwig and \MGaMC give results 
+consistent with \Powheg except for deviations at low energies but with 
+relatively large errors.
 
-For very high $H_T^{\rm jet}$ all tools including some approximation to the 3rd
-jet converge while NLO predictions for $H+1$ jet quickly begin to fall away
-from other predictions. The \Loopsim $H+1,2$ jet prediction at nNLO does a good
+For very high $H_T^\text{jet}$ all tools including some approximation to the 3rd
+jet converge while NLO predictions for $h+1$ jet quickly begin to fall away
+from other predictions. The \Loopsim $h+(1,2)$ jet prediction at nNLO does a good
 job of matching the complete NNLO result here as it is designed to do. One also
 clearly sees the benefit of the 3rd jet at NLO accuracy.  The scale variations
-for the NLO $H+3$ jet either at fixed order with \Loopsim or the \Minlo
-procedure or the fully merged prediction with \Sherpa\MEPSatNLO have
+for the NLO $h+3$ jet either at fixed order with \Loopsim or the \Minlo
+procedure or the fully merged prediction with \Sherpa \MEPSatNLO have
 significantly smaller errors above $400$ GeV than other predictions.
 
 \Todo{Jan: we don't consider $H$ decays, so the all-objects HT would be
 different from an experimental point of view. Do we want both HTs and clarify
 or only the HTjets.}
+
 \Todo{I went with Jan on this one. I didn't see much benefit in both plots which are very similar.
 Since we have NNLO for HTjets that seemed a good choice.}
+
+\Todo{MS: I agree having only one. The basic difference is $H_T^\text{jet}$ 
+starts at $h+1$-jet while $H_T^\text{all}$ starts at $h+0$-jets. We have 
+NNLO computations for both, only that the inclusive NNLO calculation uses 
+a fixed scale to reproduce the ``correct'' inclusive cross section. Granted, 
+$H_T^\text{all}=m_h$ at LO.}
 
 \clearpage
 \subsection{Jet veto cross sections}
