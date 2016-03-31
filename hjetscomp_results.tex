@@ -974,8 +974,6 @@ webpage \cite{webpage}.
     and with (right) uncertainties.}
 \end{figure}
 
-%We start by examining the inclusive jet multiplicity distributions after
-%the application of the above detailed VBF cuts in
 The inclusive jet multiplicity distributions after the application of
 the VBF (VBF2) cuts are shown in
 Figure~\ref{fig:hjetscomp:results:inclobs:njets_VBF}
@@ -983,16 +981,13 @@ Figure~\ref{fig:hjetscomp:results:inclobs:njets_VBF}
 hierarchy observed is essentially the same as for the inclusive jet
 multiplicity distribution without any cuts. The differences among the
 predictions are slightly smaller with the VBF2 cuts than with the VBF
-cuts.  In both cases, the \NNLOPS calculations are again in very good
-agreement with \Sherpa \NNLOPS. \Todo{Correct?}
-% allowing for a larger uncertainty which is driven
-%by the partially evaluated resummation uncertainty not assessed in \Powheg.
+cuts.  In both cases, the \NNLOPS calculations are again in good 
+agreement with \Sherpa \NNLOPS predicting slightly larger cross sections.
 \Hej predicts only about 50\% of the cross section of \NNLOPS.
 %Comparing with the inclusive dijet
-%cross sections of Figure \ref{fig:hjetscomp:results:inclobs:njets}
-%Nonetheless, the number of gluon fusion events passing the VBF
-%selection criteria it therefore predicts a significantly smaller
-%VBF cut efficiency.
+%cross sections of Figure \ref{fig:hjetscomp:results:inclobs:njets},
+%it therefore predicts a significantly smaller VBF cut efficiency compared to 
+%the \NNLOPS calculations.
 For the $\ge2$-jet bin, the NLO merged predictions vary from a 20\%
 smaller cross section (\MGaMC) to a 20\% larger cross section (\Sherpa
 \MEPSatNLO); both are at the edge of the \NNLOPS uncertainty
@@ -1001,61 +996,21 @@ $\sim$20\%, despite being of NLO accuracy for these observables (only
 LO for \NNLOPS). This hints at underestimated uncertainties of the
 \NNLOPS calculations for this observable. The NLO and \Minlo
 \GoSam{}+\Sherpa predictions are also 20\% larger than the \NNLOPS
-result in the $\ge 2$ jet bin, close to the \Sherpa \MEPSatNLO
+result in the $\ge2$ jet bin, close to the \Sherpa \MEPSatNLO
 prediction, while the \Loopsim prediction is about 5\% higher than the
 \NNLOPS predictions.
-%Their uncertainties are all one-sided and with about 20\%
-%of the same relative size as the NLO multijet merged uncertainties.
 More differences are apparent after requiring a third jet. The NLO and
 \Minlo \GoSam{}+\Sherpa predictions are substantially larger than the
-\NNLOPS predictions and the prediction from \MGaMC, but in better
+\NNLOPS predictions and the prediction from \MGaMC and \Herwig, but in better
 agreement with that from \Sherpa \MEPSatNLO. This is expected given
 the NLO normalization present in those calculations (NLO,\Minlo
-\GoSam{}+\Sherpa, \Sherpa \NNLOPS). The third jet arises from parton
-showering in the \NNLOPS calculations and from a leading order matrix
-element in \MGaMC.
-%The \NNLOPS calculations drop with respect to
-%all other ones due to their thrid jet desription coming entirely from
-%their parton showers' soft-collinear approximation. Otherwise, the
-%picture remains unchanged. The fixed-order cross-section again is in
-%rough agreement with the \Sherpa \MEPSatNLO one, their uncertainties,
-%however, manifesting themselves differently.
-
-\Todo{physics!; why don't Powheg, MG5 have larger uncertainties in the
-  third jet bin?}
-
-%% We start by examining the inclusive jet multiplicity distributions after 
-%% the application of the above detailed VBF cuts in 
-%% Figure~\ref{fig:hjetscomp:results:inclobs:njets_VBF}. The hierarchy
-%% is essentially the same as for the inclusive jet multiplicity
-%% distribution without any cuts. The differences among the predictions
-%% are somewhat smaller with the VBF2 cuts than with the VBF cuts. 
-%% In both cases, the \NNLOPS calculations are again in very good agreement 
-%% with \Sherpa \NNLOPS allowing for a larger uncertainty which is driven 
-%% by the partially evaluated resummation uncertainty not assessed in \Powheg. 
-%% \Hej throughout predicts only about 50\% of the cross section of the the 
-%% \NNLOPS predicted cross section. Comparing with the inclusive dijet 
-%% cross sections of Figure \ref{fig:hjetscomp:results:inclobs:njets}
-%% Nonetheless, the number of gluon fusion events passing the VBF 
-%% selection criteria it therefore predicts a significantly smaller 
-%% VBF cut efficiency. The NLO merged predictions vary from a 20\% 
-%% smaller number of events (\MGaMC) to a 20\% larger number of events 
-%% (\Sherpa \MEPSatNLO) surviving the event selection, both at the edge of 
-%% the \NNLOPS uncertainty band. Interestingly, their uncertainty is of 
-%% similar size as the \NNLOPS on, $\sim$20\%, despite being of NLO 
-%% accuracy for these observables (only LO for \NNLOPS). This hints 
-%% at the underestimated uncertainties of the \NNLOPS calculations for 
-%% this observable. The NLO and \Minlo \GoSam{}+\Sherpa calculations are 
-%% also 20\% larger than the \NNLOPS result, close to the \Sherpa \MEPSatNLO 
-%% prediction, while the \Loopsim prediction exceeds the \NNLOPS ones only 
-%% by about 5\%. Their uncertainties are all one-sided and with about 20\% 
-%% of the same relative size as the NLO multijet merged uncertainties. 
-%% Requiring a third jet sees the \NNLOPS calculations drop with respect to 
-%% all other ones due to their thrid jet desription coming entirely from 
-%% their parton showers' soft-collinear approximation. Otherwise, the 
-%% picture remains unchanged. The fixed-order cross-section again is in 
-%% rough agreement with the \Sherpa \MEPSatNLO one, their uncertainties,
-%% however, manifesting themselves differently.
+\GoSam{}+\Sherpa, \Sherpa \MEPSatNLO). The third jet arises from parton
+showering in the \NNLOPS calculations and from the parton shower matched 
+leading order matrix elements in \MGaMC and \Herwig. Owing to the employed 
+matching techniques and the not-evaluated resummation uncertainties, 
+the uncertainties are underestimated in both calculations. The same 
+therefore holds for \Powheg \NNLOPS and (partially) for \Sherpa 
+\NNLOPS. 
 
 \begin{figure}[t!]
   \centering
@@ -1068,29 +1023,14 @@ element in \MGaMC.
     production.}
 \end{figure}
 
-The $\Delta\phi$ separation between the two tagging jets is a crucial
-observable in VBF measurements.
-%Its gluon fusion contribution is
-%similarly described by all calculations with the uncertainties being
-In general, there is good agreement among the various predictions for
-this observable, with the caveat
-%$\sim$20\% throughout.
-that \Sherpa, in both its \NNLOPS and its \MEPSatNLO forms, predict a
+The azimuthal separation between the two tagging jets is a crucial
+observable in VBF measurements. In general, there is good agreement 
+among the various predictions for this observable, with the caveat
+that \Sherpa, in both its \NNLOPS and its \MEPSatNLO forms, predicts a
 shallower dip at $\Delta\phi(j_1,j_2)\approx\tfrac{\pi}{2}$, something
 that can be traced to its parton shower. Similar distributions (and
 agreement) are observed if the generalised tagging jet definition
 (VBF2) is used.
-
-\Todo{physics!; I took the phi2 predictions out; do we want to do that?}
-
-%% The $\Delta\phi$ separation between the two leading jets is a crucial 
-%% observable in the VBF measurements. Its gluon fusion contribution is 
-%% similarly described by all calculations with the uncertainties being 
-%% $\sim$20\% throughout. Noteworthy is only the fact that \Sherpa, both 
-%% its \NNLOPS and its \MEPSatNLO calculations, predict a shallower dip 
-%% at $\Delta\phi(j_1,j_2)\approx\tfrac{\pi}{2}$, a fact that can be 
-%% traced to its parton shower. Similar distributions (and agreement) 
-%% are observed if the generalised tagging jet definition is used.
 
 %% \begin{figure}[t!]
 %%   \centering
@@ -1104,9 +1044,6 @@ agreement) are observed if the generalised tagging jet definition
 %%     \label{fig:hjetscomp:results:VBFobs:phi2}
 %%   }
 %% \end{figure}
-
-%% $\Delta\phi_2$
-
 
 
 \clearpage
