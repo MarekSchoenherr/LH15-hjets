@@ -936,10 +936,8 @@ contribution, hence the divergent behaviour in the soft domain and the
 significantly lower rate but constant LO shape wrt.~\Powheg at higher
 $p_\perp$. \Loopsim, as before, benefits from the fact that the third
 jet enters at NLO accuracy, but cannot describe the soft region due to
-the procedure's cut-off dependence.
-
-\Todo{the Minlo uncertainty band is still subject to discussion and
-  testing}
+the procedure's cut-off dependence. Its uncertainty is also much larger 
+than the good agreement of the central value might suggest.
 
 \begin{figure}[t!]
   \centering
@@ -953,26 +951,24 @@ the procedure's cut-off dependence.
     the one used in Figure~\ref{fig:hjetscomp:results:2obs:hpt}.}
 \end{figure}
 
-\begin{figure}[t!]
-  \centering
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_dijet_mass.pdf}
-  \hfill
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_dijet_mass.pdf}
-  \caption{\label{fig:hjetscomp:results:2obs:mjj}%
-    The invariant mass distribution of the leading dijet system in
-    $h\,+\!\ge\!\!2$-jets production, shown without (left) and with (right)
-    theoretical uncertainties. The plot layout is the same as the one
-    used in Figure~\ref{fig:hjetscomp:results:2obs:hpt}.}
-\end{figure}
-
 The rapidity separation between the leading and sub-leading jets is
 shown in Figure~\ref{fig:hjetscomp:results:2obs:dyjj}, for $h\,+\!\ge\!\!2$
-jets. MG5 is lower than Powheg at high $\Delta y$ (while Sherpa is
-slightly higher).  Powheg is in good agreement with the fixed order
-gosam results for $h\,+\!\ge\!\!2$ jets. Similar conclusions hold for for the
-dijet mass distribution, as shown in
-Figure~\ref{fig:hjetscomp:results:2obs:mjj}, although the differences
-among predictions are smaller.
+jets. Taking into account the picture present for the individual 
+jet's rapidity spectra, cf.\ Figures \ref{fig:hjetscomp:results:1obs:j1y} and 
+\ref{fig:hjetscomp:results:2obs:j2y}, the $\Delta y(j_1,j2)$ paints a mostly 
+consistent picture. \Sherpa \NNLOPS and \MGaMC are slightly more central 
+than \Powheg \NNLOPS, while \Sherpa \MEPSatNLO predicts both jets 
+slightly wider separated. Surprisingly, \Herwig shows a large increase 
+beyond $\Delta y>6$. However, it not clear whether this is due to 
+lacking statistics. The various \GoSam{}+\Sherpa NLO results are in good 
+agreement with each other and, as seen in the subleading jet's spectrum, 
+in excess by about $20\%$. The uncertainties are as expected or seen 
+before, only \Sherpa \MEPSatNLO's quoted uncertainties rise at 
+larger rapidity separation, likely due to the low identified scales in 
+that region. \Hej again predicts a much more steeply falling shape. 
+As this observable is used to identify VBF topologies, it is already 
+clear that the observed major difference of the \Hej calculation will 
+lead to substantially different cross sections after cut application.
 
 \begin{figure}[t!]
   \centering
@@ -986,22 +982,64 @@ among predictions are smaller.
     \Todo{MS: Updated. Still, do we want it?}}
 \end{figure}
 
-\Todo{Do we want to show and discuss this plot? Seems outdated
-  compared to all other ones:\\
-  The rapidity separation between the two most forward-backward jets is
-  shown in Figure~\ref{fig:hjetscomp:results:2obs:dyjj_fb}. As for the
-  $p_T$-ordered distribution, MG5 is lower than Powheg at high $\Delta
-  y$ while Sherpa is higher. Powheg now has a slope compared to the
-  \GoSam NLO results, but, interestingly, not compared to the nNLO
-  results.
-}
+As a slight digression, it is interesting to contemplate the rapidity 
+separation of the most forward and backward jets instead of the 
+leading jets. Of course, only dijet events which are accompanied by 
+a third jet are able to give a different value for this observable 
+as compared to $\Delta y(j_1,j_2)$. It is estimated that additional 
+jet production in such rapidity ordered states is well described 
+by calculations incorporating BFKL effects. 
+Figure~\ref{fig:hjetscomp:results:2obs:dyjj_fb} indeed shows a 
+somewhat different relative and absolute behaviour of the different 
+calculations. \Powheg \NNLOPS here tends to generate slightly more 
+central jets than the other calculations while the opposite is true 
+for \Sherpa \MEPSatNLO, exhibiting a clear slope. Again, in case 
+of \Sherpa \MEPSatNLO this can be traced to its parton shower used 
+in the scale setting. The fixed order calculations of \GoSam{}+\Sherpa 
+now possess a small shape difference compared to the reference which 
+was not present in the leading jet version of this observable. \Hej 
+on the other hand follows the same relative shape it showed in the 
+leading jet case up to rapidity separations of around 4. For larger 
+rapidity differences it the relative difference then decreases again 
+an arrives at $-30\%$ at $\Delta y=8$, betraying its differing 
+theoretical input.
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_dijet_mass.pdf}
+  \hfill
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_dijet_mass.pdf}
+  \caption{\label{fig:hjetscomp:results:2obs:mjj}%
+    The invariant mass distribution of the leading dijet system in
+    $h\,+\!\ge\!\!2$-jets production, shown without (left) and with (right)
+    theoretical uncertainties. The plot layout is the same as the one
+    used in Figure~\ref{fig:hjetscomp:results:2obs:hpt}.}
+\end{figure}
+
+Similar conclusions as for Figure \ref{fig:hjetscomp:results:2obs:dyjj} 
+hold for for the dijet invariant mass distribution, again formed by the 
+leading jets, although the differences among predictions are smaller. 
+It is shown in Figure~\ref{fig:hjetscomp:results:2obs:mjj}. Again, \Sherpa 
+\NNLOPS is in excess over \Powheg \NNLOPS by about $10\%$, only here this 
+excess remains almost constant throughout the sprectrum. The multijet 
+merged calculations are also in good agreement with the \Powheg reference 
+and, more importantly, with one another. Only \MGaMC falls below 
+\Herwig and \Sherpa \MEPSatNLO amounting to about $-20\%$ at 1\,TeV, 
+but well within the other calculations' uncertainties. The \GoSam{}+\Sherpa 
+NLO calculations also display the same increase of the cross section with 
+the respect to the reference seen before -- a constant $20\%$. The 
+scale variations in all three methods, NLO, \Minlo, \Loopsim, are 
+also in agreement for this obsevable. Only \Loopsim suffers somewhat 
+from the limited statistics of its NLO $h+3j$ component. Again, \Hej 
+suffers from its LO normalisation, ranging a near constant $\sim 40\%$ 
+below the other predictions.
 
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_deltaphi_jj_incl.pdf}
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_deltaphi_jj_incl.pdf}
-  \caption{\label{fig:hjetscomp:results:2obs:dphi_jj}%
+  \caption{\label{fig:hjetscomp:results:2obs:dphijj}%
     The $\Delta\phi$ separation between the two leading jets for
     $h\,+\!\ge\!\!2$-jets production, presented without (left) and with
     (right) the associated theoretical uncertainties. Again, the
@@ -1009,11 +1047,37 @@ among predictions are smaller.
     Figure~\ref{fig:hjetscomp:results:2obs:hpt}.}
 \end{figure}
 
-The $\Delta\phi$ separation between the two leading jets is shown in
-Figure~\ref{fig:hjetscomp:results:2obs:dphi_jj}. All predictions are
-in good agreement with each other, except for HEJ, which has a leading
-order normalization. Similar distributions (and agreement) are
-observed if the two most forward-backward jets are chosen instead.
+As a last multiobject observable we examine the azimuthal separation of 
+the leading dijet pair. Although this observable plays a crucial role 
+only after VBF cuts, forcing the events into vector boson fusion-like 
+topologies, it is interesting to analyze this observable in the 
+inclusive dijet selection to judge which features are impressed upon 
+it by the VBF event selection. Inherent differences of its description 
+on this inclusive level will invariably feed through to its final 
+useful level, being overlayed with different cut efficiencies then. 
+Further, this observable possess two topologically distinct regions. In 
+the first at $\Delta\phi\gtrsim 0$ both jets are in the same azimuthal 
+hemisphere and recoil against the Higgs boson. Here, large parton shower 
+effects are expected to be present and a peak at the radial jet threshold 
+will form. Conversely, for $\Delta\phi\lesssim \pi$ both jets are 
+back-to-back, recoiling against each other. The Higgs boson cannot possess 
+large transverse momenta in these situations. While the Higgs boson's 
+transverse momentum is affected by parton showers off these topologies 
+the $\Delta\phi$ distribution is hardly impacted.
+The $\Delta\phi$ separation between the two leading jets is now shown in
+Figure~\ref{fig:hjetscomp:results:2obs:dphijj}. All predictions are
+in reasonable agreement with each other, except for \Hej, which has a 
+leading order normalization. \Sherpa \NNLOPS exhibits again an excess of 
+$10-20\%$ for $\Delta\Phi\lesssim 2.5$ compared to the \Powheg \NNLOPS 
+result and agrees with it in the dijet back-to-back region. All multijet 
+merged distributions agree very well with each other and the reference 
+while the various \GoSam{}+\Sherpa NLO calculations, too, agree very 
+well among themselves, despite their different scales and inputs, but 
+exhibit a $20\%$ excess with respect to the reference for $\Delta\phi>0.5$, 
+increasing to $30\%$ as $\Delta\phi\to 0$. The largest deviation among 
+the different calculations is again presented by \Hej. It possesses 
+a roughly $20\%$ smaller cross section for small $\Delta\phi$, increasing 
+to about $40\%$ in the dijet back-to-back region.
 
 
 

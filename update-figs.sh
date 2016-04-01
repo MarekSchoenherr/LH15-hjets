@@ -8,7 +8,7 @@
 # OBS_VBF="NJet_incl_30_VBF NJet_incl_30_VBF2 deltaphi_jj_VBF deltaphi2_VBF H_jj_pT_VBF"
 # OBS_JV="xs_central_jet_veto_VBF xs_central_jet_veto_VBF2 xs_jet_veto_j0 xs_jet_veto_j1_30 xs_jet_veto_j1_200"
 
-OBS_USER="jet2_y"
+OBS_USER="deltay_jj jjdy_dy"
 
 if [ -d /home/marek/work/LH15/Sherpa-GoSamComparison ];
 then

@@ -52,7 +52,7 @@ XLabel=$\Delta y(j_\text{fw},j_\text{bw})$
 XMax=8
 XTwosidedTicks=1
 YLabel=d$\sigma$/d$\Delta y$ [pb]
-YMax=2
+YMax=2.5
 YMin=0
 YTwosidedTicks=1
 # END PLOT
