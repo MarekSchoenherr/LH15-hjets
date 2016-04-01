@@ -51,10 +51,10 @@ RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/Pow
 RightMargin=0.45
 Title=Leading jet rapidity
 UseExtendedPSTricks=1
-XLabel=$y(j_1)$ [GeV]
+XLabel=$y(j_1)$
 XMin=0
 XTwosidedTicks=1
-YLabel=d$\sigma$/d$p_\perp$ [pb/GeV]
+YLabel=d$\sigma$/d$p_\perp$ [pb]
 YMax=4
 YTwosidedTicks=1
 # END PLOT
