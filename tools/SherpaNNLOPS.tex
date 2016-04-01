@@ -1,4 +1,21 @@
 \subsubsection{\Sherpa \NNLOPS}
 \label{sec:hjetscomp:tools:nnlops:sherpa}
 
-
+A second NNLO prediction matched to a parton shower is investigated 
+in this study. The computation is performed in the \textsc{uN$^2$loPs} 
+method~\cite{Hoeche:2014aia,Hoche:2014dla}, which is based on the 
+\textsc{uNloPs} algorithm for merging inclusive NLO matched calculations 
+of varying jet multiplicity, while leaving their total cross sections 
+unchanged~\cite{Lonnblad:2012ix,Lonnblad:2012ng}. The event samples 
+used in this comparison were generated with an implementation of the 
+\textsc{uN$^2$loPs} matching scheme in the event generator \Sherpa. The 
+NNLO prediction needed for the matching is computed within \Sherpa itself, 
+using a $q_T$ cutoff method~\cite{Gao:2012ja}, for details see 
+\cite{Hoeche:2014aia,Hoche:2014dla}. We used a parton shower based 
+on Catani-Seymour dipole factorization~\cite{Schumann:2007mg,Hoeche:2009xc},
+which has been matched to the Higgs plus jet NLO calculation using 
+the S-MC@NLO method~\cite{Hoeche:2011fd,Hoeche:2012ft}. Renormalization 
+and factorization scales for the fixed-order calculation have been 
+set to $\mu_R = \mu_F = \tfrac{1}{2}\,m_h$, and the the parton shower 
+starting scale is set to the same value. The \texttt{MMHT2014nnlo68cl} 
+PDF set \cite{Harland-Lang:2014zoa} has been used throughout.
