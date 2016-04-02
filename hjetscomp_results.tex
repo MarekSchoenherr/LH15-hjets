@@ -684,7 +684,7 @@ we discuss a number of $h+2$-jet
 observables in this section. Again, we compare predictions from three
 different categories with each other: \NNLOPS $h$ production,
 \MEPSatNLO $h+\text{jets}$ production and fixed-order (and related)
-$hjj$ production at ${\cal O}(\alpha_\mathrm{s}^5)$. It is important
+$hjj$ production at $\mathcal{O}(\alpha_\mathrm{s}^5)$. It is important
 to understand, in detail, the level of (dis-)agreement among the
 available predictions since the $h+2$-jet gluon fusion contribution
 constitutes the major irreducible background in any LHC Run-II analysis
@@ -696,7 +696,7 @@ each category, the accuracy with which the $h+2$-jet events are
 described is different: the \NNLOPS predictions are at the LO+PS level
 while the multijet merged results incorporate the precision given by NLO+PS
 matching. \Hej generates predictions derived from the behavior of QCD
-in the high-energy limit, starting from a LO accurate $h+2j$ configuration. 
+in the high-energy limit, starting from a LO accurate $h+2$-jet configuration.
 With two or more jets in the final state,
 \Hej can provide meaningful predictions for the first time. As
 for earlier cases, the last category contains NLO accurate predictions
@@ -715,60 +715,8 @@ solely, free of any parton showering.
     The predictions are grouped -- from top to bottom -- according to
     the categories \NNLOPS $h$ production, ME+PS merging at NLO (at
     least up to two jets) and NLO fixed-order $hjj$ production. \Hej's
-    prediction is added to the first, the \NNLOPS, subpanel.}
+    prediction is added to the first, the \NNLOPS subpanel.}
 \end{figure}
-
-The Higgs boson $p_\perp$ spectrum, in the presence of at least two
-jets, is shown in Figure~\ref{fig:hjetscomp:results:2obs:hpt}.
-Here, although all calculations agree on the position of the maximum 
-of the distribution situated at $p_\perp\gtrsim 60\,\gev$, twice the 
-jet threshold, varying behavior is observed for larger and smaller 
-transverse momenta. Examining first the region with $p_\perp\gtrsim 
-60\,\gev$ good agreement between all multijet merged calculations and 
-\Powheg is found. Only \Herwig predicts a slightly more quickly falling 
-distribution. \Sherpa \NNLOPS, due to its scale choice, exhibits a 
-more or less constant offset of $+20\%$ with respect to the \Powheg 
-\NNLOPS, but well within their respective uncertainties. In comparison 
-to all the NLO uncertainty bands, the \NNLOPS envelopes are expected to 
-be larger reflecting the loss of one order in accuracy. A clear 
-difference however is not found indicating that the \NNLOPS estimates 
-are too optimistic. From this point of view, the larger difference seen 
-between the two \NNLOPS predictions is no surprise at all -- rather 
-typical for comparisons at the LO+PS level, and two fairly different 
-parton showers at work. The fixed-order 
-predictions (NLO, \Minlo, \Loopsim) agree well in this region with one 
-another, but surpass the \Powheg reference and, more importantly, 
-the multijet merged calculations with the same accuracy, by about 
-$20\%$. This deviation is just covered by the edge of the NLO uncertainty 
-band of either NLO calculation. Finally, \Hej clearly produces the 
-hardest spectrum in this region, presenting a clear slope 
-with respect to all other calculations, albeit starting from a 
-approximately $40\%$ lower cross section at $p_\perp\approx 60\,\gev$.
-
-In the region below the peak, $p_\perp\lesssim 60\,\gev$, the various 
-calculations spread widely. Assuming the jets to be produced near 
-threshold, then while for $p_\perp(h)>30\,\gev$ the leading and the 
-subleading jet have to be in the same hemissphere opposing the Higgs 
-boson, for $p_\perp<30\,\gev$ the subleading jet has to cross into the 
-Higgs boson's hemisphere opposing the leading jet. This latter region 
-receives large resummation effects as both jets recoil mainly against 
-each other and soft radiation off them has a large influence on the 
-small Higgs boson transverse momentum. Another important role in this 
-region is played by the assignment of scales in the context of multijet 
-merging. The clustering algorithm needed to define the local CKKW or 
-\Minlo scales must allow for the possibility of Higgs radiation of a 
-dijet process to assign a meaningful history in this regime if the jets 
-are sufficiently hard. In consequence, the value of the scales increases 
-and the cross section is reduced, explaining the identical behaviour of 
-both the \Sherpa MEPSatNLO and \Sherpa \Minlo predictions. The \Herwig 
-and \MGaMC predictions are largely parallel here, offset by the different 
-scale choice in \MGaMC. \Powheg \NNLOPS gives the slowest decline of the 
-differential cross section as $p_\perp\to 0$. The various fixed-order 
-predictions spread somewhat more widely then for large $p_\perp$ and 
-start to exhibit a slope with respect to the \Powheg reference, but 
-retain a more or less constant ratio with respect to \Herwig or \MGaMC 
-evidencing the effect of a scale choice unable to identify the Higgs 
-strahlungs component here.
 
 \begin{figure}[t!]
   \centering
@@ -778,12 +726,87 @@ strahlungs component here.
   \caption{\label{fig:hjetscomp:results:2obs:hpt_excl}%
     The transverse momentum of the Higgs boson in the presence of 
     exactly two jets without (left) and with (right) uncertainties,
-    supplemented by two ratio plots using the reference result as
+    supplemented by three ratio plots using the reference result as
     obtained from \Powheg's \NNLOPS calculation for $h$ production.
     The predictions are grouped -- from top to bottom -- according to
-    the categories \NNLOPS $h$ production and ME+PS merging at NLO (at
-    least up to two jets). \Hej's prediction is added to the first, 
-    the \NNLOPS, subpanel.}
+    the categories \NNLOPS $h$ production, ME+PS merging at NLO (at
+    least up to two jets) and NLO fixed-order $hjj$ production. \Hej's
+    prediction is added to the first, the \NNLOPS subpanel.}
+\end{figure}
+
+The Higgs boson $p_\perp$ spectrum, in the presence of at least two
+jets, is shown in Figure~\ref{fig:hjetscomp:results:2obs:hpt}.
+Here, although all calculations agree on the position of the maximum 
+of the distribution (situated at $p_\perp\gtrsim 60\gev$, twice the 
+jet threshold), varying behavior is observed for larger and smaller 
+transverse momenta. Examining first the region where $p_\perp\gtrsim 
+60\gev$, good agreement between all multijet merged calculations and 
+\Powheg is found. Only \Herwig predicts a somewhat more rapidly falling 
+distribution. \Sherpa \NNLOPS, due to its scale choice, exhibits a 
+more or less constant $\mathcal{O}(+20\%)$ offset with respect to the
+\Powheg \NNLOPS, but remains well within their respective uncertainties.
+In comparison to all the NLO uncertainty bands, the \NNLOPS envelopes
+are expected to be larger reflecting the loss of one order in accuracy.
+A clear difference however is not found indicating that the \NNLOPS
+estimates are too optimistic. From this point of view, the larger
+difference seen between the two \NNLOPS predictions is no surprise at
+all -- rather typical for comparisons at the LO+PS level, and two
+fairly different parton showers at work. The fixed-order
+predictions (NLO, \Minlo and \Loopsim) agree well in this region with
+one another, but surpass the \Powheg reference and, more importantly,
+the multijet merged calculations with the same accuracy, by about 
+20\%. This deviation is just covered by the edge of the uncertainty
+bands associated with either of the NLO calculations. Finally, \Hej
+clearly produces the hardest spectrum in this region, exhibiting a
+considerably different slope with respect to all other calculations,
+albeit it starts out from an approximately 40\% lower cross section at
+$p_\perp\approx 60\gev$.
+
+In the region below the peak, $p_\perp\lesssim 60\gev$, the various
+calculations spread more widely. We can readily distinguish between
+two topologies if we assume the jets to be produced near their
+$p_\perp$ threshold: while for $p_\perp(h)>30\gev$, both the leading
+and subleading jet have to be in the same hemissphere opposing the
+Higgs boson, for $p_\perp(h)<30\gev$, the subleading jet has to cross
+over into the Higgs boson's hemisphere opposing the leading jet.
+\Todo{JW: why go through all this if it's really only the
+  jet-balancing configs that we eventually are referring to? Plus the
+  jet-balancing also occurs for two hard jets}.
+This latter region
+receives large resummation corrections as both jets recoil mainly against 
+each other and soft radiation off them has a large influence on the 
+small Higgs boson transverse momentum. Another important role is
+played by the assignment of scales in the context of multijet merging.
+To assign a meaningful history in this regime, in particular for
+sufficiently hard jets, the clustering algorithm that is needed to
+define the local CKKW or \Minlo scales must allow for the possibility
+of Higgs boson radiation of a dijet process. In consequence, the value
+of the scales increases and the cross section is reduced, explaining
+the identical behaviour of both the \Sherpa \MEPSatNLO and \Sherpa
+\Minlo predictions. \Todo{JW: do you mean Minlo or NNLOPS? Minlo looks
+  like the other NLO preds.}
+The \Herwig and \MGaMC predictions are largely similar in shape, but
+offset as a result of the larger central scale choice in \MGaMC.
+\Powheg \NNLOPS gives the slowest decline of the differential cross
+section as $p_\perp\to0$.
+The various fixed-order predictions spread somewhat more widely then
+for large $p_\perp$ (as indcatied by the wider uncertainty bands), and 
+start to exhibit a slope wrt.~the \Powheg reference, retaining however
+a more or less constant ratio wrt.~\Herwig and \MGaMC. This is
+evidence for the effect of a scale choice unable to identify the
+Higgs-strahlungs component here. \Todo{JW: have trouble with the last
+  sentence, basically what evidences what, it's not clear to me. Do
+  you refer to the jet-balancing config?}
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_jet2_pT_incl.pdf}
+  \hfill
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet2_pT_incl.pdf}
+  \caption{\label{fig:hjetscomp:results:2obs:jet2_pt}%
+    The subleading jet $p_\perp$ for $h\,+\!\ge\!2$-jets production shown
+    without (left) and with (right) theoretical uncertainties. The
+    plot layout is the same as in the previous figure.}
 \end{figure}
 
 Figure \ref{fig:hjetscomp:results:2obs:hpt_excl} displays the 
@@ -805,18 +828,6 @@ Higgs boson transverse momentum and the rejected jet is present. Due to
 its lower scales, this effect is more pronounced using the \Minlo scales. 
 It is however remedied by the inclusion of NLO $h+3j$ information in the 
 \Loopsim approach, as seen before.
-
-\begin{figure}[t!]
-  \centering
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_jet2_pT_incl.pdf}
-  \hfill
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_jet2_pT_incl.pdf}
-  \caption{\label{fig:hjetscomp:results:2obs:jet2_pt}%
-    The subleading jet $p_\perp$ for $h\,+\!\ge\!\!2$-jets production shown
-    without (left) and with (right) theoretical uncertainties. The
-    plot layout is the same as in the previous figure.
-    \Todo{the HEJ legend fell off the plot.}}
-\end{figure}
 
 \begin{figure}[t!]
   \centering
