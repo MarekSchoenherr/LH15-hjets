@@ -1058,28 +1058,32 @@ Hej's prediction, shouldn't they predict wider separations?}
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_dijet_mass.pdf}
   \caption{\label{fig:hjetscomp:results:2obs:mjj}%
     The invariant mass distribution of the leading dijet system in
-    $h\,+\!\ge\!2$-jet production, shown without (left) and with (right)
+    $h\,+\!\ge\!2$-jets production, shown without (left) and with (right)
     theoretical uncertainties. The plot layout is the same as the one
     used in Figure~\ref{fig:hjetscomp:results:2obs:hpt}.}
 \end{figure}
 
-Similar conclusions as for Figure \ref{fig:hjetscomp:results:2obs:dyjj} 
+Similar conclusions as for Figure~\ref{fig:hjetscomp:results:2obs:dyjj} 
 hold for for the dijet invariant mass distribution, again formed by the 
-leading jets, although the differences among predictions are smaller. 
-It is shown in Figure~\ref{fig:hjetscomp:results:2obs:mjj}. Again, \Sherpa 
-\NNLOPS is in excess over \Powheg \NNLOPS by about $10\%$, only here this 
-excess remains almost constant throughout the sprectrum. The multijet 
-merged calculations are also in good agreement with the \Powheg reference 
-and, more importantly, with one another. Only \MGaMC falls below 
-\Herwig and \Sherpa \MEPSatNLO amounting to about $-20\%$ at 1\,TeV, 
-but well within the other calculations' uncertainties. The \GoSam{}+\Sherpa 
-NLO calculations also display the same increase of the cross section with 
-the respect to the reference seen before -- a constant $20\%$. The 
-scale variations in all three methods, NLO, \Minlo, \Loopsim, are 
-also in agreement for this obsevable. Only \Loopsim suffers somewhat 
-from the limited statistics of its NLO $h+3j$ component. Again, \Hej 
-suffers from its LO normalisation, ranging a near constant $\sim 40\%$ 
-below the other predictions.
+leading jets, although the differences among predictions are smaller.
+In fact Figure~\ref{fig:hjetscomp:results:2obs:mjj} shows that there
+are almost no shape deviations among the various predictions, except
+for the first-to-second bin transition which \Powheg and \MGaMC
+predict to rise more strongly. All other deviations are mainly driven
+by rate differences. \Sherpa \NNLOPS is in excess over \Powheg \NNLOPS
+by about 10\%, and maintains this excess almost throughout the whole
+spectrum. The multijet merged calculations are also in good agreement
+with the \Powheg reference and, more importantly, with one another. Only
+\MGaMC falls below \Herwig and \Sherpa \MEPSatNLO being about 20\%
+lower at $1\tev$, but well within the uncertainties of the other
+calculations. The \GoSam{}+\Sherpa NLO calculations display the same
+increase of the cross section wrt.~the reference as seen before -- a
+constant 20\% increase. The scale variations in all three methods,
+pure NLO, \Minlo and \Loopsim, are also in agreement for this
+observable. Only \Loopsim suffers somewhat from the limited statistics
+of its NLO $hjjj$ component. Again, \Hej is deviating more strongly
+but this time mainly as a result of its LO normalization, ranging a
+near constant $\sim 40\%$ below the other predictions.
 
 \begin{figure}[t!]
   \centering
@@ -1087,19 +1091,20 @@ below the other predictions.
   \hfill
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_deltaphi_jj_incl.pdf}
   \caption{\label{fig:hjetscomp:results:2obs:dphijj}%
-    The $\Delta\phi$ separation between the two leading jets for
-    $h\,+\!\ge\!\!2$-jets production, presented without (left) and with
-    (right) the associated theoretical uncertainties. Again, the
-    plot layout is the same as the one used in
+    The azimuthal angle separation, $\Delta\phi(j_1,j_2)$, between the
+    two leading jets for $h\,+\!\ge\!2$-jets production, presented
+    without (left) and with (right) the associated theoretical
+    uncertainties. Again, the plot layout is the same as the one used in
     Figure~\ref{fig:hjetscomp:results:2obs:hpt}.}
 \end{figure}
 
 As a last multiobject observable we examine the azimuthal separation of 
 the leading dijet pair. Although this observable plays a crucial role 
-only after VBF cuts, forcing the events into vector boson fusion-like 
-topologies, it is interesting to analyze this observable in the 
-inclusive dijet selection to judge which features are impressed upon 
-it by the VBF event selection. Inherent differences of its description 
+only after VBF selection cuts, which force the events into vector boson
+fusion-like topologies, it is interesting to analyze this observable in the 
+inclusive dijet selection to judge which features are impressed upon
+it \Todo{molded in} by the VBF event selection.
+Inherent differences of its description 
 on this inclusive level will invariably feed through to its final 
 useful level, being overlayed with different cut efficiencies then. 
 Further, this observable possess two topologically distinct regions. In 
