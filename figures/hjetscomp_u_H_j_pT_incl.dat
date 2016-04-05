@@ -1,17 +1,17 @@
 # BEGIN PLOT
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
-DrawOnly=nnlo-hj powheg un2lops madgraph sherpa herwig gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim 
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}	\definecolor{brightmaroon}{rgb}{0.72, 0.45, 0.2}
+DrawOnly=nnlo-hj resbos powheg un2lops madgraph sherpa herwig gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim 
 DrawReferenceFirst=0
 Legend=1
 Legend2=1
-Legend2Only=nnlo-hj 
+Legend2Only=resbos nnlo-hj 
 Legend2XPos=0.25
-Legend2YPos=0.37
+Legend2YPos=0.4
 Legend3=1
 Legend3Only=gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim 
 Legend3Title=\textsc{GoSam+Sherpa} hj
 Legend3XPos=0.25
-Legend3YPos=0.3
+Legend3YPos=0.27
 LegendOnly=powheg un2lops madgraph sherpa herwig 
 LegendXPos=0.5
 LogY=1
@@ -48,17 +48,17 @@ RatioPlot3YMax=1.4999
 RatioPlot3YMin=0.5001
 RatioPlot3YSize=4
 RatioPlot4=1
-RatioPlot4DrawOnly=gosam-h1j-nlo powheg un2lops
+RatioPlot4DrawOnly=powheg resbos nnlo-hj
 RatioPlot4DrawReferenceFirst=0
-RatioPlot4Reference=gosam-h1j-nlo
+RatioPlot4Reference=powheg
 RatioPlot4SameStyle=1
-RatioPlot4YLabel=Ratio to hj \textsc{Nlo}
+RatioPlot4YLabel=Ratio to \texttt{Powheg}
 RatioPlot4YMajorTickMarks=20
 RatioPlot4YMax=1.4999
 RatioPlot4YMin=0.5001
 RatioPlot4YSize=4
 RatioPlot5=1
-RatioPlot5DrawOnly=gosam-h1j-nlo madgraph sherpa herwig
+RatioPlot5DrawOnly=gosam-h1j-nlo powheg un2lops
 RatioPlot5DrawReferenceFirst=0
 RatioPlot5Reference=gosam-h1j-nlo
 RatioPlot5SameStyle=1
@@ -67,7 +67,17 @@ RatioPlot5YMajorTickMarks=20
 RatioPlot5YMax=1.4999
 RatioPlot5YMin=0.5001
 RatioPlot5YSize=4
-RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/BFGLP-NNLO/H1j_NNLO_m1sumpt2_cen0.5_BFGLP.yoda/MC_HJETS_LH15/H_j_pT_incl
+RatioPlot6=1
+RatioPlot6DrawOnly=gosam-h1j-nlo madgraph sherpa herwig
+RatioPlot6DrawReferenceFirst=0
+RatioPlot6Reference=gosam-h1j-nlo
+RatioPlot6SameStyle=1
+RatioPlot6YLabel=Ratio to hj \textsc{Nlo}
+RatioPlot6YMajorTickMarks=20
+RatioPlot6YMax=1.4999
+RatioPlot6YMin=0.5001
+RatioPlot6YSize=4
+RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/H_j_pT_incl
 RightMargin=0.45
 Title=Higgs boson transverse momentum ($n_j\ge 1$)
 UseExtendedPSTricks=1
@@ -83,6 +93,48 @@ YTwosidedTicks=1
 # BEGIN SPECIAL /MC_HJETS_LH15/H_j_pT_incl
 \rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
 # END SPECIAL
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/H_j_pT_incl
+ErrorType=env
+LegendOrder=0
+LineColor=brightmaroon!80!black
+LineStyle=solid
+LineWidth=1.5pt
+Name=resbos
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/H_j_pT_incl
+Title=\textsc{ResBos} 2
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	5.000000e+00	8.575363e-03	1.512048e-03	2.156051e-03
+5.000000e+00	1.000000e+01	2.712450e-02	5.031485e-03	4.792398e-03
+1.000000e+01	1.500000e+01	4.898452e-02	9.040314e-03	8.998804e-03
+1.500000e+01	2.000000e+01	7.272063e-02	1.233801e-02	1.729934e-02
+2.000000e+01	2.500000e+01	9.965405e-02	1.566482e-02	1.918368e-02
+2.500000e+01	3.000000e+01	1.218916e-01	2.078503e-02	9.315620e-03
+3.000000e+01	3.500000e+01	1.361174e-01	1.695483e-02	1.465930e-02
+3.500000e+01	4.000000e+01	1.805085e-01	2.847452e-02	3.076513e-02
+4.000000e+01	4.500000e+01	2.115821e-01	3.608441e-02	3.138447e-02
+4.500000e+01	5.000000e+01	2.211156e-01	4.006994e-02	4.399558e-02
+5.000000e+01	5.500000e+01	2.186561e-01	4.452123e-02	4.624165e-02
+5.500000e+01	6.000000e+01	2.021242e-01	3.334138e-02	5.464917e-02
+6.000000e+01	6.500000e+01	1.841799e-01	3.445427e-02	4.254132e-02
+6.500000e+01	7.000000e+01	1.611398e-01	3.044227e-02	3.315985e-02
+7.000000e+01	7.500000e+01	1.411987e-01	2.633221e-02	3.081329e-02
+7.500000e+01	8.000000e+01	1.256008e-01	2.483798e-02	3.251424e-02
+8.000000e+01	8.500000e+01	1.091713e-01	1.839385e-02	2.447481e-02
+8.500000e+01	9.000000e+01	9.936123e-02	1.774556e-02	2.052735e-02
+9.000000e+01	9.500000e+01	9.079490e-02	1.956235e-02	1.524334e-02
+9.500000e+01	1.000000e+02	8.119692e-02	1.741950e-02	1.638525e-02
+1.000000e+02	1.100000e+02	6.871235e-02	1.253967e-02	1.275148e-02
+1.100000e+02	1.200000e+02	5.501087e-02	9.750421e-03	1.321860e-02
+1.200000e+02	1.300000e+02	4.534235e-02	8.220772e-03	7.589681e-03
+1.300000e+02	1.400000e+02	3.716651e-02	6.575972e-03	8.199712e-03
+1.400000e+02	1.500000e+02	3.090416e-02	5.768643e-03	4.991231e-03
+1.500000e+02	1.600000e+02	2.591845e-02	4.155778e-03	4.333200e-03
+1.600000e+02	1.700000e+02	2.062380e-02	2.347553e-03	5.024545e-03
+1.700000e+02	1.800000e+02	1.856967e-02	3.069344e-03	3.120314e-03
+1.800000e+02	1.900000e+02	1.538576e-02	2.381500e-03	1.272117e-03
+1.900000e+02	2.000000e+02	1.298096e-02	1.173527e-03	4.242733e-04
+# END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/BFGLP-NNLO/H1j_NNLO_m1sumpt2_cen0.5_BFGLP.yoda/MC_HJETS_LH15/H_j_pT_incl
 LegendOrder=2

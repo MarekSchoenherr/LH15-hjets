@@ -1,12 +1,12 @@
 # BEGIN PLOT
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
-DrawOnly=powheg un2lops madgraph sherpa herwig gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim  nnlo-hj
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}	\definecolor{brightmaroon}{rgb}{0.72, 0.45, 0.2}
+DrawOnly=resbos powheg un2lops madgraph sherpa herwig gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim  nnlo-hj
 DrawReferenceFirst=0
 Legend=1
 Legend2=1
-Legend2Only=nnlo-hj 
+Legend2Only=resbos nnlo-hj 
 Legend2XPos=0.1
-Legend2YPos=0.35
+Legend2YPos=0.34
 Legend3=1
 Legend3Only=gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim  
 Legend3Title=\textsc{GoSam+Sherpa} hj
@@ -38,7 +38,7 @@ RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlot3=1
-RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim nnlo-hj 
+RatioPlot3DrawOnly=powheg resbos gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim nnlo-hj 
 RatioPlot3DrawReferenceFirst=0
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
@@ -47,7 +47,7 @@ RatioPlot3YMajorTickMarks=20
 RatioPlot3YMax=1.4999
 RatioPlot3YMin=0.5001
 RatioPlot3YSize=4
-RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/jet1_y
+RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/jet1_y
 RightMargin=0.45
 Title=Leading jet rapidity
 UseExtendedPSTricks=1
@@ -63,6 +63,32 @@ YTwosidedTicks=1
 # BEGIN SPECIAL /MC_HJETS_LH15/jet1_y
 \rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
 # END SPECIAL
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/jet1_y
+ErrorType=env
+LegendOrder=0
+LineColor=brightmaroon!80!black
+LineStyle=solid
+LineWidth=1.5pt
+Name=resbos
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/jet1_y
+Title=\textsc{ResBos} 2
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.500000e-01	3.181590e+00	5.226250e-01	6.267471e-01
+2.500000e-01	5.000000e-01	3.121548e+00	5.454626e-01	5.832481e-01
+5.000000e-01	7.500000e-01	3.095818e+00	5.571306e-01	6.529846e-01
+7.500000e-01	1.000000e+00	2.976178e+00	5.139751e-01	6.100425e-01
+1.000000e+00	1.250000e+00	2.828701e+00	4.640416e-01	5.470974e-01
+1.250000e+00	1.500000e+00	2.704013e+00	4.477281e-01	5.472468e-01
+1.500000e+00	1.750000e+00	2.470618e+00	4.022232e-01	4.400586e-01
+1.750000e+00	2.000000e+00	2.315803e+00	4.300385e-01	4.331800e-01
+2.000000e+00	2.250000e+00	2.118405e+00	3.847151e-01	3.919246e-01
+2.250000e+00	2.500000e+00	1.884397e+00	3.403526e-01	2.991567e-01
+2.500000e+00	3.000000e+00	1.543991e+00	2.780229e-01	2.540247e-01
+3.000000e+00	3.500000e+00	1.070703e+00	1.814087e-01	2.147503e-01
+3.500000e+00	4.000000e+00	6.617747e-01	1.117525e-01	1.212842e-01
+4.000000e+00	4.400000e+00	3.530956e-01	5.261035e-02	5.413598e-02
+# END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/PowhegNNLOPS/PowhegNNLOPS_Pythia8_M1250_MMHT14_13TeV_envelope.yoda/MC_HJETS_LH15/jet1_y
 LegendOrder=3

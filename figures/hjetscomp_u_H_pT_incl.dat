@@ -1,6 +1,6 @@
 # BEGIN PLOT
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
-DrawOnly=hqt powheg un2lops madgraph sherpa herwig 
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}	\definecolor{brightmaroon}{rgb}{0.72, 0.45, 0.2}
+DrawOnly=hqt resbos powheg un2lops madgraph sherpa herwig 
 DrawReferenceFirst=0
 Legend=1
 LegendXPos=0.5
@@ -28,12 +28,12 @@ RatioPlot2YMajorTickMarks=20
 RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
-RatioPlot3=0
-RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo hqt stwz nnlo-h nnlo-hj 
+RatioPlot3=1
+RatioPlot3DrawOnly=hqt resbos 
 RatioPlot3DrawReferenceFirst=0
-RatioPlot3Reference=powheg
+RatioPlot3Reference=hqt
 RatioPlot3SameStyle=1
-RatioPlot3YLabel=Ratio to \texttt{Powheg}
+RatioPlot3YLabel=Ratio to \textsc{HqT}
 RatioPlot3YMajorTickMarks=20
 RatioPlot3YMax=1.4999
 RatioPlot3YMin=0.5001
@@ -95,6 +95,48 @@ Title=\textsc{HqT}
 1.700000e+02	1.800000e+02	1.674237e-02	3.141424e-03	3.368763e-03
 1.800000e+02	1.900000e+02	1.417104e-02	2.631632e-03	2.742987e-03
 1.900000e+02	2.000000e+02	1.205374e-02	2.213388e-03	2.235134e-03
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/H_pT_incl
+ErrorType=env
+LegendOrder=0
+LineColor=brightmaroon!80!black
+LineStyle=solid
+LineWidth=1.5pt
+Name=resbos
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/H_pT_incl
+Title=\textsc{ResBos} 2
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	5.000000e+00	3.735177e-01	9.687108e-02	4.997912e-02
+5.000000e+00	1.000000e+01	8.820264e-01	1.089090e-01	4.587394e-02
+1.000000e+01	1.500000e+01	9.859411e-01	5.052680e-02	1.185220e-02
+1.500000e+01	2.000000e+01	9.208986e-01	1.189309e-02	2.318680e-03
+2.000000e+01	2.500000e+01	8.054566e-01	7.436734e-02	3.405589e-02
+2.500000e+01	3.000000e+01	6.650528e-01	1.054910e-01	7.157308e-02
+3.000000e+01	3.500000e+01	5.314675e-01	9.018961e-02	9.739536e-02
+3.500000e+01	4.000000e+01	4.331957e-01	7.595462e-02	8.631054e-02
+4.000000e+01	4.500000e+01	3.577510e-01	6.254551e-02	7.558817e-02
+4.500000e+01	5.000000e+01	3.012630e-01	5.490996e-02	6.365281e-02
+5.000000e+01	5.500000e+01	2.549748e-01	4.563747e-02	5.661297e-02
+5.500000e+01	6.000000e+01	2.190394e-01	4.144055e-02	4.717948e-02
+6.000000e+01	6.500000e+01	1.879286e-01	3.457658e-02	4.328197e-02
+6.500000e+01	7.000000e+01	1.637583e-01	3.088439e-02	3.570311e-02
+7.000000e+01	7.500000e+01	1.427706e-01	2.636348e-02	3.225970e-02
+7.500000e+01	8.000000e+01	1.256381e-01	2.384292e-02	2.782157e-02
+8.000000e+01	8.500000e+01	1.104634e-01	2.079608e-02	2.512848e-02
+8.500000e+01	9.000000e+01	9.768155e-02	1.859055e-02	2.183969e-02
+9.000000e+01	9.500000e+01	8.671457e-02	1.633477e-02	1.910690e-02
+9.500000e+01	1.000000e+02	7.757118e-02	1.572878e-02	1.692878e-02
+1.000000e+02	1.100000e+02	6.472109e-02	1.232600e-02	1.464970e-02
+1.100000e+02	1.200000e+02	5.212417e-02	1.021694e-02	1.137120e-02
+1.200000e+02	1.300000e+02	4.207755e-02	7.987391e-03	9.069465e-03
+1.300000e+02	1.400000e+02	3.461685e-02	6.883696e-03	7.201847e-03
+1.400000e+02	1.500000e+02	2.828610e-02	5.836090e-03	5.940270e-03
+1.500000e+02	1.600000e+02	2.332826e-02	4.831364e-03	4.690619e-03
+1.600000e+02	1.700000e+02	1.932608e-02	4.006143e-03	3.914291e-03
+1.700000e+02	1.800000e+02	1.632889e-02	3.396481e-03	3.084788e-03
+1.800000e+02	1.900000e+02	1.386456e-02	3.249500e-03	2.761867e-03
+1.900000e+02	2.000000e+02	1.145519e-02	2.745218e-03	2.309533e-03
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLO/nnlo-mh/nnlo-mh-envelope-3p-sel-min.yoda/MC_HJETS_LH15/H_pT_incl

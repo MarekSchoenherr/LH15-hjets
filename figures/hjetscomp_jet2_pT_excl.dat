@@ -1,5 +1,5 @@
 # BEGIN PLOT
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}	\definecolor{brightmaroon}{rgb}{0.72, 0.45, 0.2}
 DrawOnly=powheg un2lops madgraph sherpa herwig hej 
 DrawReferenceFirst=0
 Legend=1

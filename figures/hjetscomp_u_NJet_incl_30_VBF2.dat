@@ -1,13 +1,13 @@
 # BEGIN PLOT
 ConnectBins=0
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}	\definecolor{brightmaroon}{rgb}{0.72, 0.45, 0.2}
 DrawOnly=powheg un2lops madgraph sherpa herwig hej 
 DrawReferenceFirst=0
 Legend=1
 Legend2=0
-Legend2Only=stwz nnlo-h nnlo-hj 
+Legend2Only=stwz resbos nnlo-h nnlo-hj 
 Legend2XPos=0.05
-Legend2YPos=0.47
+Legend2YPos=0.53
 Legend3=0
 Legend3Only=gosam-h2j-nlo gosam-h3j-nlo 
 Legend3Title=\hspace*{-7mm}\textsc{GoSam+Sherpa}

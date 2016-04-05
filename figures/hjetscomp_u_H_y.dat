@@ -1,6 +1,6 @@
 # BEGIN PLOT
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
-DrawOnly=nnlo-h powheg un2lops madgraph sherpa herwig 
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}	\definecolor{brightmaroon}{rgb}{0.72, 0.45, 0.2}
+DrawOnly=nnlo-h resbos powheg un2lops madgraph sherpa herwig 
 DrawReferenceFirst=0
 Legend=1
 LegendXPos=0.45
@@ -27,17 +27,17 @@ RatioPlot2YMajorTickMarks=20
 RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
-RatioPlot3=0
-RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo hqt stwz nnlo-h nnlo-hj 
+RatioPlot3=1
+RatioPlot3DrawOnly=nnlo-h resbos 
 RatioPlot3DrawReferenceFirst=0
-RatioPlot3Reference=powheg
+RatioPlot3Reference=nnlo-h
 RatioPlot3SameStyle=1
-RatioPlot3YLabel=Ratio to \texttt{Powheg}
+RatioPlot3YLabel=Ratio to h \textsc{Nnlo}
 RatioPlot3YMajorTickMarks=20
 RatioPlot3YMax=1.4999
 RatioPlot3YMin=0.5001
 RatioPlot3YSize=4
-RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLO/nnlo-mh/nnlo-mh-envelope-3p-sel-min.yoda/MC_HJETS_LH15/H_y
+RatioPlotReference=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/H_y
 RightMargin=0.45
 Title=Higgs boson rapidity
 UseExtendedPSTricks=1
@@ -54,6 +54,51 @@ YTwosidedTicks=1
 # BEGIN SPECIAL /MC_HJETS_LH15/H_y
 \rput[tr]{90}(1.008,1.){LH15 $pp\to h+\text{jets}$ comparison}
 # END SPECIAL
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/H_y
+ErrorType=env
+LegendOrder=0
+LineColor=brightmaroon!80!black
+LineStyle=solid
+LineWidth=1.5pt
+Name=resbos
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/H_y
+Title=\textsc{ResBos} 2
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	2.003577e+01	1.764647e+00	1.470798e+00
+1.000000e-01	2.000000e-01	1.989607e+01	1.753345e+00	1.445938e+00
+2.000000e-01	3.000000e-01	1.985247e+01	1.749619e+00	1.468666e+00
+3.000000e-01	4.000000e-01	1.979218e+01	1.751177e+00	1.456387e+00
+4.000000e-01	5.000000e-01	1.951781e+01	1.729342e+00	1.425556e+00
+5.000000e-01	6.000000e-01	1.922627e+01	1.697683e+00	1.397554e+00
+6.000000e-01	7.000000e-01	1.891558e+01	1.677382e+00	1.405293e+00
+7.000000e-01	8.000000e-01	1.851357e+01	1.631845e+00	1.364775e+00
+8.000000e-01	9.000000e-01	1.818018e+01	1.627546e+00	1.338179e+00
+9.000000e-01	1.000000e+00	1.766627e+01	1.559443e+00	1.285406e+00
+1.000000e+00	1.100000e+00	1.723777e+01	1.528557e+00	1.259823e+00
+1.100000e+00	1.200000e+00	1.666038e+01	1.479997e+00	1.232475e+00
+1.200000e+00	1.300000e+00	1.604711e+01	1.444183e+00	1.169994e+00
+1.300000e+00	1.400000e+00	1.549326e+01	1.395173e+00	1.140330e+00
+1.400000e+00	1.500000e+00	1.479039e+01	1.337606e+00	1.077780e+00
+1.500000e+00	1.600000e+00	1.415308e+01	1.300488e+00	1.046412e+00
+1.600000e+00	1.700000e+00	1.338182e+01	1.227485e+00	9.731512e-01
+1.700000e+00	1.800000e+00	1.258672e+01	1.166623e+00	9.375277e-01
+1.800000e+00	1.900000e+00	1.191175e+01	1.125336e+00	8.804884e-01
+1.900000e+00	2.000000e+00	1.108114e+01	1.048055e+00	8.453550e-01
+2.000000e+00	2.100000e+00	1.031055e+01	9.757452e-01	7.592049e-01
+2.100000e+00	2.200000e+00	9.495735e+00	8.977203e-01	7.293463e-01
+2.200000e+00	2.300000e+00	8.670514e+00	8.381915e-01	6.733589e-01
+2.300000e+00	2.400000e+00	7.912199e+00	7.728481e-01	6.055250e-01
+2.400000e+00	2.500000e+00	7.136605e+00	7.001758e-01	5.842662e-01
+2.500000e+00	2.700000e+00	6.036971e+00	5.988817e-01	4.740791e-01
+2.700000e+00	2.900000e+00	4.622946e+00	4.674230e-01	3.890867e-01
+2.900000e+00	3.100000e+00	3.386184e+00	3.576837e-01	2.831318e-01
+3.100000e+00	3.300000e+00	2.332533e+00	2.543533e-01	2.076762e-01
+3.300000e+00	3.500000e+00	1.462378e+00	1.707731e-01	1.468127e-01
+3.500000e+00	4.000000e+00	4.996339e-01	6.775084e-02	5.913267e-02
+4.000000e+00	4.500000e+00	2.589998e-02	4.720552e-03	3.231725e-03
+4.500000e+00	5.000000e+00	-9.769764e-04	1.142075e-04	1.545672e-04
+# END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLO/nnlo-mh/nnlo-mh-envelope-3p-sel-min.yoda/MC_HJETS_LH15/H_y
 LegendOrder=1

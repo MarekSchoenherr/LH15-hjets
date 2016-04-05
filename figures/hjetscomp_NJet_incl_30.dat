@@ -1,13 +1,13 @@
 # BEGIN PLOT
 ConnectBins=0
-DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
-DrawOnly=hqt stwz nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo nnlo-hj 
+DefineColor=\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}	\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}	\definecolor{brightmaroon}{rgb}{0.72, 0.45, 0.2}
+DrawOnly=hqt stwz resbos nnlo-h powheg un2lops madgraph sherpa herwig hej gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo nnlo-hj 
 DrawReferenceFirst=0
 Legend=1
 Legend2=1
-Legend2Only=stwz nnlo-h nnlo-hj 
+Legend2Only=stwz resbos nnlo-h nnlo-hj 
 Legend2XPos=0.05
-Legend2YPos=0.47
+Legend2YPos=0.53
 Legend3=1
 Legend3Only=gosam-h1j-nlo gosam-h2j-nlo gosam-h3j-nlo 
 Legend3Title=\hspace*{-7mm}\textsc{GoSam+Sherpa}
@@ -48,7 +48,7 @@ RatioPlot2YMax=1.4999
 RatioPlot2YMin=0.5001
 RatioPlot2YSize=4
 RatioPlot3=1
-RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo hqt stwz nnlo-h nnlo-hj 
+RatioPlot3DrawOnly=powheg gosam-h1j-nlo gosam-h1j-minlo gosam-h1j-loopsim gosam-h2j-nlo gosam-h2j-minlo gosam-h2j-loopsim gosam-h3j-nlo gosam-h3j-minlo hqt stwz resbos nnlo-h nnlo-hj 
 RatioPlot3DrawReferenceFirst=0
 RatioPlot3Reference=powheg
 RatioPlot3SameStyle=1
@@ -96,6 +96,27 @@ Title=STWZ
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e-01	5.000000e-01	4.734000e+01	2.390000e+00	2.390000e+00
 5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTOGRAM
+
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/NJet_incl_30
+ErrorBandColor=brightmaroon
+ErrorBandOpacity=0.2
+ErrorBands=1
+ErrorTubeLineColor=brightmaroon!90!black
+ErrorTubes=1
+ErrorType=env
+LegendOrder=0
+LineColor=brightmaroon!80!black
+LineStyle=solid
+LineWidth=1.5pt
+Name=resbos
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/NJet_incl_30
+Title=\textsc{ResBos} 2
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	4.220000e+01	3.900000e+00	3.200000e+00
+5.000000e-01	1.500000e+00	1.690000e+01	2.900000e+00	3.200000e+00
 1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
