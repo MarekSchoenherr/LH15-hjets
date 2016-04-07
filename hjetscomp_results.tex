@@ -294,7 +294,8 @@ the differences at NLO.
     dynamical scales are $\hat{H}_T'=m_{T,h} + \sum_{\rm partons} p_T$ 
     (see also eq.~\eqref{eq:hthatprime}) and 
     $\Sigma_T = m_h^2 + \sum_{\rm jets} p_T^2$ 
-    (see also eq.~\eqref{eq:bfglpScale}).
+    (see also eq.~\eqref{eq:bfglpScale}). We note that thought the NNLO figures
+    are not available for $\hat{H}_T'/2$ or $m_H/2$ the variations will be very small.
   }
   \label{tab:H1jXS}
 \end{table}
@@ -371,14 +372,14 @@ clear indication of the instability emerging at the jet threshold.
 Comparing the different fixed-order predictions, which are detailed in 
 the third ratio plot, noticeable differences only
 occur between the NNLO prediction and the four NLO predictions as
-obtained from \Powheg and the three version of \GoSam{}+\Sherpa (pure
+obtained from \Powheg and the three variations on \GoSam{}+\Sherpa (pure
 NLO, \Minlo and \Loopsim). The NNLO tail is harder by about 15\% which
 is expected since the $p_\perp$ tail is affected by multi-jet
 contributions. The NNLO treatment includes these contributions to a
-larger extent, as it respectively includes $h+2$-jet and
-$h+3$-jet contributions at the NLO and LO. For $p_\perp(h)< 30\,\gev$, 
+larger extent, as it includes $h+2$-jet and
+$h+3$-jet contributions at the NLO and LO respectively. For $p_\perp(h)< 30\,\gev$, 
 the (N)NLO description is degraded to (N)LO. Here, the inclusion of 
-the first term of the Sudakov resummation included in \Powheg benefits 
+the first term of the Sudakov resummation, also included in \Powheg, benefits 
 the BFGLP $hj$ NNLO calculation. However, it
 can be noticed that apart from \Powheg and the BFGLP $hj$ NNLO
 calculation all other approaches predict a more steeply falling
@@ -487,7 +488,7 @@ between all results where the largest deviations rarely exceed the
 20\% mark. For the exclusive lead-jet transverse momentum distribution
 of Figure~\ref{fig:hjetscomp:results:1obs:j1pt_excl}, this means that
 all predictions are in reasonably good agreement with \Powheg. The
-\MGaMC prediction is lower than \Powheg for basically the entire
+\MGaMC prediction is lower than \Powheg for almost the entire
 transverse momentum range, again because of the central scale choice
 being higher than in the other approaches. For the inclusive lead-jet
 transverse momentum spectrum (see
@@ -526,8 +527,8 @@ has the best theoretical uncertainties available, is in good agreement
 with the \Sherpa \NNLOPS prediction, and to a
 somewhat lesser extent, with the \Powheg \NNLOPS predictions. The level of
 moderate disagreements observed with the multijet merged calculations 
-may be due to the somewhat different scale choices that are still important 
-at NLO. The largest deviation seen with \MGaMC is can mainly be traced to 
+may be due to the different scale choices that are still important 
+at NLO. The largest deviation seen with \MGaMC can mainly be traced to 
 its different choice of central scales. There is no sign of any serious 
 impact of the merging of the
 fixed-order predictions with parton showers, as expected for such an
@@ -548,6 +549,7 @@ inclusive cross section.
 \end{figure}
 
 \Todo{MS: Too colloquial?}
+\Todo{SB: I don't understand this paragraph - It seems to be mixed up with a question.}
 
 Did we talk about great agreement in the previous case where we
 discussed the $p_\perp(j_1)$ distribution, the agreement found for the
@@ -594,7 +596,7 @@ to all other NLO-accurate predictions.
 
 We finish this section by examining the results for the transverse
 momentum of the Higgs-boson plus leading-jet system. In other words,
-we are interested in studying the different answers in describing the
+we are interested in studying the different descriptions of the
 recoil of the $hj_1$ system. In the inclusive one-jet case depicted in
 Figure~\ref{fig:hjetscomp:results:1obs:hj_pt}, the system may recoil
 against a second jet (or secondary jets) plus soft radiation, while
@@ -682,7 +684,7 @@ dropping to about 25\% wrt.~the \Powheg result at $p_\perp\sim100\gev$.
 
 Moving to topologies with one more jet in the final state, 
 we discuss a number of $h+2$-jet
-observables in this section. Again, we compare predictions from three
+observables in this section. Following the previous sections, we compare predictions from three
 different categories with each other: \NNLOPS $h$ production,
 \MEPSatNLO $h+\text{jets}$ production and fixed-order (and related)
 $hjj$ production at $\mathcal{O}(\alpha_\mathrm{s}^5)$. It is important
@@ -833,8 +835,8 @@ fixed-order predictions start to lose their perturbative stability when
 the $p_\perp$ ratio between the observed Higgs boson and the rejected
 jet turns out to be large. This effect is more pronounced for the
 \Minlo procedure because it generates lower scale values on
-average. In the \Loopsim approach, perturbative stability is however
-restored as a result of the inclusion of $hjjj$ information.
+average. In the \Loopsim approach, perturbative stability is
+improved as a result of the inclusion of $hjjj$ information.
 
 \begin{figure}[t!]
   \centering
@@ -880,7 +882,7 @@ pronounced way to what we found for $p_\perp(j_1)$ in the $n_j\ge1$
 case. 
 \Loopsim combines the NLO-accurate $hjj$ and $hjjj$ bins, and in doing
 so it seems closer to the NLO-merged results and therefore reproduces
-some of their characteristics. The by far hardest spectrum is
+some of their characteristics. The hardest spectrum is
 delivered by \Hej even though its total rate is significantly lower. 
 In the plot range, \Hej's prediction is consistent with the others due 
 to overlapping uncertainties (LO for \Hej), but this statement gets
@@ -1368,7 +1370,7 @@ order \GoSam{}+\Sherpa results show more than 50\% increase over \Powheg at larg
 $p_T$.  The close agreement between central values \GoSam{}+\Sherpa using the
 dynamical scale of $\tfrac{1}{2}\,\sqrt{m_{h}^2+\sum p_{T,j_i}^2}$ and \Minlo
 is somewhat suprising. The \Minlo scale variations in this case are more than
-double the NLO variations in this case though do not increase with $p_T$. Care
+double the NLO variations though do not increase with $p_T$. Care
 should be taken in interpreting the high $p_T$ region since due to the
 complexity of the phase space MC statistical error is beginning to come into
 play.
