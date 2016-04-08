@@ -48,36 +48,43 @@ multiplicities predicted by the different approaches.
   \includegraphics[width=0.47\textwidth]{figures/hjetscomp_H_y.pdf}
   \caption{\label{fig:hjetscomp:results:inclobs:hy}%
     The inclusive Higgs boson rapidity without (left) and with (right)
-    uncertainties. To enhance visibility, the \NNLOPS and \MEPSatNLO
-    predictions are grouped together and shown with respect to the same reference
-    curve in the upper and lower ratio plots, respectively. The
-    reference prediction is taken from the NNLO accurate description
-    of inclusive $h$ production.}
+    uncertainties. To enhance visibility, the \NNLOPS, \MEPSatNLO and
+    analytic $q_T$-resummation predictions are grouped together and
+    shown with respect to the same reference curve in the upper, lower
+    and middle ratio plots, respectively. The reference prediction is
+    taken from the NNLO accurate description of inclusive $h$ production.}
 \end{figure}
 
 We start by examining the inclusive Higgs boson rapidity distribution in
 Figure~\ref{fig:hjetscomp:results:inclobs:hy}. While the absolute
 predictions are given in the top panel, the plots in the bottom panel
 depict the respective ratios to the NNLO prediction. For better
-visibility, we have divided the predictions into two groups based on
+visibility, we have divided the predictions into three groups based on
 their simulation type and/or claimed accuracy. The upper ratio plot
-contains the NNLO predictions while the lower one shows those obtained
+contains the NNLO predictions while the middle one shows those obtained
 from different strategies to merge matrix elements plus parton showers
-at NLO. Overall, we find very good agreement in the description of the
-shape of the Higgs boson rapidity distribution. The main source of deviations stems
-from the different normalizations given at NNLO or NLO and the
-different (core) scale choices. As expected, the \Sherpa \NNLOPS and
-\Powheg \NNLOPS results agree well with the fixed order NNLO prediction. 
-\Sherpa \NNLOPS' larger fluctuation wrt.\ to \Powheg \NNLOPS' stem from 
-it being computed directly rather then reweighted from a NLO computation. 
-Consequently, \MGaMC, \Sherpa \MEPSatNLO and \Herwig have slightly lower (NLO)
-normalizations.  Here, the \MGaMC scale choice reducing to
+at NLO. The lower ratio plot displays the comparison between the pure
+NNLO prediction and the matched result from \Todo{\Resbos} that includes the
+effects from the $q_T$ resummation. Overall, we find very good
+agreement in the description of the shape of the Higgs boson rapidity
+distribution. The main source of deviations stems from the different
+normalizations given at NNLO or NLO and the different (core) scale
+choices. As expected, the \Sherpa \NNLOPS and
+\Powheg \NNLOPS results agree well with the fixed-order NNLO prediction. 
+The larger fluctuations found for \Sherpa \NNLOPS wrt.~\Powheg \NNLOPS
+stem from the fact that the former is computed directly rather than
+reweighted from an NLO computation for $hj$ final states.
+As a result of ..., \Todo{\Resbos} predicts a slightly smaller rate,
+in particular for $y(h)<2$, than the one given by the NNLO calculation.
+The \MGaMC, \Sherpa \MEPSatNLO and \Herwig have slightly lower (NLO)
+normalizations. Here, the \MGaMC scale choice reducing to
 $m_h$, rather than $\tfrac{1}{2}m_h$, is clearly noticeable. The upper edge of
 the \MGaMC uncertainty band (equal to a scale that reduces to $\tfrac{1}{2}m_h$)
 agrees with the central value of the other NLO ME+PS
 predictions. There are no major differences in the size of the
 uncertainty envelopes, although to some extent, the NNLO scale
-uncertainty bands are smaller than those at NLO, as expected. Note
+uncertainty bands (including \Resbos) are smaller than those at NLO,
+as expected. Note
 that the NLO-based predictions fall off more rapidly at higher $y$
 than the NNLO-based predictions do. This is expected because of the
 influence of additional $\ln(1-x)$ corrections present in the
@@ -107,50 +114,64 @@ from LO to NLO.
     The Higgs boson transverse momentum in the exclusive event
     selection (i.e.~in the absence of any jet) without (left) and with
     (right) uncertainties. The bottom panel has been arranged as in
-    the previous figure, apart from switching to a new reference curve
-    which has been obtained from \Powheg \NNLOPS.}
+    the previous figure, apart from dropping the last one and
+    switching to a new reference curve which has been obtained from
+    \Powheg \NNLOPS.}
 \end{figure}
 
 In Figures~\ref{fig:hjetscomp:results:inclobs:hpt} and
 \ref{fig:hjetscomp:results:exclobs:hpt}, the inclusive and exclusive
 (i.e.~vetoing jets above $30$\gev) Higgs boson transverse momentum
 distributions are shown, respectively.  For the former, the ratios in
-the bottom panel are taken with respect to the \HqT result, while
+the bottom panels are taken with respect to the \HqT result, while
 \Powheg \NNLOPS serves as the reference for the latter case. In
 general, good agreement is found, with differences being somewhat more
 pronounced in the exclusive case. For the inclusive version of the
 $p_\perp(h)$ observable, the good agreement is observed with \HqT,
-with some larger deviations evident at very low $p_\perp$. Here the 
-resummation properties of the different parton showers dominate the 
-spectra of the matched and merged predictions. While the
-\Sherpa \NNLOPS curve starts about 15\% higher than both \HqT and \Powheg 
-\NNLOPS at low $p_\perp$ it approaches the \HqT results at high $p_\perp$ 
+with some larger deviations evident at very low $p_\perp$. Here the
+resummation properties of the different parton showers dominate the
+spectra of the matched and merged predictions. While at low $p_\perp$
+the \Sherpa \NNLOPS curve starts about 15\% higher than both \HqT and
+\Powheg \NNLOPS, it approaches the \HqT results at high $p_\perp$ 
 in the fixed-order region. At the same time, \Powheg \NNLOPS follows 
 \HqT closely up to scales of $\sim m_h$. Beyond that value, the 
-dynamical scale employed \Powheg \NNLOPS accounts for the ensuing 
-difference. The multi-jet merged calculations, due to their similar 
+dynamical scale employed by \Powheg \NNLOPS accounts for the
+\Todo{ensuing/subsequent}
+difference. The multijet merged calculations, due to their similar
 scale choices, follow the pattern of the \Powheg \NNLOPS prediction.
 Note that the differences in \MGaMC's central scale
 choice becomes less significant as the Higgs boson transverse momentum
 increases. \Herwig clearly provides the softest spectrum and \Sherpa
 as well as \MGaMC predict a noticeably different shape for the Sudakov
-suppression at low $p_\perp$. This is not covered by the \HqT
-uncertainty envelope. We refrain from showing any fixed order
-prediction here because they are neither stable nor reliable at low
-$p_\perp$ in the Sudakov region where resummation effects play a 
-dominant role.
+suppression at low $p_\perp$, which is not covered by the \HqT
+uncertainty envelope. For \Sherpa, the more significant suppression of
+the lowest $p_\perp$ values can be traced back to the performance of the
+\textsc{CSshower} which tends to radiate more strongly in this region.
+The third ratio plot finally presents the direct comparison between
+the two analytic resummation approaches, \HqT and \Todo{\Resbos},
+which are in great agreement with each other. The leftover
+$\mathcal{O}(10\%)$ deviations between the two approaches can be
+attributed to non-perturbative effects and the different handling of
+the finite process-dependent pieces in the CFG and CSS schemes. The
+\Resbos scale variation band features a cross-over point at
+$p_\perp(h)\approx20\gev$ but this does not indicate/imply a vanishing
+uncertainty at this point.
+Lastly, we refrain from showing any fixed-order prediction here
+because they are neither stable nor reliable at low $p_\perp$ in the
+Sudakov region where resummation effects play a dominant role.
 
 As shown in Figure~\ref{fig:hjetscomp:results:exclobs:hpt}, the
 exclusive version of $p_\perp(h)$ exhibits deviations among the
 predictions that become more sizable. The $p_\perp(h)$ distribution 
 declines much faster, easily spanning three orders of magnitude 
-between zero and $100$\gev. This observable is less straight forward 
+between zero and $100\gev$. This observable is less straightforward 
 than the inclusive $p_\perp$-spectrum as not only Sudakov effects 
 dominate the low-$p_\perp$ region, but resummation effects are also 
-entering through the veto on any jet activity. It thus necessitates 
-both a proper description of small $p_\perp(h)$ region as well as 
-jet production. Thus,
-this is a stringent test of all predictions combining matrix elements and parton showers (ME+PS), as
+entering through the veto on any jet activity. A reliable description
+of the observable therefore necessitates both a proper understanding
+of the small $p_\perp(h)$ region as well as jet production. Thus,
+this is a stringent test of all predictions combining matrix elements
+and parton showers (ME+PS), as
 the high transverse momentum of the Higgs boson is produced by a
 combination of soft jets (those that are below the $30$\gev threshold)
 and soft gluon radiation. Note that the comparison is now taken with respect to
@@ -162,10 +183,9 @@ Among them, apart from the differences already seen in the inclusive
 spectrum, both \NNLOPS calculations agree very well with one another, 
 remaining within the 20\% uncertainty bands throughout the spectrum. 
 While \Sherpa \MEPSatNLO remains mostly flat with respect to the \NNLOPS 
-predictions, both \MGaMC and \Herwig exhibit difference in shape also 
-also at larger transverse momenta. In the case
-of \Herwig, they even grow larger than 40\%. 
-From the resummation (i.e.~parton-shower)
+predictions, both \MGaMC and \Herwig exhibit shape differences also at
+larger transverse momenta. In the case of \Herwig, they even grow
+larger than 40\%. From the resummation (i.e.~parton-shower)
 point of view, all predictions are at the same level here, although
 formally the \NNLOPS techniques lead to a more accurate description of
 the exact zero-jet bin. The NLO merging approaches reduce to an \NLOPS
@@ -177,37 +197,56 @@ better reflection of the true uncertainty.
 
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_NJet_incl_30.pdf}
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_NJet_incl_30.pdf}
   \hfill
-  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_NJet_excl_30.pdf}
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_NJet_incl_30.pdf}
   \caption{\label{fig:hjetscomp:results:inclobs:njets}%
-    The inclusive (left) and exclusive (right) jet multiplicities
-    including theoretical uncertainties as predicted by fixed-order
-    calculations, resummed calculations, NNLO and NLO Monte Carlos. The
-    bottom panel is divided up into three subplots all showing the
-    ratios with respect to the \Powheg \NNLOPS prediction. The upper of these plots
+    The central predictions on their own (left panel) and including their
+    theoretical uncertainties (right panel) for the inclusive jet
+    multiplicities as predicted by fixed-order calculations, resummed
+    calculations, NNLO and NLO Monte Carlos. The bottom panel is
+    divided up into three subplots all showing the ratios with respect
+    to the \Powheg \NNLOPS prediction. The upper of these plots
     contains the \Hej and \Sherpa \NNLOPS ratios, while the middle one
     includes all NLO merged predictions (\MGaMC, \Herwig and \Sherpa)
     and the lower one shows all those listed in the bottom left legend
     of the main panel.}
 \end{figure}
 
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_u_NJet_excl_30.pdf}
+  \hfill
+  \includegraphics[width=0.47\textwidth]{figures/hjetscomp_NJet_excl_30.pdf}
+  \caption{\label{fig:hjetscomp:results:inclobs:njets_excl}%
+    The central predictions on their own (left panel) and including their
+    theoretical uncertainties (right panel) for the exclusive jet multiplicities
+    as predicted by fixed-order calculations, resummed calculations,
+    NNLO and NLO Monte Carlos. The bottom panel is divided up into
+    three subplots all showing the ratios with respect to the \Powheg
+    \NNLOPS prediction. The upper of these plots contains the \Hej and
+    \Sherpa \NNLOPS ratios, while the middle one includes all NLO
+    merged predictions (\MGaMC, \Herwig and \Sherpa) and the lower one
+    shows all those listed in the bottom left legend of the main panel.}
+\end{figure}
+
 To obtain a first impression of how the different predictions 
 compare beyond the zero-jet bins ($n_j\ge0$ and $n_j=0$) we 
 look at the various inclusive and exclusive $n_j$ cross sections.
-Accordingly, Figure~\ref{fig:hjetscomp:results:inclobs:njets} shows,
-to the left, the inclusive ($n_j\ge N$) and, to the right, the
-exclusive ($n_j=N$) jet multiplicity distributions up to $N=3$ 
-using the previously defined \antikt jets with $p_\perp>30\gev$. Two
-statements can be made before discussing the individual results in
-more detail: first of all, the agreement between all results is
+Accordingly, Figures~\ref{fig:hjetscomp:results:inclobs:njets} and
+\ref{fig:hjetscomp:results:inclobs:njets_excl} respectively show the
+inclusive ($n_j\ge N$) and the exclusive ($n_j=N$) jet multiplicity
+distributions up to $N=3$ using the previously defined \antikt jets
+with $p_\perp>30\gev$. Two statements can be made before discussing
+the individual results in more detail:
+first of all, the agreement between all results is
 remarkable, and second, the details of the comparison are barely
 altered when going from the inclusive description to the exclusive
 description of the jet cross sections, apart from the obvious fact
 that the exclusive jet bins always lie below the respective inclusive
-jet bins. Although not shown here, when increasing the minimum jet-$p_\perp$ 
-threshold to $50\gev$ the picture does not change significantly. 
-Again, the bottom panels are split up into several ratio
+jet bins. Although not shown here, when increasing the minimum
+jet-$p_\perp$ threshold to $50\gev$ the picture does not change
+significantly. Again, the bottom panels are split up into several ratio
 plots with the common reference provided by the \Powheg \NNLOPS
 results. The upper ratio plot depicts the \NNLOPS methods together
 with \Hej, which only starts at $N=2$. Due to the scale choices in either 
@@ -374,7 +413,7 @@ the third ratio plot, noticeable differences only
 occur between the NNLO prediction and the four NLO predictions as
 obtained from \Powheg and the three variations on \GoSam{}+\Sherpa (pure
 NLO, \Minlo and \Loopsim). The NNLO tail is harder by about 15\% which
-is expected since the $p_\perp$ tail is affected by multi-jet
+is expected since the $p_\perp$ tail is affected by multijet
 contributions. The NNLO treatment includes these contributions to a
 larger extent, as it includes $h+2$-jet and
 $h+3$-jet contributions at the NLO and LO respectively. For $p_\perp(h)< 30\,\gev$, 
@@ -931,7 +970,7 @@ underestimated.
     Figure~\ref{fig:hjetscomp:results:2obs:hpt}.}
 \end{figure}
 
-As before, we are also interested in multi-particle or system
+As before, we are also interested in multiparticle or system
 observables. As an example we show the transverse momentum
 distribution of the Higgs boson plus two leading jet system in
 Figure~\ref{fig:hjetscomp:results:2obs:hjj_pt}. The $p_\perp(hj_1j_2)$
