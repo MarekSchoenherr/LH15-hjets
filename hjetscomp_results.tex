@@ -439,7 +439,7 @@ theory~\cite{Catani:1997xc}. For the BFGLP $hj$ NNLO  prediction, an
 averaging procedure has been used to dampen the effect around the jet
 threshold while for the NLO predictions, the large oscillations are a
 clear indication of the instability emerging at the jet threshold. The
-\NNLOPS, NLO ME+PS and \Todo{\Resbos} predictions do not suffer from
+\NNLOPS, NLO ME+PS and \Resbos predictions do not suffer from
 the Sudakov shoulder effect since they include the necessary all-order
 resummation corrections.
 
@@ -453,12 +453,13 @@ contributions. The NNLO treatment includes these contributions to a
 larger extent, as it includes $h+2$-jet and $h+3$-jet contributions at
 the NLO and LO, respectively. For $p_\perp(h)<30\gev$, the (N)NLO
 description is degraded to (N)LO. Here, the inclusion of the first
-term of the Sudakov resummation, also included in \Powheg, benefits
-the BFGLP $hj$ NNLO calculation. However, it can be noticed (see
-fourth ratio plot in Figure~\ref{fig:hjetscomp:results:1obs:hpt}) that
-apart from \Powheg, \Todo{\Resbos} and the BFGLP $hj$ NNLO calculation,
-all other approaches predict a more steeply falling shoulder resulting
-in a significantly lower cross section as $p_\perp(h)\to0$.
+term of the Sudakov resummation, also included in \Powheg and \Resbos
+in particular, benefits the BFGLP $hj$ NNLO calculation. However, it
+can be noticed (see fourth ratio plot in
+Figure~\ref{fig:hjetscomp:results:1obs:hpt}) that apart from \Powheg,
+\Resbos and the BFGLP $hj$ NNLO calculation, all other approaches
+predict a more steeply falling shoulder resulting in a significantly
+lower cross section as $p_\perp(h)\to0$.
 For larger $p_\perp(h)$ values, $p_\perp(h)\gtrsim\tfrac{1}{2}m_h$, in
 general there is good agreement between \Powheg, \MGaMC, \Sherpa
 \MEPSatNLO and the NLO curves; this can be expected as these
@@ -724,9 +725,12 @@ off about 30\% above the \GoSam{}+\Sherpa result as a consequence of
 employing a lower scale (that is $\mu=\tfrac{1}{2}m_h$). Note that for
 the jet associated Higgs boson production, the transverse momentum of
 the $hj_1$ system constitutes exactly the $q_T$ quantity that is to be
-resummed in/by \Resbos as long as $p_\perp(hj_1)<p_\perp(j_1)$. In
-addition, terms of the form $\ln(1/R^2)$ are also taken into account
-and lead to a somewhat broader, upward shifted Sudakov peak.
+resummed by \Resbos imposing the constraint $p_\perp(hj_1)<p_\perp(j_1)$,
+which is to ensure that $j_1$ is indeed the leading jet (as any other
+jet is integrated out in the resummation formalism used by \Resbos).
+In addition, terms of the form $\ln(1/R^2)$ are also taken into
+account by the resummation carried out in \Resbos and lead to a
+somewhat broader, upward shifted Sudakov peak.
 
 \begin{figure}[t!]
   \centering
