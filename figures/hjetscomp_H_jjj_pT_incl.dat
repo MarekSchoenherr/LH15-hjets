@@ -499,11 +499,13 @@ Title=NLO
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H1j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/H_jjj_pT_incl
 ErrorBandColor=yellow
 ErrorBandOpacity=0.2
+ErrorBandStyle=hlines*,hatchstyle=dotted,hatchsep=0.08
 ErrorBands=1
 ErrorTubeLineColor=yellow!50!black
 ErrorTubeLineStyle=solid
 ErrorTubes=1
 ErrorType=env
+HatchColor=yellow!50!black
 LegendOrder=12
 LineColor=yellow!50!black
 LineDash=3pt 3pt 0.8pt 3pt 0.8pt 3pt 0.8pt 3pt
@@ -548,6 +550,7 @@ Title=\textsc{MiNLO}
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H2j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/H_jjj_pT_incl
 ErrorBandColor=orange
 ErrorBandOpacity=0.2
+ErrorBandStyle=hlines*,hatchstyle=dotted,hatchsep=0.08
 ErrorBands=1
 ErrorTubeLineColor=orange!80!black
 ErrorTubeLineStyle=solid
@@ -597,6 +600,7 @@ Title=\textsc{MiNLO}
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/H_jjj_pT_incl
 ErrorBandColor=red
 ErrorBandOpacity=0.2
+ErrorBandStyle=hlines*,hatchstyle=dotted,hatchsep=0.08
 ErrorBands=1
 ErrorTubeLineColor=red!80!black
 ErrorTubeLineStyle=solid

@@ -832,7 +832,7 @@ class RatioPlot(Plot):
         inputdata.ratiohistos = {}
         inputdata.ratiohistos = copy.deepcopy(inputdata.histos)
         foo=inputdata.description[self.name+'DrawOnly'].pop(inputdata.description[self.name+'DrawOnly'].index(self.refdata))
-        if inputdata.description.has_key(self.name+'DrawReferenceFirst') and inputdata.description[self.name+'DrawReferenceFirst']=='0':
+        if not (inputdata.description.has_key(self.name+'DrawReferenceFirst') and inputdata.description[self.name+'DrawReferenceFirst']=='0'):
             if inputdata.histos[self.refdata].description.has_key('ErrorBands') and inputdata.histos[self.refdata].description['ErrorBands']=='1':
 		inputdata.description[self.name+'DrawOnly'].insert(0,foo)
             else:
@@ -1044,7 +1044,7 @@ class Legend:
                 lineheight = 0.5*(boxtop-boxbottom)
                 out += ('\\rput[B%s](%s,%s){%s\n' %(self.getLegendAlign(),rel_xpos_sign*0.1,ypos,'%'))
                 if drawobject.getErrorBands():
-                    out += ('\\psframe[linewidth=0pt,linestyle=none,fillstyle=%s,fillcolor=%s,opacity=%s,hatchcolor=%s]' %(drawobject.getErrorBandStyle(),drawobject.getErrorBandColor(),drawobject.getErrorBandOpacity(),drawobject.getErrorBandColor()))
+                    out += ('\\psframe[linewidth=0pt,linestyle=none,fillstyle=%s,fillcolor=%s,opacity=%s,hatchcolor=%s]' %(drawobject.getErrorBandStyle(),drawobject.getErrorBandColor(),drawobject.getErrorBandOpacity(),drawobject.getHatchColor()))
                     out += ('(%s, %s)(%s, %s)\n' %(xpos1,boxtop,xpos2,boxbottom))
                 # set psline options for all lines to be drawn next
                 lineopts = ('linestyle=' + drawobject.getLineStyle() \
@@ -1333,7 +1333,7 @@ class DrawableObject:
         if self.description.has_key('HatchColor'):
             return self.description['HatchColor']
         else:
-            return 'black'
+            return self.getErrorBandColor()
 
     def getFillStyle(self):
         if self.description.has_key('FillStyle'):
@@ -1874,7 +1874,7 @@ class Histogram(DrawableObject):
             if self.getErrorBands():
                 self.description['SmoothLine']=0
                 for i in range(len(self.data)):
-                    out += ('\\psframe[dimen=inner,linewidth=0pt,linestyle=none,fillstyle=%s,fillcolor=%s,opacity=%s,hatchcolor=%s]' %(self.getErrorBandStyle(),self.getErrorBandColor(),self.getErrorBandOpacity(),self.getErrorBandColor()))
+                    out += ('\\psframe[dimen=inner,linewidth=0pt,linestyle=none,fillstyle=%s,fillcolor=%s,opacity=%s,hatchcolor=%s]' %(self.getErrorBandStyle(),self.getErrorBandColor(),self.getErrorBandOpacity(),self.getHatchColor()))
                     out += ('(' + coors.strphys2frameX(self.data[i]['LowEdge']) + ', ' \
                                 + coors.strphys2frameY(self.data[i]['Content']-self.data[i]['Error'][0]) + ')(' \
                                 + coors.strphys2frameX(self.data[i]['UpEdge'])  + ', ' \
