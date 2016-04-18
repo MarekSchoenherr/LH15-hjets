@@ -105,7 +105,7 @@ Name=resbos
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/ResBos/ResBos2.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{ResBos} 2
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	4.220000e+01	3.900000e+00	3.200000e+00
+-5.000000e-01	5.000000e-01	4.440000e+01	1.820000e+00	1.180000e+00
 5.000000e-01	1.500000e+00	1.690000e+01	2.900000e+00	3.200000e+00
 1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -310,20 +310,20 @@ Title=\textsc{MiNLO}
 2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTOGRAM
 
-# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMIFO_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/NJet_incl_30
+# BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/NJet_incl_30
 LegendOrder=14
 LineColor=red!80!black
 LineDash=3pt 3pt 0.8pt 3pt 0.8pt 3pt 0.8pt 3pt
 LineStyle=dashed
 LineWidth=1.5pt
 Name=gosam-h3j-minlo
-Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMIFO_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/NJet_incl_30
+Path=/home/marek/work/LH15/Sherpa-GoSamComparison/GoSamGionata_MiNLO/H3j_GGFMI_BVIRS_6500_pt30.0_eta4.4.yoda/MC_HJETS_LH15/NJet_incl_30
 Title=\textsc{MiNLO}
 # xlow	 xhigh	 val	 errminus	 errplus
--5.000000e-01	5.000000e-01	1.800522e+00	1.826450e-01	3.259100e-02
-5.000000e-01	1.500000e+00	1.800522e+00	1.826450e-01	3.259100e-02
-1.500000e+00	2.500000e+00	1.800522e+00	1.826450e-01	3.259100e-02
-2.500000e+00	3.500000e+00	1.800522e+00	1.826450e-01	3.259100e-02
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+2.500000e+00	3.500000e+00	1.870905e+00	1.863860e-01	0.000000e+00
 # END HISTOGRAM
 
 # BEGIN HISTOGRAM /home/marek/work/LH15/Sherpa-GoSamComparison/GoSamSimon_LoopSim/H1j/H1j-MMHT2014nnlo68cl_MC_HJETS_LH15-jpt30_je4.4_R0.4-m1sumpt2-env-l_s0-LS-nNLO_scaled.yoda/MC_HJETS_LH15/NJet_incl_30
