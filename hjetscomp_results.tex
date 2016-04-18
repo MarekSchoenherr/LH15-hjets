@@ -48,7 +48,7 @@ multiplicities as obtained by the different approaches.
   \caption{\label{fig:hjetscomp:results:inclobs:hy}%
     The inclusive Higgs boson rapidity without (left) and with (right)
     uncertainties. To enhance visibility, the \NNLOPS, \MEPSatNLO and
-    analytic $q_T$-resummation predictions are grouped together and
+    analytic $q_\text{T}$-resummation predictions are grouped together and
     shown with respect to the same reference curve in the upper, lower
     and middle ratio plots, respectively. The reference prediction is
     taken from the NNLO-accurate description of inclusive $h$ production.}
@@ -64,7 +64,7 @@ contains the NNLO predictions, while the middle ratio plot shows predictions obt
 from different strategies for  merging matrix elements plus parton showers
 at NLO. The lower ratio plot displays the comparison between the pure
 NNLO prediction and the matched result from \Resbos that includes the
-effects from the $q_T$ resummation. Overall, we find very good
+effects from the $q_\text{T}$-resummation. Overall, we find very good
 agreement in the description of the shape of the Higgs boson rapidity
 distribution. The main source of deviations stems from the different
 normalizations given at NNLO or NLO and the different (core) scale
@@ -144,18 +144,18 @@ as well as \MGaMC predict a noticeably different shape for the Sudakov
 suppression at low $p_\perp$, which is not covered by the \HqT
 uncertainty envelope. For \Sherpa, the more significant suppression of
 the lowest $p_\perp$ values can be traced back to the performance of the
-\textsc{CSshower} which tends to radiate more strongly in this region.
+\textsc{Csshower} which tends to radiate more strongly in this region.
 The third ratio plot finally presents the direct comparison between
 the two analytic resummation approaches, \HqT and \Resbos,
 which are in good agreement with each other. The leftover
 $\mathcal{O}(10\%)$ deviations between the two approaches can be
-attributed to non-perturbative effects and the different handling of
+attributed to non-perturbative effects, still included in the latter, and the different handling of
 the process-dependent pieces in the CFG and CSS schemes. The
 \Resbos scale variation band features a cross-over point at
 $p_\perp(h)\approx20\gev$ but this does not indicate or imply a
 vanishing uncertainty at this point.
 Lastly, we refrain from showing any fixed-order prediction here
-because they are neither stable nor reliable at low $p_\perp$, in the
+because they are neither stable nor reliable at low $p_\perp$ in the
 Sudakov region where resummation effects play a dominant role.
 
 As shown in Figure~\ref{fig:hjetscomp:results:exclobs:hpt}, the
@@ -275,7 +275,7 @@ against the common reference \Powheg \NNLOPS. All these predictions
 claim NLO accuracy for $N=0,1,2$, and thus overlap well within
 uncertainties, where the lower value for \MGaMC can again be attributed
 to the different scale choice. Again, with the same scale choice, all of
-the calculations should agree exactly. For $N=3$, only the \Sherpa \MEPSatNLO
+the calculations should agree much better. For $N=3$, only the \Sherpa \MEPSatNLO
 prediction retains NLO accuracy, while \MGaMC and \Herwig revert to LO
 accuracy, which is nicely reflected in the sizes of the uncertainty estimates. 
 Unsurprisingly, in the $N=3$ case, all three NLO merged calculations
@@ -311,7 +311,7 @@ also contains the resummation prediction of Stewart et
 al.~(STWZ); the comparisons for non-zero jet bins also
 include the \Minlo enhanced NLO calculations.
 Figure~\ref{fig:hjetscomp:results:inclobs:njets} also
-contains the \Resbos $q_T$ resummed predictions in the zero-jet bin
+contains the \Resbos $q_\text{T}$-resummed predictions in the zero-jet bin
 (with precision corresponding to NNLO+NNLL) as well as in the
 one-jet bin (with precision corresponding to NLO+NLL). All of the
 above are grouped together in the lower ratio plot.
@@ -720,7 +720,7 @@ reverts to a LO description in the tail of the distribution leveling
 off about 30\% above the \GoSam{}+\Sherpa result as a consequence of
 employing a lower scale (that is $\mu=\tfrac{1}{2}m_h$). Note that for
 the jet associated Higgs boson production, the transverse momentum of
-the $hj_1$ system constitutes exactly the $q_T$ quantity that is to be
+the $hj_1$ system constitutes exactly the $q_\text{T}$ quantity that is to be
 resummed by \Resbos imposing the constraint $p_\perp(hj_1)<p_\perp(j_1)$,
 which is to ensure that $j_1$ is indeed the leading jet (as any other
 jet is integrated out in the resummation formalism used by \Resbos).
