@@ -1,2 +1,33 @@
 \subsubsection{Jet veto resummation}
 \label{sec:hjetscomp:tools:ares:jvres}
+
+To resum the $p_\perp$ spectrum of the leading jet as well as the exclusive $0$-jet
+(jet-vetoed) cross section, the STWZ predictions~\cite{Stewart:2013faa} utilize
+the soft-collinear effective theory (SCET) formalism for jet-veto resummation at
+hadron colliders as developed in \cite{Stewart:2009yx, Berger:2010xi,
+Tackmann:2012bt, Stewart:2013faa}. The results are obtained in the HEFT 
+limit, taking $m_\text{top}\to\infty$.
+Jets are defined with a jet radius of $R = 0.4$ and without any cut on the jet
+rapidity. The \texttt{MMHT2014nnlo68cl} PDFs are used. The calculation is carried out to
+NNLL$'+$NNLO order. The resummation is performed by renormalization group
+evolution in virtuality and rapidity space in SCET. The NNLL$'$ resummation
+includes the RG evolution at next-to-next-to-leading logarithmic order together
+with the full NNLO singular matching correction, thus incorporating all two-loop
+virtual and singular real-emission contributions in the resummation. This allows
+to perform the matching to the full NNLO result by adding purely nonsingular
+corrections to the resummed contributions, and to achieve a smooth transition to
+the fixed-order result simply by turning off the RG evolution using profile
+scales~\cite{Ligeti:2008ac, Abbate:2010xh}. The perturbative uncertainties are
+estimated by varying the relevant virtuality and rapidity renormalization scales
+using profile scale variations, which has been established as a reliable method
+to assess perturbative uncertainties in resummed predictions. We evaluate
+separate fixed-order and resummation uncertainties which are added in
+quadrature~\cite{Berger:2010xi, Stewart:2011cf, Stewart:2013faa}.
+The predictions use a complex value for the hard scale $\mu_H = -i \mu_{FO}$ where
+$\mu_{FO} = m_h$ is the fixed-order scale, which allows to resum large virtual
+corrections in the $gg\to h$ form factor in both the 0-jet limit and the
+inclusive cross section. This scale choice results in a very similar 
+inclusive cross section compared to a standard NNLO calculation with 
+$\mu_R=\mu_F=\tfrac{1}{2}m_h$. The uncertainty related to this resummation is
+estimated by varying the phase of $\mu_H$ and is also added in quadrature.
+
