@@ -308,7 +308,7 @@ exclusive bins using \Sherpa (without PS), and for the $1$-jet inclusive
 bin using the prediction of Boughezal et al.~(BFGLP).
 The zero-jet bin comparison
 also contains the resummation prediction of Stewart et
-al.~(STWZ); the comparisons for non-zero jet bins also
+al.~(STWZ); the comparisons for the $n_j\ge 1$, $2$, $3$ jet bins also
 include the \Minlo enhanced NLO calculations.
 Figure~\ref{fig:hjetscomp:results:inclobs:njets} also
 contains the \Resbos $q_\text{T}$-resummed predictions in the zero-jet bin
@@ -343,7 +343,7 @@ difference gets more pronounced. However, the relatively large Monte
 Carlo generation cut of $25\gev$ means that the total rates predicted
 by \Loopsim should be interpreted with care.
 Furthermore, compared to the NLO benchmark, the \Minlo approach
-predicts 10-20\% larger cross sections for all non-zero jet bins.
+predicts 10-20\% larger cross sections for all $n_j\ge 1$, $2$, $3$ jet bins.
 Note that the \Minlo ratio for inclusive $hjjj$ turns out to be
 outside the plot range appearing at around $1.65$, with the lower edge
 of the uncertainty band at a ratio value of $1.5$.
@@ -1580,17 +1580,23 @@ differences are largely due to their separate characteristics.
 We start by considering 
 the cross section for the production of a Higgs boson and no 
 additional jets, as a function of the minimum jet transverse momentum 
-as shown in Figure~\ref{fig:hjetscomp:results:jvobs:jvxs0}. Remarkable 
+as shown in Figure~\ref{fig:hjetscomp:results:jvobs:jvxs0}. Remarkable, 
+and possibly largely accidental, 
 agreement between both \NNLOPS simulations and the dedicated resummation 
 calculation of STWZ is found, typically better than 5\% within the considered range. 
-However, as the resummation accuracy for both \NNLOPS' implementations is limited by their parton 
+However, as the resummation accuracy for both \NNLOPS' implementations is 
+limited by their parton 
 shower's accuracy and they do not (\Powheg) or only partially (\Sherpa) 
-assess their intrinsic resummation uncertainties and the interplay with the hard process 
-scale variations, their uncertainties are less well-determined than those of STWZ. Although
-the uncertainties for STWZ are similar to those of the \NNLOPS predictions for low values of the
-jet veto transverse momentum, they are significantly smaller for higher values, perhaps reflecting the
-effects of the $\pi^2$ resummation effects included in STWZ.
- The multijet merged predictions have a wider variation, and have veto cross sections lower than
+assess their intrinsic resummation uncertainties and the interplay with 
+the hard process' scale variations, their uncertainties are less 
+well-determined than those of STWZ. Consequently, while both \NNLOPS' uncertainties are largely 
+independent of $p_\perp^\text{veto}$, those of the dedicated STWZ calculation 
+show the expected comparably large uncertainty in the resummation dominated 
+region gradually easing into the near contstant small fixed-order uncertainty 
+at large $p_\perp^\text{veto}$ as the influence of the resummation decreases.
+It is puzzling, however, why their quoted uncertainty at large $p_\perp^\text{veto}$ 
+differ significantly despite identical theoretical accuracy in that region.
+The multijet merged predictions have a wider variation, and have veto cross sections lower than
 those provided by the STWZ and the NNLOPS predictions. In addition to 
 suffering from their NLO normalisation in the $p_\perp^\text{veto}\to\infty$ 
 limit, they also show different behavior as $p_\perp^\text{veto}\to 0$. For example, 
