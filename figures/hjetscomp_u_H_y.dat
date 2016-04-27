@@ -107,6 +107,7 @@ LineStyle=solid
 LineWidth=1.5pt
 Name=nnlo-h
 Path=/home/marek/work/LH15/Sherpa-GoSamComparison/Sherpa-NNLO/nnlo-mh/nnlo-mh-envelope-3p-sel-min.yoda/MC_HJETS_LH15/H_y
+Scale=0.977647147709
 Title=\textsc{Sherpa} h \textsc{Nnlo}
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	1.000000e-01	2.199061e+01	1.988170e+00	2.101880e+00
