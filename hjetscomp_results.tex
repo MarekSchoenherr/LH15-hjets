@@ -1,7 +1,7 @@
 \subsection{RESULTS}
 \label{sec:hjetscomp:results}
 
-In the following comparisons, we will typically show the central
+In the following comparisons, we show the central
 values of each prediction on the left (both as absolute predictions
 and in ratio to a reference prediction), and a similar comparison of
 the predictions with uncertainty bands on the right. The reason for
@@ -17,9 +17,9 @@ calculations that are being compared.
 In general, the \Powheg \NNLOPS calculation has been chosen as the 
 reference for the ratios presented. For some observables, other calculations
 have been chosen, especially if that reference calculation has the highest
-precision. Similar (theory) style predictions are typically grouped together to improve readability. 
-The top most 
-ratio plot  always compares the \NNLOPS predictions to the reference. 
+precision. Predictions of similar precision are typically grouped together 
+to improve readability. The top ratio plot always compares the \NNLOPS 
+predictions to the reference. 
 The second ratio plot then contains the multijet merged predictions, while 
 the third ratio plot has the predictions at pure fixed order. Additional ratios are added as needed. The BFKL resummation 
 of \Hej is inserted into the top ratio plot where applicable.
@@ -35,9 +35,9 @@ boson is required, with no restrictions on its momentum. Two important
 predictions in this category then are  the rapidity and the transverse momentum
 distribution of the Higgs boson. The latter is differentiated into
 two cases: the inclusive spectrum of the Higgs boson and the exclusive spectrum, requiring
-zero  accompanying jets. Also, to get a first overview on the amount
-of jet activity accompanying Higgs boson production, we examine the predictions for 
-the inclusive,  as well as the exclusive,  cross sections for various jet
+zero  accompanying jets. Also, to get an overview on the amount
+of QCD activity accompanying Higgs boson production, we examine the predictions for 
+the inclusive as well as exclusive cross sections for various jet
 multiplicities as obtained by the different approaches.
 
 \begin{figure}[t!]
@@ -407,11 +407,10 @@ NLO.
 \label{sec:hjetscomp:results:1jobs}
 
 In this section, we move away from the fully inclusive picture and
-require the presence of at least one jet associated with the Higgs
-boson. In some cases we also ask for the predictions where exactly one
-jet is being resolved. Recall that the jets are defined based on the
-\antikt algorithm using $R=0.4$; they furthermore have to obey the
-criteria that $p_\perp(j)>30\gev$ and $|\eta(j)|<4.4$. The set of
+require the presence of at least one or exactly one jet associated with 
+the Higgs boson. Recall that the jets are defined based on the
+\antikt algorithm using $R=0.4$; they furthermore have to fulfil the selection
+criteria that $p_\perp(j)>30\,\gev$ and $|\eta(j)|<4.4$. The set of
 observables presented here includes the transverse momentum
 distributions of the Higgs boson $h$, the leading jet $j_1$ and the
 $hj_1$ two-body system as well as the rapidity spectrum of the leading
@@ -751,11 +750,10 @@ real-emission (LO-like) contributions ($hjj$ and $hjjj$), which impact
 the $p_\perp(hj_1)$ observable.
 \MGaMC and \Sherpa \MEPSatNLO on the one side and \Herwig on the other
 side produce NLO variations that are fairly different in size.
-However, the \Herwig as well as the \Powheg envelopes are most likely
-underestimated; in particular the \Powheg band does not behave as
-expected from a LO variation for above-jet-threshold $p_\perp$. The
-\Sherpa \NNLOPS bands here are somewhat larger than those of \Powheg
-but still do not reflect the LO nature of the prediction.
+However, the \Herwig as well as the \Powheg and \Sherpa \NNLOPS envelopes 
+are most likely underestimated; in particular the \Powheg and \Sherpa \NNLOPS 
+bands do not behave as
+expected from a LO variation for above-jet-threshold $p_\perp(hj)$. 
 
 The exclusive (exactly one jet) case for the $p_\perp(hj_1)$
 observable is shown in Figure~\ref{fig:hjetscomp:results:1obs:hj_pt_excl}.
@@ -803,16 +801,16 @@ dropping to about 25\% wrt.~the \Powheg result at $p_\perp\sim100\gev$.
     prediction is added to the first, the \NNLOPS subpanel.}
 \end{figure}
 
-Moving to topologies with one more jet in the final state, 
-we discuss a number of $h+2$-jet
-observables in this section. Following the previous sections, we compare predictions from three
-different categories with each other: \NNLOPS $h$ production,
-\MEPSatNLO $h+\text{jets}$ production and fixed-order (and related)
-$hjj$ production at $\mathcal{O}(\alpha_\mathrm{s}^5)$. It is important
+Moving to topologies with one more jet in the final state, we discuss a 
+number of $h+2$-jet observables in this section. It is important
 to understand, in detail, the level of (dis-)agreement among the
 available predictions since the $h+2$-jet gluon fusion contribution
 constitutes the major irreducible background in any LHC Run-II analysis
-targeting the prominent vector boson fusion channel. As before we have
+targeting the prominent vector boson fusion channel. Following the layout 
+of the previous sections, we compare predictions from three
+different categories with each other: \NNLOPS $h$ production,
+\MEPSatNLO $h+\text{jets}$ production and fixed-order (and related)
+$hjj$ production at $\mathcal{O}(\alpha_\mathrm{s}^5)$. As before we have
 provided one ratio plot for each category in order to enhance the
 readability of our plots; common to all figures is the use of \Powheg's
 \NNLOPS prediction to serve as the reference result. Note that for
@@ -844,7 +842,7 @@ solely, free of any parton showering.
 
 The Higgs boson $p_\perp$ spectrum, in the presence of at least two
 jets, is shown in Figure~\ref{fig:hjetscomp:results:2obs:hpt}.
-Here, although all calculations agree on the position of the maximum
+Although all calculations agree on the position of the maximum
 of the distribution (situated at $p_\perp\gtrsim 60\gev$, i.e.~twice the 
 jet threshold),\footnote{Note that around this two-jet threshold, we
   again find remnants of the Sudakov shoulder effect affecting the
@@ -862,7 +860,7 @@ A clear difference however is not found indicating that the \NNLOPS
 estimates are too optimistic. From this point of view, the larger
 difference seen between the two \NNLOPS predictions is no surprise at
 all -- rather typical for comparisons at the LO+PS level, and two
-fairly different parton showers at work. The fixed-order
+different parton showers at work. The fixed-order
 predictions (NLO, \Minlo and \Loopsim) agree well in this region with
 one another, but surpass the \Powheg reference and, more importantly,
 the multijet merged calculations with the same accuracy, by about 
@@ -1046,12 +1044,11 @@ distribution of the Higgs boson plus two leading jet system in
 Figure~\ref{fig:hjetscomp:results:2obs:hjj_pt}. The $p_\perp(hj_1j_2)$
 variable is the two-jet analog of the $p_\perp(hj_1)$ variable for
 inclusive one-jet events. The physics of this type of recoil
-observable has been already discussed in detail around
-Figure~\ref{fig:hjetscomp:results:1obs:hj_pt}, and simply applies to
-the current case as well. The variations between the different
-approaches are similar to the $p_\perp(hj_1)$ case of
-Figure~\ref{fig:hjetscomp:results:1obs:hj_pt}, but turn out
-to be somewhat stronger. \MGaMC and \Sherpa have a slope with respect
+observable has been already discussed in detail for 
+Figure~\ref{fig:hjetscomp:results:1obs:hj_pt}. The variations between 
+the different approaches are qualitatively similar to those of 
+$p_\perp(hj_1)$, cf.\ Figure~\ref{fig:hjetscomp:results:1obs:hj_pt}, 
+only their absolute size is increased. \MGaMC and \Sherpa have a slope with respect
 to \Powheg at low $p_\perp$ and overshoot by about 25\% at higher
 $p_\perp$, while \Herwig is again somewhat lower than \Powheg at high
 $p_\perp$. In the soft domain, the \Sherpa \NNLOPS result resembles
