@@ -1,8 +1,8 @@
-\subsubsection{\MGaMC}
+\subsubsection{\hjetscompMGaMC}
 \label{sec:hjetscomp:tools:mc:mgamc}
 
 Higgs production in gluon fusion, in association with multiple jets,
-is generated with \MGaMC \cite{Alwall:2014hca}~at NLO
+is generated with \hjetscompMGaMC \cite{Alwall:2014hca}~at NLO
 accuracy using the following commands
 \begin{verbatim}
   import model HC_NLO_X0_UFO-heft
@@ -26,16 +26,16 @@ contributions from the loops (they are already integrated out in the
 effective Higgs-gluon vertices). By setting the parameter
 \texttt{ickkw} to \texttt{3} in the \texttt{run\_card.dat}, the FxFx
 merging~\cite{Frederix:2012ps}~is turned on. The LHE events are
-matched to the \Pythia 8 (v.210) parton
+matched to the \hjetscompPythia 8 (v.210) parton
 shower~\cite{Sjostrand:2014zea}, using the FxFx interface also used in
 \cite{Frederix:2015eii}. As central choices for the factorisation
 and renormalisation scales we use the default value in the
-\MGaMC code, which, in the context of FxFx merging, is
+\hjetscompMGaMC code, which, in the context of FxFx merging, is
 roughly given by the transverse energy of the Higgs boson, after the
 partons entering the matrix elements have been clustered to a $pp \to h
 j$ configuration. $pp\to h$ configurations thus are calculated using 
-$m_h$ as the scale. The central merging scale is taken to be 35 GeV,
-while the variations include 25 GeV and 50 GeV. These scales include 
+$m_h$ as the scale. The central merging scale is taken to be $35\,\hjetscompgev$,
+while the variations include $25\,\hjetscompgev$ and $50\,\hjetscompgev$. These scales include 
 values both below as well as above the default minimal jet transverse
 momentum used in the analysis and should therefore cover the complete
 range of uncertainties coming from the merging.  The uncertainty band
@@ -51,4 +51,4 @@ account here. Throughout the \texttt{MMHT2014nlo68cl} PDF set with
 $\alpha_\mathrm{s}(m_Z)=0.12$ has been used, as compared to the canonical choice
 of $0.118$. There is a partial cancellation between the effects of the larger scale choice
 and the larger  value of $\alpha_\mathrm{s}(m_Z)$, but for most of the comparisons, 
-when there are notable differences, they can be traced to the larger scale choice of \MGaMC. 
+when there are notable differences, they can be traced to the larger scale choice of \hjetscompMGaMC. 

@@ -1,4 +1,4 @@
-\subsubsection{\Sherpa \MEPSatNLO}
+\subsubsection{\hjetscompSherpa \hjetscompMEPSatNLO}
 \label{sec:hjetscomp:tools:mc:sherpa}
 
 We provide a multijet merged sample of Higgs boson production in 
@@ -6,13 +6,13 @@ gluon fusion in assiciation jets wherein the $h+0,1,2,3\,\text{jet}$
 final states are calculated at NLO accuracy \cite{Gleisberg:2008ta,
   Hoeche:2012yf,Gehrmann:2012yg,Hoeche:2014lxa}. Therein, NLO QCD 
 computations are matched to the parton shower using a variant of the 
-\MCatNLO method \cite{Hoeche:2011fd,Hoeche:2012ft,Hoche:2012wh}.
-The one-loop matrix elements are provided by \GoSam \cite{Cullen:2011ac,
+\hjetscompSMCatNLO method \cite{Hoeche:2011fd,Hoeche:2012ft,Hoche:2012wh}.
+The one-loop matrix elements are provided by \hjetscompGoSam \cite{Cullen:2011ac,
   Cullen:2013saa,Greiner:2015jha} and are interfaced using the BLHA 
 \cite{Alioli:2013nda} standard.
 
 The individual jet multiplicity contributions are merged using a merging 
-cut of $Q_\text{cut}=20$ GeV. The $n$-parton matrix elements are then 
+cut of $Q_\text{cut}=20\,\hjetscompgev$. The $n$-parton matrix elements are then 
 clustered in the scheme of \cite{Hoeche:2009rj,Hoeche:2012yf,Gehrmann:2012yg} 
 to find a suitable core configuration and defining $\mu_\text{core}
 =\tfrac{1}{2}\,m_h$ for the present study. The factorisation 
@@ -20,7 +20,7 @@ and parton shower starting scales are then set directly to
 $\mu_\text{core}$ while the renormalisation scale is determined by 
 through CKKW scale setting using the identified emission scales and 
 the above defined core scale.
-The uncertainties are assessed varying $Q_\text{cut}\in[15,30]$ GeV, 
+The uncertainties are assessed varying $Q_\text{cut}\in[15,30]\,\hjetscompgev$, 
 ensuring that the description of all analysis jets always proceeds 
 at NLO accuracy. Renormalisation and factorisation scales are varied 
 indepently by a factor of two keeping $\tfrac{1}{2} < \mu_F/\mu_R < 2$. 

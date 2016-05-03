@@ -1,28 +1,28 @@
-\subsubsection{\Powheg \NNLOPS}
+\subsubsection{\hjetscompPowheg \hjetscompNNLOPS}
 \label{sec:hjetscomp:tools:nnlops:powheg}
 
-One of the generators under investigation is the \NNLOPS prediction 
+One of the generators under investigation is the \hjetscompNNLOPS prediction 
 of Higgs boson production via gluon fusion~\cite{Hamilton:2013fea}.
-To produce this sample, the Higgs-boson-plus-jet \Minlo~\cite{Hamilton:2012np} 
-predictions generated with \PowhegBox{}\texttt{-v2}~\cite{Campbell:2012am} 
+To produce this sample, the Higgs-boson-plus-jet \hjetscompMinlo~\cite{Hamilton:2012np} 
+predictions generated with \hjetscompPowhegBox{}\texttt{-v2}~\cite{Campbell:2012am} 
 are combined with an NNLO accurate analytical calculation by the 
-program \HNNLO (v.2.0)~\cite{Catani:2007vq,Grazzini:2008tf,Grazzini:2013mca} 
+program \hjetscompHNNLO (v.2.0)~\cite{Catani:2007vq,Grazzini:2008tf,Grazzini:2013mca} 
 following the instructions in \cite{Hamilton:2013fea}. Here, the rapidity 
-spectrum of the Higgs boson of the \Powheg \texttt{HJ} \Minlo prediction 
-is reweighted with the spectrum from \HNNLO, while ensuring that NLO 
+spectrum of the Higgs boson of the \hjetscompPowheg \texttt{HJ} \hjetscompMinlo prediction 
+is reweighted with the spectrum from \hjetscompHNNLO, while ensuring that NLO 
 precision is kept for the kinematic properties of the first additional jet. 
-In the generation and the \HNNLO calculation, the default parameters are 
+In the generation and the \hjetscompHNNLO calculation, the default parameters are 
 set as follows, in particular the renormalization and factorization scales 
 have been set to $\mu_R = \mu_F = \tfrac{1}{2}\,m_h$ and the 
 \texttt{MMHT2014nnlo68cl} \cite{Harland-Lang:2014zoa} has been used. 
 To evaluate the uncertainties in the choice of the renormalization and 
 factorization scales, the 21-point scale variations described in detail 
 in \cite{Hamilton:2013fea} are evaluated.
-The \NNLOPS sample is showered with \Pythia~8 (v.8.253) \cite{Sjostrand:2014zea} 
+The \hjetscompNNLOPS sample is showered with \hjetscompPythia~8 (v.8.253) \cite{Sjostrand:2014zea} 
 using the \texttt{NNPDF} \texttt{2.3} leading-order PDF set~\cite{Ball:2012cx} 
 and the A14 tune~\cite{ATL-PHYS-PUB-2014-021}. 
 The variation of the renormalization scale also varies consistently the 
-resummation scale in the Sudakov form factor of the \Minlo 
+resummation scale in the Sudakov form factor of the \hjetscompMinlo 
 procedure~\cite{Hamilton:2012rf}. Other resummation properties are not 
 varied in this simulation. 
 
